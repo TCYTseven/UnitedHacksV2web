@@ -20,6 +20,11 @@ useEffect(() => {
   
   setHasregistered(false)
 }, [])
+if(hasregistered===true){
+  setTimeout(() => {
+    setHasregistered(false)
+  }, 2500);
+}
   return (
     
 
@@ -27,8 +32,8 @@ useEffect(() => {
     <Head>
       <title>Hack United </title>
     </Head>
-   {hasregistered && 
-<Toast/>
+   {hasregistered ===true? 
+<Toast/> : ""
    }
     <Registeration reg= {setHasregistered}/>
     
