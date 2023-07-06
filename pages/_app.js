@@ -3,6 +3,7 @@ import '@/styles/globals.css'
 import Loader from "@/components/Loader";
 import { useState } from "react";
 import { useEffect } from "react";
+import { ToastContainer } from "react-toastify";
 
 export default function MyApp({ Component, pageProps }) {
   const [isloading, setIsloading] = useState(true)
@@ -19,8 +20,21 @@ export default function MyApp({ Component, pageProps }) {
           font-family: ${poppins.style.fontFamily};
         }
       `}</style>
+      <ToastContainer
+          style={{ marginTop: "60px" }}
+          position="top-center"
+          autoClose={3000}
+          hideProgressBar={true}
+          newestOnTop={false}
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+        />
       {isloading ? <Loader message={"HACK UNITED"}/> : 
       <Component  {...pageProps} />
+      
       }
     </>
   );

@@ -32,14 +32,14 @@ export default function Registeration() {
       body: JSON.stringify(form),
     });
     const content = await response.json();
-   
+    alert(content)
+    toast.success("Successfully Registered");
     setMessage("");
     setName("");
     setPhone("");
     setEmail("");
     setTimeout(() => {
       
-      toast.success("Successfully Registered!");
       setIsloading(false)
     }, 2000);
 
