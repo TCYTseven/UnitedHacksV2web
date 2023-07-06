@@ -1,6 +1,6 @@
-export default function Loader({message}) {
+export default function Loader({ message }) {
   return (
-    <div className="h-screen w-full fixed loader flex-col justify-center flex items-center bg-[#000000]">
+    <div className="h-screen z-[9999999] w-full fixed loader flex-col justify-center flex items-center bg-[#000000]">
       <div className="rounded-text rotating" style={{ zIndex: "1" }}>
         <svg viewBox="0 0 200 200">
           <path
@@ -26,7 +26,9 @@ export default function Loader({message}) {
           </g>
         </svg>
       </div>
-      <h1 className="md:text-[1vw] text-[4vw]  text-[#DF6A50] mt-5 text-center text-savapro">{message}</h1>
+      <h1 className="md:text-[1vw] text-[4vw]  text-[#DF6A50] mt-5 text-center text-savapro">
+        {message}
+      </h1>
     </div>
   );
 }
