@@ -26,7 +26,7 @@ export default function Hero() {
             />
           </svg>
           <h1 className="md:text-[4vw] text-[9vw] mr-5 text-[#DF6A50] hackunited text-savapro">
-            HACK UNITED
+             UNITED HACKS
           </h1>
         </div>
         <div

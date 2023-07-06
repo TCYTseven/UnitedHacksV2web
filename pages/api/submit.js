@@ -15,7 +15,7 @@ export default async (req, res) => {
   const range = 'Sheet1!A1:D';
 
   const values = [
-    [req.body.name, req.body.email, req.body.message],
+    [req.body.name, req.body.email, req.body.username, req.body.country, req.body.linkedin, req.body.resume, req.body.issubscribed, req.body.isopen, req.body.first],
   ];
 
   const resource = {

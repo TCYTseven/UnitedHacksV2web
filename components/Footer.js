@@ -24,15 +24,18 @@ export default function Footer() {
                     className="absolute mt-[-5px] mr-1  "
                     alt="HackUnited Logo"
                   />
-                  <h1 className="text-3xl ml-[95px]  md:text-center text-[#DF6A50] hackunited text-savapro">
+                  <h1 className="text-3xl  ml-[95px]  md:text-center text-[#DF6A50] hackunited text-savapro">
                     HACK
                   </h1>
-                  <h1 className="text-xl ml-[95px]  md:text-center text-[#DF6A50] hackunited text-savapro">
+                  <h1 className="text-xl  ml-[95px]  md:text-center text-[#DF6A50] hackunited text-savapro">
                     UNITED
                   </h1>
               </div>
+              
+                <h3 className="text-gray-600 text-[0.9rem] mt-5 dark:text-gray-400 font-medium">EIN: 81-2908499
+</h3>
               <div className="pt-[1vh]  text-[18px]">
-                <div className="flex flex-row text-3xl space-x-4 mt-5">
+                <div className="flex flex-row text-3xl space-x-4 ">
                   <Link
                     target="_blank"
                     rel="noopener noreferrer"

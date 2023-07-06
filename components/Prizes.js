@@ -21,15 +21,17 @@ export default function Prizes() {
           interval={2000}
             showStatus={false}
             useKeyboardArrows={true}
+            
             swipeable={true}
             thumbWidth={600}
             showThumbs={false}
             
             autoPlay={true}
-            infiniteLoop={true}
+            infiniteLoop={true} 
+
           >
 
-            <div className='flex flex-col flex-grow justify-center items-center bg-gradient-to-r from-indigo-800 w-full  h-[120vw] md:h-[40vw] p-8'> <h2 className="md:text-[3.5vw]    text-[6vw] text-[#DF6A50] font-[500]">
+            <div className='flex rounded-[50px]    border-black border-[2px]  flex-col flex-grow justify-center  items-center bg-gradient-to-r from-[#3e158a] w-full  h-[120vw] md:h-[40vw] p-8'> <h2 className="md:text-[3.5vw]    text-[6vw] text-[#DF6A50] font-[500]">
               Learn More than Just Tech
             </h2>
             <h3 className="text-white   md:text-[1.5vw] text-center md:leading-normal leading-8  text-[3.5w]  break-normal">
@@ -38,7 +40,7 @@ export default function Prizes() {
               
             </h3></div>
             
-            <div className='flex flex-col flex-grow justify-center items-center bg-gradient-to-r from-indigo-800 w-full  h-[120vw] md:h-[40vw] p-8'> <h2 className="md:text-[3.5vw]    text-[6vw] text-[#DF6A50] font-[500]">
+            <div className='flex rounded-[50px]  border-black border-[2px]  flex-col flex-grow justify-center items-center bg-gradient-to-r from-[#3e158a] w-full  h-[120vw] md:h-[40vw] p-8'> <h2 className="md:text-[3.5vw]    text-[6vw] text-[#DF6A50] font-[500]">
               Learn More than Just Tech
             </h2>
             <h3 className="text-white   md:text-[1.5vw] text-center md:leading-normal leading-8  text-[3.5w]  break-normal">
@@ -47,7 +49,7 @@ export default function Prizes() {
               
             </h3></div>
             
-            <div className='flex flex-col flex-grow justify-center items-center bg-gradient-to-r from-indigo-800 w-full  h-[120vw] md:h-[40vw] p-8'> <h2 className="md:text-[3.5vw]    text-[6vw] text-[#DF6A50] font-[500]">
+            <div className='flex rounded-[50px]  border-black border-[2px]  flex-col flex-grow justify-center items-center bg-gradient-to-r from-[#3e158a] w-full  h-[120vw] md:h-[40vw] p-8'> <h2 className="md:text-[3.5vw]    text-[6vw] text-[#DF6A50] font-[500]">
               Learn More than Just Tech
             </h2>
             <h3 className="text-white   md:text-[1.5vw] text-center md:leading-normal leading-8  text-[3.5w]  break-normal">
@@ -56,7 +58,7 @@ export default function Prizes() {
               
             </h3></div>
             
-            <div className='flex flex-col flex-grow justify-center items-center bg-gradient-to-r from-indigo-800 w-full  h-[120vw] md:h-[40vw] p-8'> <h2 className="md:text-[3.5vw]    text-[6vw] text-[#DF6A50] font-[500]">
+            <div className='flex rounded-[50px]  border-black border-[2px]  flex-col flex-grow justify-center items-center bg-gradient-to-r from-[#3e158a] w-full  h-[120vw] md:h-[40vw] p-8'> <h2 className="md:text-[3.5vw]    text-[6vw] text-[#DF6A50] font-[500]">
               Learn More than Just Tech
             </h2>
             <h3 className="text-white   md:text-[1.5vw] text-center md:leading-normal leading-8  text-[3.5w]  break-normal">

@@ -29,6 +29,7 @@
 }
 .register{
   display: none;
+  overflow-y: scroll;
 }
 body {
   background-color: linear-gradient(145deg, rgba(0,0,0,1) 0%, rgba(55,0,171,1) 100%);
