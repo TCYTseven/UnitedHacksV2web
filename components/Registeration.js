@@ -232,7 +232,6 @@ export default function Registeration({ reg }) {
                   <div className="flex flex-row ">
                     <Checkbox className="mb-5 mt-5"
                     isChecked={first}
-                    isDisabled={first===true? false :true}
                     onChange={handlefirst} 
                       size="md"
                       color="secondary"
@@ -242,7 +241,7 @@ export default function Registeration({ reg }) {
                       Yes
                     </Checkbox>
                     <Checkbox className="mb-5 ml-5 mt-5"
-                      size="md" isDisabled={first===true? true :false}
+                      size="md" defaultChecked={first===false? true :false} 
                       isChecked={first}
                       color="secondary"
                       onChange={handlefirst}
