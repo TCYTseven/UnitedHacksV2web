@@ -243,7 +243,7 @@ export default function Registeration({ reg }) {
                       size="md"
                       isChecked={first}
                       color="secondary"
-                      onClick={handlefirst}
+                      onChange={handlefirst}
                       labelColor="warning"
                     >
                       No
@@ -255,7 +255,7 @@ export default function Registeration({ reg }) {
                     size="md"
                     isChecked={issubscribed}
                     color="secondary"
-                    onClick={handlesubscribe}
+                    onChange={handlesubscribe}
                     labelColor="warning"
                   >
                     I consent to subscribing to Hack United's mailing list and
@@ -275,7 +275,7 @@ export default function Registeration({ reg }) {
                   <Checkbox className="mb-5 mt-5"
                     size="md"
                     color="secondary"
-                    onClick={handleopen}
+                    onChange={handleopen}
                     isChecked={isopen}
                     labelColor="warning"
                   >
