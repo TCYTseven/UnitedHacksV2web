@@ -5,7 +5,7 @@ export default function Hero() {
   return (
     <div className="hero-bg fade items-center justify-center  min-h-screen">
       <div className="flex  flex-col flex-wrap text-center justify-center  items-center">
-        <Image
+        <Image alt="Hack United"
           className="scale w-[80vw] md:w-[30vw] mb-5 mt-10"
           src={"/earth.png"}
           width={600}

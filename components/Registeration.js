@@ -249,6 +249,8 @@ export default function Registeration({ reg }) {
                       No
                     </Checkbox>
                   </div>
+                  <div>
+
                   <Checkbox className="mb-5 mt-5"
                     size="md"
                     isChecked={issubscribed}
@@ -291,6 +293,7 @@ export default function Registeration({ reg }) {
                     I have carefully read and understand the rules of the
                     hackathon, and I agree to abide by them.
                   </Checkbox>
+                  </div>
                 </div>
                 <button
                       type="submit"

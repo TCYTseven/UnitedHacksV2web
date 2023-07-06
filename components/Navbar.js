@@ -59,7 +59,7 @@ export default function Navbar() {
       className="flex fade top-0 sticky items-center justify-between flex-wrap px-3 py-3"
     >
       <div className="flex items-center flex-shrink-0 text-white mr-6">
-        <Image
+        <Image alt="Hack United"
           src={"/navbarlogo.png"}
           width={300}
           height={120}

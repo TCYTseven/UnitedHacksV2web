@@ -17,7 +17,7 @@ export default function Footer() {
             <div className="mb-6 justify-center  md:mb-0">
               <div className="ml-[-30px]">
               
-                  <Image
+                  <Image alt="Hack United"
                     width={110}
                     height={110}
                     src="/earth.png"

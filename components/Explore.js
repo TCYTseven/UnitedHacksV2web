@@ -682,7 +682,7 @@ export default function Explore() {
               </svg>
             </div>
             <div className="justify-center flex items-center">
-              <Image src={"/exploreimg1.png"} className="w-auto md:mt-0 mt-5 h-[50vw]  md:h-[19vw]" width={400} height={400} />
+              <Image alt="Hack United" src={"/exploreimg1.png"} className="w-auto md:mt-0 mt-5 h-[50vw]  md:h-[19vw]" width={400} height={400} />
             </div>
           </div>
         </div>
@@ -1300,7 +1300,7 @@ export default function Explore() {
               </svg>
             </div>
             <div className="justify-center flex items-center">
-              <Image src={"/exploreimg2.png"} className="w-auto  mt-5 h-[50vw]  md:h-[19vw]" width={400} height={400} />
+              <Image alt="Hack United" src={"/exploreimg2.png"} className="w-auto  mt-5 h-[50vw]  md:h-[19vw]" width={400} height={400} />
             </div>
           </div>
           <div className="flex md:mt-0 mt-5  md:text-left text-center justify-center flex-col w-full md:w-[60%] ml-0 md:ml-[5vw]  ">
@@ -1941,7 +1941,7 @@ export default function Explore() {
               </svg>
             </div>
             <div className="justify-center flex items-center">
-              <Image src={"/exploreimg3.png"} className="w-auto md:mt-0 mt-5 h-[50vw]  md:h-[19vw]" width={400} height={400} />
+              <Image alt="Hack United" src={"/exploreimg3.png"} className="w-auto md:mt-0 mt-5 h-[50vw]  md:h-[19vw]" width={400} height={400} />
             </div>
           </div>
         </div>

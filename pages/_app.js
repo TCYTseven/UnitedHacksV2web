@@ -22,6 +22,7 @@ export default function MyApp({ Component, pageProps }) {
           name="keywords"
           content="hack united,hack united company, hack united, hack united, hack united hackathon, hack united code, hack united help, hack united sponsor, hack united explore, hack united  hack united linkedin, hack united github"
         />
+         <link rel="icon" href="./public/earth.png" type="image/x-icon"/>
          <meta property="og:image" content="../public/earth.png" />
         <meta name="author" content="Hack United" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />

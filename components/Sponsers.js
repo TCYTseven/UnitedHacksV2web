@@ -39,29 +39,29 @@ export default function Sponsers() {
       
       <logo-slider >
       <div className="slidersponsers">
-      <Image src={"/sponser1.webp"} width={200} height={200}/>
-        <Image src={"/sponser1.webp"} width={200} height={200}/>
-        <Image src={"/sponser1.webp"} width={200} height={200}/>
-        <Image src={"/sponser1.webp"} width={200} height={200}/>
-        <Image src={"/sponser1.webp"} width={200} height={200}/>
-        <Image src={"/sponser1.webp"} width={200} height={200}/>
-        <Image src={"/sponser1.webp"} width={200} height={200}/>
-        <Image src={"/sponser1.webp"} width={200} height={200}/>
-        <Image src={"/sponser1.webp"} width={200} height={200}/>
-        <Image src={"/sponser1.webp"} width={200} height={200}/>
+      <Image alt="Hack United" src={"/sponser1.webp"} width={200} height={200}/>
+        <Image alt="Hack United" src={"/sponser1.webp"} width={200} height={200}/>
+        <Image alt="Hack United" src={"/sponser1.webp"} width={200} height={200}/>
+        <Image alt="Hack United" src={"/sponser1.webp"} width={200} height={200}/>
+        <Image alt="Hack United" src={"/sponser1.webp"} width={200} height={200}/>
+        <Image alt="Hack United" src={"/sponser1.webp"} width={200} height={200}/>
+        <Image alt="Hack United" src={"/sponser1.webp"} width={200} height={200}/>
+        <Image alt="Hack United" src={"/sponser1.webp"} width={200} height={200}/>
+        <Image alt="Hack United" src={"/sponser1.webp"} width={200} height={200}/>
+        <Image alt="Hack United" src={"/sponser1.webp"} width={200} height={200}/>
    </div>
   
   <div className="slidersponsers">
-  <Image src={"/sponser1.webp"} width={200} height={200}/>
-        <Image src={"/sponser1.webp"} width={200} height={200}/>
-        <Image src={"/sponser1.webp"} width={200} height={200}/>
-        <Image src={"/sponser1.webp"} width={200} height={200}/>
-        <Image src={"/sponser1.webp"} width={200} height={200}/>
-        <Image src={"/sponser1.webp"} width={200} height={200}/>
-        <Image src={"/sponser1.webp"} width={200} height={200}/>
-        <Image src={"/sponser1.webp"} width={200} height={200}/>
-        <Image src={"/sponser1.webp"} width={200} height={200}/>
-        <Image src={"/sponser1.webp"} width={200} height={200}/>
+  <Image alt="Hack United" src={"/sponser1.webp"} width={200} height={200}/>
+        <Image alt="Hack United" src={"/sponser1.webp"} width={200} height={200}/>
+        <Image alt="Hack United" src={"/sponser1.webp"} width={200} height={200}/>
+        <Image alt="Hack United" src={"/sponser1.webp"} width={200} height={200}/>
+        <Image alt="Hack United" src={"/sponser1.webp"} width={200} height={200}/>
+        <Image alt="Hack United" src={"/sponser1.webp"} width={200} height={200}/>
+        <Image alt="Hack United" src={"/sponser1.webp"} width={200} height={200}/>
+        <Image alt="Hack United" src={"/sponser1.webp"} width={200} height={200}/>
+        <Image alt="Hack United" src={"/sponser1.webp"} width={200} height={200}/>
+        <Image alt="Hack United" src={"/sponser1.webp"} width={200} height={200}/>
   </div>
 
       </logo-slider>
@@ -71,29 +71,29 @@ export default function Sponsers() {
 
       <logo-slider >
       <div className="slidersponsers">
-      <Image src={"/sponser1.webp"} width={200} height={200}/>
-        <Image src={"/sponser1.webp"} width={200} height={200}/>
-        <Image src={"/sponser1.webp"} width={200} height={200}/>
-        <Image src={"/sponser1.webp"} width={200} height={200}/>
-        <Image src={"/sponser1.webp"} width={200} height={200}/>
-        <Image src={"/sponser1.webp"} width={200} height={200}/>
-        <Image src={"/sponser1.webp"} width={200} height={200}/>
-        <Image src={"/sponser1.webp"} width={200} height={200}/>
-        <Image src={"/sponser1.webp"} width={200} height={200}/>
-        <Image src={"/sponser1.webp"} width={200} height={200}/>
+      <Image alt="Hack United" src={"/sponser1.webp"} width={200} height={200}/>
+        <Image alt="Hack United" src={"/sponser1.webp"} width={200} height={200}/>
+        <Image alt="Hack United" src={"/sponser1.webp"} width={200} height={200}/>
+        <Image alt="Hack United" src={"/sponser1.webp"} width={200} height={200}/>
+        <Image alt="Hack United" src={"/sponser1.webp"} width={200} height={200}/>
+        <Image alt="Hack United" src={"/sponser1.webp"} width={200} height={200}/>
+        <Image alt="Hack United" src={"/sponser1.webp"} width={200} height={200}/>
+        <Image alt="Hack United" src={"/sponser1.webp"} width={200} height={200}/>
+        <Image alt="Hack United" src={"/sponser1.webp"} width={200} height={200}/>
+        <Image alt="Hack United" src={"/sponser1.webp"} width={200} height={200}/>
    </div>
   
   <div className="slidersponsers">
-  <Image src={"/sponser1.webp"} width={200} height={200}/>
-        <Image src={"/sponser1.webp"} width={200} height={200}/>
-        <Image src={"/sponser1.webp"} width={200} height={200}/>
-        <Image src={"/sponser1.webp"} width={200} height={200}/>
-        <Image src={"/sponser1.webp"} width={200} height={200}/>
-        <Image src={"/sponser1.webp"} width={200} height={200}/>
-        <Image src={"/sponser1.webp"} width={200} height={200}/>
-        <Image src={"/sponser1.webp"} width={200} height={200}/>
-        <Image src={"/sponser1.webp"} width={200} height={200}/>
-        <Image src={"/sponser1.webp"} width={200} height={200}/>
+  <Image alt="Hack United" src={"/sponser1.webp"} width={200} height={200}/>
+        <Image alt="Hack United" src={"/sponser1.webp"} width={200} height={200}/>
+        <Image alt="Hack United" src={"/sponser1.webp"} width={200} height={200}/>
+        <Image alt="Hack United" src={"/sponser1.webp"} width={200} height={200}/>
+        <Image alt="Hack United" src={"/sponser1.webp"} width={200} height={200}/>
+        <Image alt="Hack United" src={"/sponser1.webp"} width={200} height={200}/>
+        <Image alt="Hack United" src={"/sponser1.webp"} width={200} height={200}/>
+        <Image alt="Hack United" src={"/sponser1.webp"} width={200} height={200}/>
+        <Image alt="Hack United" src={"/sponser1.webp"} width={200} height={200}/>
+        <Image alt="Hack United" src={"/sponser1.webp"} width={200} height={200}/>
   </div>
 
       </logo-slider>
