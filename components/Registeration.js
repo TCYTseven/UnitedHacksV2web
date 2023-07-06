@@ -38,6 +38,7 @@ export default function Registeration({ reg }) {
       setFirst(false);
     } else {
       setFirst(true);
+      
     }
   };
   const handleSubmit = async (e) => {
@@ -231,7 +232,8 @@ export default function Registeration({ reg }) {
                   <div className="flex flex-row ">
                     <Checkbox className="mb-5 mt-5"
                     isChecked={first}
-                    onChange={handlefirst}
+                    isDisabled={first===true? false :true}
+                    onChange={handlefirst} 
                       size="md"
                       color="secondary"
                       
@@ -239,8 +241,8 @@ export default function Registeration({ reg }) {
                     >
                       Yes
                     </Checkbox>
-                    <Checkbox className="mb-5 mt-5"
-                      size="md"
+                    <Checkbox className="mb-5 ml-5 mt-5"
+                      size="md" isDisabled={first===true? true :false}
                       isChecked={first}
                       color="secondary"
                       onChange={handlefirst}
