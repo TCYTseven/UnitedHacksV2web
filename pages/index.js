@@ -7,19 +7,30 @@ import Navbar from "@/components/Navbar";
 import Prizes from "@/components/Prizes";
 import Registeration from "@/components/Registeration";
 import Sponsers from "@/components/Sponsers";
-
+import Head from "next/head";
 import { ibmPlexMono } from "../font";
 
+import { useState } from "react";
+import { useEffect } from "react";
+import Toast from "@/components/Toast";
 export default function Home() {
- 
+  const [hasregistered, setHasregistered] = useState(false)
+
+useEffect(() => {
   
+  setHasregistered(false)
+}, [])
   return (
     
 
-    <div >
-   
-
-    <Registeration/>
+    <>
+    <Head>
+      <title>Hack United </title>
+    </Head>
+   {hasregistered && 
+<Toast/>
+   }
+    <Registeration reg= {setHasregistered}/>
     
       <Navbar />
       <Hero />
@@ -97,7 +108,7 @@ export default function Home() {
       <Footer/>
       
 
-    </div>
+    </>
 
       
      

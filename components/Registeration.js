@@ -1,18 +1,18 @@
 import { useState } from "react";
 import Loader from "./Loader";
-import { toast } from "react-toastify";
 
-export default function Registeration() {
+export default function Registeration({reg}) {
   const [isloading, setIsloading] = useState(false)
   const [prompt, setPrompt] = useState("")
   const toggle = () => {
     document.getElementsByClassName("register")[0].style.display = "none";
   };
+
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
   const [message, setMessage] = useState("");
-
+  
   const handleSubmit = async (e) => {
     setPrompt("HACK UNITED")
     setIsloading(true)
@@ -36,8 +36,8 @@ export default function Registeration() {
     setPhone("");
     setEmail("");
     setTimeout(() => {
+      reg(true)
       
-      toast.success("Successfully Registered");
       setIsloading(false)
     }, 2000);
 

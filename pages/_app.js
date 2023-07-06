@@ -3,7 +3,8 @@ import '@/styles/globals.css'
 import Loader from "@/components/Loader";
 import { useState } from "react";
 import { useEffect } from "react";
-import { ToastContainer } from "react-toastify";
+import Head from 'next/head';
+import { ToastProvider } from 'react-toast-notifications'
 
 export default function MyApp({ Component, pageProps }) {
   const [isloading, setIsloading] = useState(true)
@@ -15,6 +16,16 @@ export default function MyApp({ Component, pageProps }) {
     
   return (
     <>
+    <Head>
+    <meta charSet="UTF-8" />
+        <meta
+          name="keywords"
+          content="hack united,hack united company, hack united, hack united, hack united hackathon, hack united code, hack united help, hack united sponsor, hack united explore, hack united  hack united linkedin, hack united github"
+        />
+         <meta property="og:image" content="../public/earth.png" />
+        <meta name="author" content="Hack United" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    </Head>
       <style jsx global>{`
         html {
           font-family: ${poppins.style.fontFamily};
@@ -22,25 +33,15 @@ export default function MyApp({ Component, pageProps }) {
      
       `}</style>
       {isloading ? <Loader message={"HACK UNITED"}/> : 
+      
       <>
-
+      <ToastProvider placement='center'>
       <Component  {...pageProps} />
+          </ToastProvider>
+
       </>
       
       }
-      <ToastContainer
-          style={{ marginTop: "60px" }}
-          position="top-center"
-          autoClose={3000}
-          hideProgressBar={true}
-          newestOnTop={false}
-          closeOnClick
-          rtl={false}
-          pauseOnFocusLoss
-          draggable
-          pauseOnHover
-        >
-      </ToastContainer>
     </>
   );
 }

@@ -157,7 +157,32 @@ nav{
   opacity: 1;
   animation: toptobottom 1s ease-in-out, fade 1s ease-in-out;
 }
+.toast{
+  opacity: 0;
+  animation: toast 4s ease-in-out, fade 1s ease-in-out;
 
+}
+@keyframes toast {
+  0%{
+    transform: translateY(-150px);
+    opacity: 0;
+  }
+  20%{
+    opacity: 1;
+    
+    transform: translateY(100px);
+  }
+  80%{
+    opacity: 1;
+    
+    transform: translateY(100px);
+  }
+  100%{
+    opacity: 0;
+    transform: translateY(0px);
+    
+  }
+}
 .exploreimg1{
   background-image: url("../public/exploreimg1.png");
 }

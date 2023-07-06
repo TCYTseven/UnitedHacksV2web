@@ -12,7 +12,7 @@ export default async (req, res) => {
   const sheets = google.sheets({ version: 'v4', auth });
 
   const spreadsheetId = "1zGF9iNK1b8zEs21IlSWhvR0E-cugOqA4b7rD2h-Qrn0";
-  const range = 'Sheet1!A1:D1';
+  const range = 'Sheet1!A1:D';
 
   const values = [
     [req.body.name, req.body.email, req.body.message],

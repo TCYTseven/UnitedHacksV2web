@@ -26,7 +26,7 @@ export default function Loader({message}) {
           </g>
         </svg>
       </div>
-      <h1 className="md:text-[1vw] text-[9vw]  text-[#DF6A50] mt-5 text-center text-savapro">{message}</h1>
+      <h1 className="md:text-[1vw] text-[4vw]  text-[#DF6A50] mt-5 text-center text-savapro">{message}</h1>
     </div>
   );
 }
