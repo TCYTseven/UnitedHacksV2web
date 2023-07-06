@@ -19,10 +19,15 @@ export default function MyApp({ Component, pageProps }) {
         html {
           font-family: ${poppins.style.fontFamily};
         }
+     
       `}</style>
       {isloading ? <Loader message={"HACK UNITED"}/> : 
       <>
 
+      <Component  {...pageProps} />
+      </>
+      
+      }
       <ToastContainer
           style={{ marginTop: "60px" }}
           position="top-center"
@@ -34,11 +39,8 @@ export default function MyApp({ Component, pageProps }) {
           pauseOnFocusLoss
           draggable
           pauseOnHover
-        />
-      <Component  {...pageProps} />
-      </>
-      
-      }
+        >
+      </ToastContainer>
     </>
   );
 }

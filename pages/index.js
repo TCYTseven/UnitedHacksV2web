@@ -17,6 +17,8 @@ export default function Home() {
     
 
     <div >
+   
+
     <Registeration/>
     
       <Navbar />
@@ -93,6 +95,8 @@ export default function Home() {
         </p>
       </div>
       <Footer/>
+      
+
     </div>
 
       
