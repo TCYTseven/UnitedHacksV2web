@@ -6,10 +6,9 @@ export default function Explore() {
   useEffect(() => {
     function reveal() {
       var revealed = document.querySelectorAll(".marquee");
-
       
-      var reveals = document.querySelectorAll(".heading");
       var wheel = document.querySelectorAll(".wheel");
+      var reveals = document.querySelectorAll(".heading");
 
       for (var i = 0; i < reveals.length; i++) {
         var windowHeight = window.innerHeight;
@@ -19,8 +18,10 @@ export default function Explore() {
         if (elementTop < windowHeight - elementVisible) {
           reveals[i].classList.add("active");
           revealed[i].classList.add("active");
+          
         }
         else{
+        
           revealed[i].classList.remove("active");
 
         }
@@ -45,36 +46,33 @@ export default function Explore() {
   }, []);
 
   return (
-    <div className="min-h-screen mt-3">
+    <div className="min-h-screen mt-3 mb-24">
       <div className="text heading">
         <h1
-          className=" text-center  explore-heading text text--blocks"
+          className=" text-center md:text-[4vw] text-[10vw]  explore-heading text text--blocks"
           data-scroll="out"
           data-splitting=""
         >
           Why Participate?
         </h1>
       </div>
-      <div className="mt-24 flex-col flex ">
-        <div className="flex flex-row justify-center flex-wrap p-5 mb-[101px]">
-          <div className="flex flex-col w-[70%] mr-[5vw]  ">
-            <h2 className="text-[42px] text-[#DF6A50] font-[500]">
+      <div className="md:mt-24 mt-5 flex-col flex ">
+        <div className="flex flex-row justify-center  flex-wrap p-5 mb-[50px]">
+          <div className="flex md:order-none order-1 md:mt-0 mt-5 md:text-left text-center justify-center flex-col w-full md:w-[60%] mr-0 md:mr-[5vw]  ">
+            <h2 className="md:text-[2vw] text-[6vw] text-[#DF6A50] font-[500]">
               Learn More than Just Tech
             </h2>
-            <h3 className="text-white mt-5 text-2xl text-justify break-normal ">
+            <h3 className="text-white  md:text-[1vw] text-center md:leading-normal leading-8  text-[3.5vw] md:text-justify break-normal ">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
               deserunt veniam, harum dolor voluptas perspiciatis aut veritatis
               iste eaque sunt! Pariatur adipisci laboriosam eum nostrum fuga
               alias sunt iusto maiores?
             </h3>
           </div>
-          <div className="align-center mt-[-5vh] justify-center flex items-center">
-            <div className="absolute ">
+          <div className="align-center md:mb-0 mb-7 justify-center flex items-center">
+            <div className="absolute justify-center">
               <svg
-                width="302"
-                height="297"
-                className="wheel"
-                style={{ transform: "scale(1.6)" }}
+                className="wheel md:mt-0 mt-5 h-[40vw] md:h-[15vw]"
                 viewBox="0 0 302 297"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -208,13 +206,13 @@ export default function Explore() {
                     y2="13.2335"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#5D00BA" />
+                    <stop stopColor="#5D00BA" />
                     <stop
                       offset="0.9999"
-                      stop-color="#490092"
-                      stop-opacity="0.392001"
+                      stopColor="#490092"
+                      stopOpacity="0.392001"
                     />
-                    <stop offset="1" stop-color="#3C0078" stop-opacity="0" />
+                    <stop offset="1" stopColor="#3C0078" stopOpacity="0" />
                   </linearGradient>
                   <linearGradient
                     id="paint1_linear_4_209"
@@ -224,13 +222,13 @@ export default function Explore() {
                     y2="15.3206"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#5D00BA" />
+                    <stop stopColor="#5D00BA" />
                     <stop
                       offset="0.9999"
-                      stop-color="#490092"
-                      stop-opacity="0.392001"
+                      stopColor="#490092"
+                      stopOpacity="0.392001"
                     />
-                    <stop offset="1" stop-color="#3C0078" stop-opacity="0" />
+                    <stop offset="1" stopColor="#3C0078" stopOpacity="0" />
                   </linearGradient>
                   <linearGradient
                     id="paint2_linear_4_209"
@@ -240,13 +238,13 @@ export default function Explore() {
                     y2="23.2539"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#5D00BA" />
+                    <stop stopColor="#5D00BA" />
                     <stop
                       offset="0.9999"
-                      stop-color="#490092"
-                      stop-opacity="0.392001"
+                      stopColor="#490092"
+                      stopOpacity="0.392001"
                     />
-                    <stop offset="1" stop-color="#3C0078" stop-opacity="0" />
+                    <stop offset="1" stopColor="#3C0078" stopOpacity="0" />
                   </linearGradient>
                   <linearGradient
                     id="paint3_linear_4_209"
@@ -256,13 +254,13 @@ export default function Explore() {
                     y2="36.714"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#5D00BA" />
+                    <stop stopColor="#5D00BA" />
                     <stop
                       offset="0.9999"
-                      stop-color="#490092"
-                      stop-opacity="0.392001"
+                      stopColor="#490092"
+                      stopOpacity="0.392001"
                     />
-                    <stop offset="1" stop-color="#3C0078" stop-opacity="0" />
+                    <stop offset="1" stopColor="#3C0078" stopOpacity="0" />
                   </linearGradient>
                   <linearGradient
                     id="paint4_linear_4_209"
@@ -272,13 +270,13 @@ export default function Explore() {
                     y2="55.1053"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#5D00BA" />
+                    <stop stopColor="#5D00BA" />
                     <stop
                       offset="0.9999"
-                      stop-color="#490092"
-                      stop-opacity="0.392001"
+                      stopColor="#490092"
+                      stopOpacity="0.392001"
                     />
-                    <stop offset="1" stop-color="#3C0078" stop-opacity="0" />
+                    <stop offset="1" stopColor="#3C0078" stopOpacity="0" />
                   </linearGradient>
                   <linearGradient
                     id="paint5_linear_4_209"
@@ -288,13 +286,13 @@ export default function Explore() {
                     y2="77.5869"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#5D00BA" />
+                    <stop stopColor="#5D00BA" />
                     <stop
                       offset="0.9999"
-                      stop-color="#490092"
-                      stop-opacity="0.392001"
+                      stopColor="#490092"
+                      stopOpacity="0.392001"
                     />
-                    <stop offset="1" stop-color="#3C0078" stop-opacity="0" />
+                    <stop offset="1" stopColor="#3C0078" stopOpacity="0" />
                   </linearGradient>
                   <linearGradient
                     id="paint6_linear_4_209"
@@ -304,13 +302,13 @@ export default function Explore() {
                     y2="103.127"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#5D00BA" />
+                    <stop stopColor="#5D00BA" />
                     <stop
                       offset="0.9999"
-                      stop-color="#490092"
-                      stop-opacity="0.392001"
+                      stopColor="#490092"
+                      stopOpacity="0.392001"
                     />
-                    <stop offset="1" stop-color="#3C0078" stop-opacity="0" />
+                    <stop offset="1" stopColor="#3C0078" stopOpacity="0" />
                   </linearGradient>
                   <linearGradient
                     id="paint7_linear_4_209"
@@ -320,13 +318,13 @@ export default function Explore() {
                     y2="130.567"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#5D00BA" />
+                    <stop stopColor="#5D00BA" />
                     <stop
                       offset="0.9999"
-                      stop-color="#490092"
-                      stop-opacity="0.392001"
+                      stopColor="#490092"
+                      stopOpacity="0.392001"
                     />
-                    <stop offset="1" stop-color="#3C0078" stop-opacity="0" />
+                    <stop offset="1" stopColor="#3C0078" stopOpacity="0" />
                   </linearGradient>
                   <linearGradient
                     id="paint8_linear_4_209"
@@ -336,13 +334,13 @@ export default function Explore() {
                     y2="158.691"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#5D00BA" />
+                    <stop stopColor="#5D00BA" />
                     <stop
                       offset="0.9999"
-                      stop-color="#490092"
-                      stop-opacity="0.392001"
+                      stopColor="#490092"
+                      stopOpacity="0.392001"
                     />
-                    <stop offset="1" stop-color="#3C0078" stop-opacity="0" />
+                    <stop offset="1" stopColor="#3C0078" stopOpacity="0" />
                   </linearGradient>
                   <linearGradient
                     id="paint9_linear_4_209"
@@ -352,13 +350,13 @@ export default function Explore() {
                     y2="186.287"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#5D00BA" />
+                    <stop stopColor="#5D00BA" />
                     <stop
                       offset="0.9999"
-                      stop-color="#490092"
-                      stop-opacity="0.392001"
+                      stopColor="#490092"
+                      stopOpacity="0.392001"
                     />
-                    <stop offset="1" stop-color="#3C0078" stop-opacity="0" />
+                    <stop offset="1" stopColor="#3C0078" stopOpacity="0" />
                   </linearGradient>
                   <linearGradient
                     id="paint10_linear_4_209"
@@ -368,13 +366,13 @@ export default function Explore() {
                     y2="212.194"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#5D00BA" />
+                    <stop stopColor="#5D00BA" />
                     <stop
                       offset="0.9999"
-                      stop-color="#490092"
-                      stop-opacity="0.392001"
+                      stopColor="#490092"
+                      stopOpacity="0.392001"
                     />
-                    <stop offset="1" stop-color="#3C0078" stop-opacity="0" />
+                    <stop offset="1" stopColor="#3C0078" stopOpacity="0" />
                   </linearGradient>
                   <linearGradient
                     id="paint11_linear_4_209"
@@ -384,13 +382,13 @@ export default function Explore() {
                     y2="235.344"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#5D00BA" />
+                    <stop stopColor="#5D00BA" />
                     <stop
                       offset="0.9999"
-                      stop-color="#490092"
-                      stop-opacity="0.392001"
+                      stopColor="#490092"
+                      stopOpacity="0.392001"
                     />
-                    <stop offset="1" stop-color="#3C0078" stop-opacity="0" />
+                    <stop offset="1" stopColor="#3C0078" stopOpacity="0" />
                   </linearGradient>
                   <linearGradient
                     id="paint12_linear_4_209"
@@ -400,13 +398,13 @@ export default function Explore() {
                     y2="254.784"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#5D00BA" />
+                    <stop stopColor="#5D00BA" />
                     <stop
                       offset="0.9999"
-                      stop-color="#490092"
-                      stop-opacity="0.392001"
+                      stopColor="#490092"
+                      stopOpacity="0.392001"
                     />
-                    <stop offset="1" stop-color="#3C0078" stop-opacity="0" />
+                    <stop offset="1" stopColor="#3C0078" stopOpacity="0" />
                   </linearGradient>
                   <linearGradient
                     id="paint13_linear_4_209"
@@ -416,13 +414,13 @@ export default function Explore() {
                     y2="269.701"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#5D00BA" />
+                    <stop stopColor="#5D00BA" />
                     <stop
                       offset="0.9999"
-                      stop-color="#490092"
-                      stop-opacity="0.392001"
+                      stopColor="#490092"
+                      stopOpacity="0.392001"
                     />
-                    <stop offset="1" stop-color="#3C0078" stop-opacity="0" />
+                    <stop offset="1" stopColor="#3C0078" stopOpacity="0" />
                   </linearGradient>
                   <linearGradient
                     id="paint14_linear_4_209"
@@ -432,13 +430,13 @@ export default function Explore() {
                     y2="279.44"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#5D00BA" />
+                    <stop stopColor="#5D00BA" />
                     <stop
                       offset="0.9999"
-                      stop-color="#490092"
-                      stop-opacity="0.392001"
+                      stopColor="#490092"
+                      stopOpacity="0.392001"
                     />
-                    <stop offset="1" stop-color="#3C0078" stop-opacity="0" />
+                    <stop offset="1" stopColor="#3C0078" stopOpacity="0" />
                   </linearGradient>
                   <linearGradient
                     id="paint15_linear_4_209"
@@ -448,13 +446,13 @@ export default function Explore() {
                     y2="283.539"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#5D00BA" />
+                    <stop stopColor="#5D00BA" />
                     <stop
                       offset="0.9999"
-                      stop-color="#490092"
-                      stop-opacity="0.392001"
+                      stopColor="#490092"
+                      stopOpacity="0.392001"
                     />
-                    <stop offset="1" stop-color="#3C0078" stop-opacity="0" />
+                    <stop offset="1" stopColor="#3C0078" stopOpacity="0" />
                   </linearGradient>
                   <linearGradient
                     id="paint16_linear_4_209"
@@ -464,13 +462,13 @@ export default function Explore() {
                     y2="281.761"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#5D00BA" />
+                    <stop stopColor="#5D00BA" />
                     <stop
                       offset="0.9999"
-                      stop-color="#490092"
-                      stop-opacity="0.392001"
+                      stopColor="#490092"
+                      stopOpacity="0.392001"
                     />
-                    <stop offset="1" stop-color="#3C0078" stop-opacity="0" />
+                    <stop offset="1" stopColor="#3C0078" stopOpacity="0" />
                   </linearGradient>
                   <linearGradient
                     id="paint17_linear_4_209"
@@ -480,13 +478,13 @@ export default function Explore() {
                     y2="274.129"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#5D00BA" />
+                    <stop stopColor="#5D00BA" />
                     <stop
                       offset="0.9999"
-                      stop-color="#490092"
-                      stop-opacity="0.392001"
+                      stopColor="#490092"
+                      stopOpacity="0.392001"
                     />
-                    <stop offset="1" stop-color="#3C0078" stop-opacity="0" />
+                    <stop offset="1" stopColor="#3C0078" stopOpacity="0" />
                   </linearGradient>
                   <linearGradient
                     id="paint18_linear_4_209"
@@ -496,13 +494,13 @@ export default function Explore() {
                     y2="260.945"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#5D00BA" />
+                    <stop stopColor="#5D00BA" />
                     <stop
                       offset="0.9999"
-                      stop-color="#490092"
-                      stop-opacity="0.392001"
+                      stopColor="#490092"
+                      stopOpacity="0.392001"
                     />
-                    <stop offset="1" stop-color="#3C0078" stop-opacity="0" />
+                    <stop offset="1" stopColor="#3C0078" stopOpacity="0" />
                   </linearGradient>
                   <linearGradient
                     id="paint19_linear_4_209"
@@ -512,13 +510,13 @@ export default function Explore() {
                     y2="242.793"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#5D00BA" />
+                    <stop stopColor="#5D00BA" />
                     <stop
                       offset="0.9999"
-                      stop-color="#490092"
-                      stop-opacity="0.392001"
+                      stopColor="#490092"
+                      stopOpacity="0.392001"
                     />
-                    <stop offset="1" stop-color="#3C0078" stop-opacity="0" />
+                    <stop offset="1" stopColor="#3C0078" stopOpacity="0" />
                   </linearGradient>
                   <linearGradient
                     id="paint20_linear_4_209"
@@ -528,13 +526,13 @@ export default function Explore() {
                     y2="220.501"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#5D00BA" />
+                    <stop stopColor="#5D00BA" />
                     <stop
                       offset="0.9999"
-                      stop-color="#490092"
-                      stop-opacity="0.392001"
+                      stopColor="#490092"
+                      stopOpacity="0.392001"
                     />
-                    <stop offset="1" stop-color="#3C0078" stop-opacity="0" />
+                    <stop offset="1" stopColor="#3C0078" stopOpacity="0" />
                   </linearGradient>
                   <linearGradient
                     id="paint21_linear_4_209"
@@ -544,13 +542,13 @@ export default function Explore() {
                     y2="195.093"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#5D00BA" />
+                    <stop stopColor="#5D00BA" />
                     <stop
                       offset="0.9999"
-                      stop-color="#490092"
-                      stop-opacity="0.392001"
+                      stopColor="#490092"
+                      stopOpacity="0.392001"
                     />
-                    <stop offset="1" stop-color="#3C0078" stop-opacity="0" />
+                    <stop offset="1" stopColor="#3C0078" stopOpacity="0" />
                   </linearGradient>
                   <linearGradient
                     id="paint22_linear_4_209"
@@ -560,13 +558,13 @@ export default function Explore() {
                     y2="167.722"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#5D00BA" />
+                    <stop stopColor="#5D00BA" />
                     <stop
                       offset="0.9999"
-                      stop-color="#490092"
-                      stop-opacity="0.392001"
+                      stopColor="#490092"
+                      stopOpacity="0.392001"
                     />
-                    <stop offset="1" stop-color="#3C0078" stop-opacity="0" />
+                    <stop offset="1" stopColor="#3C0078" stopOpacity="0" />
                   </linearGradient>
                   <linearGradient
                     id="paint23_linear_4_209"
@@ -576,13 +574,13 @@ export default function Explore() {
                     y2="139.603"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#5D00BA" />
+                    <stop stopColor="#5D00BA" />
                     <stop
                       offset="0.9999"
-                      stop-color="#490092"
-                      stop-opacity="0.392001"
+                      stopColor="#490092"
+                      stopOpacity="0.392001"
                     />
-                    <stop offset="1" stop-color="#3C0078" stop-opacity="0" />
+                    <stop offset="1" stopColor="#3C0078" stopOpacity="0" />
                   </linearGradient>
                   <linearGradient
                     id="paint24_linear_4_209"
@@ -592,13 +590,13 @@ export default function Explore() {
                     y2="111.95"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#5D00BA" />
+                    <stop stopColor="#5D00BA" />
                     <stop
                       offset="0.9999"
-                      stop-color="#490092"
-                      stop-opacity="0.392001"
+                      stopColor="#490092"
+                      stopOpacity="0.392001"
                     />
-                    <stop offset="1" stop-color="#3C0078" stop-opacity="0" />
+                    <stop offset="1" stopColor="#3C0078" stopOpacity="0" />
                   </linearGradient>
                   <linearGradient
                     id="paint25_linear_4_209"
@@ -608,13 +606,13 @@ export default function Explore() {
                     y2="85.9276"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#5D00BA" />
+                    <stop stopColor="#5D00BA" />
                     <stop
                       offset="0.9999"
-                      stop-color="#490092"
-                      stop-opacity="0.392001"
+                      stopColor="#490092"
+                      stopOpacity="0.392001"
                     />
-                    <stop offset="1" stop-color="#3C0078" stop-opacity="0" />
+                    <stop offset="1" stopColor="#3C0078" stopOpacity="0" />
                   </linearGradient>
                   <linearGradient
                     id="paint26_linear_4_209"
@@ -624,13 +622,13 @@ export default function Explore() {
                     y2="62.6091"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#5D00BA" />
+                    <stop stopColor="#5D00BA" />
                     <stop
                       offset="0.9999"
-                      stop-color="#490092"
-                      stop-opacity="0.392001"
+                      stopColor="#490092"
+                      stopOpacity="0.392001"
                     />
-                    <stop offset="1" stop-color="#3C0078" stop-opacity="0" />
+                    <stop offset="1" stopColor="#3C0078" stopOpacity="0" />
                   </linearGradient>
                   <linearGradient
                     id="paint27_linear_4_209"
@@ -640,13 +638,13 @@ export default function Explore() {
                     y2="42.9535"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#5D00BA" />
+                    <stop stopColor="#5D00BA" />
                     <stop
                       offset="0.9999"
-                      stop-color="#490092"
-                      stop-opacity="0.392001"
+                      stopColor="#490092"
+                      stopOpacity="0.392001"
                     />
-                    <stop offset="1" stop-color="#3C0078" stop-opacity="0" />
+                    <stop offset="1" stopColor="#3C0078" stopOpacity="0" />
                   </linearGradient>
                   <linearGradient
                     id="paint28_linear_4_209"
@@ -656,13 +654,13 @@ export default function Explore() {
                     y2="27.783"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#5D00BA" />
+                    <stop stopColor="#5D00BA" />
                     <stop
                       offset="0.9999"
-                      stop-color="#490092"
-                      stop-opacity="0.392001"
+                      stopColor="#490092"
+                      stopOpacity="0.392001"
                     />
-                    <stop offset="1" stop-color="#3C0078" stop-opacity="0" />
+                    <stop offset="1" stopColor="#3C0078" stopOpacity="0" />
                   </linearGradient>
                   <linearGradient
                     id="paint29_linear_4_209"
@@ -672,31 +670,27 @@ export default function Explore() {
                     y2="17.7595"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#5D00BA" />
+                    <stop stopColor="#5D00BA" />
                     <stop
                       offset="0.9999"
-                      stop-color="#490092"
-                      stop-opacity="0.392001"
+                      stopColor="#490092"
+                      stopOpacity="0.392001"
                     />
-                    <stop offset="1" stop-color="#3C0078" stop-opacity="0" />
+                    <stop offset="1" stopColor="#3C0078" stopOpacity="0" />
                   </linearGradient>
                 </defs>
               </svg>
             </div>
-            <div>
-              <Image src={"/exploreimg1"} width={400} height={400} />
+            <div className="justify-center flex items-center">
+              <Image src={"/exploreimg1.png"} className="w-auto md:mt-0 mt-5 h-[50vw]  md:h-[19vw]" width={400} height={400} />
             </div>
           </div>
         </div>
-        <div className="flex flex-row flex-wrap justify-center p-5 mb-[101px]">
-          
-          <div className="align-center mt-[-5vh] justify-center flex items-center">
-            <div className="absolute ">
+        <div className="flex flex-row justify-center  flex-wrap p-5 mb-[50px]">
+        <div className="align-center md:mb-0 mb-7 justify-center flex items-center">
+            <div className="absolute justify-center">
               <svg
-                width="302"
-                height="297"
-                className="wheel"
-                style={{ transform: "scale(1.6)" }}
+                className="wheel md:mt-0 mt-5 h-[40vw] md:h-[15vw]"
                 viewBox="0 0 302 297"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -830,13 +824,13 @@ export default function Explore() {
                     y2="13.2335"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#5D00BA" />
+                    <stop stopColor="#5D00BA" />
                     <stop
                       offset="0.9999"
-                      stop-color="#490092"
-                      stop-opacity="0.392001"
+                      stopColor="#490092"
+                      stopOpacity="0.392001"
                     />
-                    <stop offset="1" stop-color="#3C0078" stop-opacity="0" />
+                    <stop offset="1" stopColor="#3C0078" stopOpacity="0" />
                   </linearGradient>
                   <linearGradient
                     id="paint1_linear_4_209"
@@ -846,13 +840,13 @@ export default function Explore() {
                     y2="15.3206"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#5D00BA" />
+                    <stop stopColor="#5D00BA" />
                     <stop
                       offset="0.9999"
-                      stop-color="#490092"
-                      stop-opacity="0.392001"
+                      stopColor="#490092"
+                      stopOpacity="0.392001"
                     />
-                    <stop offset="1" stop-color="#3C0078" stop-opacity="0" />
+                    <stop offset="1" stopColor="#3C0078" stopOpacity="0" />
                   </linearGradient>
                   <linearGradient
                     id="paint2_linear_4_209"
@@ -862,13 +856,13 @@ export default function Explore() {
                     y2="23.2539"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#5D00BA" />
+                    <stop stopColor="#5D00BA" />
                     <stop
                       offset="0.9999"
-                      stop-color="#490092"
-                      stop-opacity="0.392001"
+                      stopColor="#490092"
+                      stopOpacity="0.392001"
                     />
-                    <stop offset="1" stop-color="#3C0078" stop-opacity="0" />
+                    <stop offset="1" stopColor="#3C0078" stopOpacity="0" />
                   </linearGradient>
                   <linearGradient
                     id="paint3_linear_4_209"
@@ -878,13 +872,13 @@ export default function Explore() {
                     y2="36.714"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#5D00BA" />
+                    <stop stopColor="#5D00BA" />
                     <stop
                       offset="0.9999"
-                      stop-color="#490092"
-                      stop-opacity="0.392001"
+                      stopColor="#490092"
+                      stopOpacity="0.392001"
                     />
-                    <stop offset="1" stop-color="#3C0078" stop-opacity="0" />
+                    <stop offset="1" stopColor="#3C0078" stopOpacity="0" />
                   </linearGradient>
                   <linearGradient
                     id="paint4_linear_4_209"
@@ -894,13 +888,13 @@ export default function Explore() {
                     y2="55.1053"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#5D00BA" />
+                    <stop stopColor="#5D00BA" />
                     <stop
                       offset="0.9999"
-                      stop-color="#490092"
-                      stop-opacity="0.392001"
+                      stopColor="#490092"
+                      stopOpacity="0.392001"
                     />
-                    <stop offset="1" stop-color="#3C0078" stop-opacity="0" />
+                    <stop offset="1" stopColor="#3C0078" stopOpacity="0" />
                   </linearGradient>
                   <linearGradient
                     id="paint5_linear_4_209"
@@ -910,13 +904,13 @@ export default function Explore() {
                     y2="77.5869"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#5D00BA" />
+                    <stop stopColor="#5D00BA" />
                     <stop
                       offset="0.9999"
-                      stop-color="#490092"
-                      stop-opacity="0.392001"
+                      stopColor="#490092"
+                      stopOpacity="0.392001"
                     />
-                    <stop offset="1" stop-color="#3C0078" stop-opacity="0" />
+                    <stop offset="1" stopColor="#3C0078" stopOpacity="0" />
                   </linearGradient>
                   <linearGradient
                     id="paint6_linear_4_209"
@@ -926,13 +920,13 @@ export default function Explore() {
                     y2="103.127"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#5D00BA" />
+                    <stop stopColor="#5D00BA" />
                     <stop
                       offset="0.9999"
-                      stop-color="#490092"
-                      stop-opacity="0.392001"
+                      stopColor="#490092"
+                      stopOpacity="0.392001"
                     />
-                    <stop offset="1" stop-color="#3C0078" stop-opacity="0" />
+                    <stop offset="1" stopColor="#3C0078" stopOpacity="0" />
                   </linearGradient>
                   <linearGradient
                     id="paint7_linear_4_209"
@@ -942,13 +936,13 @@ export default function Explore() {
                     y2="130.567"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#5D00BA" />
+                    <stop stopColor="#5D00BA" />
                     <stop
                       offset="0.9999"
-                      stop-color="#490092"
-                      stop-opacity="0.392001"
+                      stopColor="#490092"
+                      stopOpacity="0.392001"
                     />
-                    <stop offset="1" stop-color="#3C0078" stop-opacity="0" />
+                    <stop offset="1" stopColor="#3C0078" stopOpacity="0" />
                   </linearGradient>
                   <linearGradient
                     id="paint8_linear_4_209"
@@ -958,13 +952,13 @@ export default function Explore() {
                     y2="158.691"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#5D00BA" />
+                    <stop stopColor="#5D00BA" />
                     <stop
                       offset="0.9999"
-                      stop-color="#490092"
-                      stop-opacity="0.392001"
+                      stopColor="#490092"
+                      stopOpacity="0.392001"
                     />
-                    <stop offset="1" stop-color="#3C0078" stop-opacity="0" />
+                    <stop offset="1" stopColor="#3C0078" stopOpacity="0" />
                   </linearGradient>
                   <linearGradient
                     id="paint9_linear_4_209"
@@ -974,13 +968,13 @@ export default function Explore() {
                     y2="186.287"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#5D00BA" />
+                    <stop stopColor="#5D00BA" />
                     <stop
                       offset="0.9999"
-                      stop-color="#490092"
-                      stop-opacity="0.392001"
+                      stopColor="#490092"
+                      stopOpacity="0.392001"
                     />
-                    <stop offset="1" stop-color="#3C0078" stop-opacity="0" />
+                    <stop offset="1" stopColor="#3C0078" stopOpacity="0" />
                   </linearGradient>
                   <linearGradient
                     id="paint10_linear_4_209"
@@ -990,13 +984,13 @@ export default function Explore() {
                     y2="212.194"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#5D00BA" />
+                    <stop stopColor="#5D00BA" />
                     <stop
                       offset="0.9999"
-                      stop-color="#490092"
-                      stop-opacity="0.392001"
+                      stopColor="#490092"
+                      stopOpacity="0.392001"
                     />
-                    <stop offset="1" stop-color="#3C0078" stop-opacity="0" />
+                    <stop offset="1" stopColor="#3C0078" stopOpacity="0" />
                   </linearGradient>
                   <linearGradient
                     id="paint11_linear_4_209"
@@ -1006,13 +1000,13 @@ export default function Explore() {
                     y2="235.344"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#5D00BA" />
+                    <stop stopColor="#5D00BA" />
                     <stop
                       offset="0.9999"
-                      stop-color="#490092"
-                      stop-opacity="0.392001"
+                      stopColor="#490092"
+                      stopOpacity="0.392001"
                     />
-                    <stop offset="1" stop-color="#3C0078" stop-opacity="0" />
+                    <stop offset="1" stopColor="#3C0078" stopOpacity="0" />
                   </linearGradient>
                   <linearGradient
                     id="paint12_linear_4_209"
@@ -1022,13 +1016,13 @@ export default function Explore() {
                     y2="254.784"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#5D00BA" />
+                    <stop stopColor="#5D00BA" />
                     <stop
                       offset="0.9999"
-                      stop-color="#490092"
-                      stop-opacity="0.392001"
+                      stopColor="#490092"
+                      stopOpacity="0.392001"
                     />
-                    <stop offset="1" stop-color="#3C0078" stop-opacity="0" />
+                    <stop offset="1" stopColor="#3C0078" stopOpacity="0" />
                   </linearGradient>
                   <linearGradient
                     id="paint13_linear_4_209"
@@ -1038,13 +1032,13 @@ export default function Explore() {
                     y2="269.701"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#5D00BA" />
+                    <stop stopColor="#5D00BA" />
                     <stop
                       offset="0.9999"
-                      stop-color="#490092"
-                      stop-opacity="0.392001"
+                      stopColor="#490092"
+                      stopOpacity="0.392001"
                     />
-                    <stop offset="1" stop-color="#3C0078" stop-opacity="0" />
+                    <stop offset="1" stopColor="#3C0078" stopOpacity="0" />
                   </linearGradient>
                   <linearGradient
                     id="paint14_linear_4_209"
@@ -1054,13 +1048,13 @@ export default function Explore() {
                     y2="279.44"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#5D00BA" />
+                    <stop stopColor="#5D00BA" />
                     <stop
                       offset="0.9999"
-                      stop-color="#490092"
-                      stop-opacity="0.392001"
+                      stopColor="#490092"
+                      stopOpacity="0.392001"
                     />
-                    <stop offset="1" stop-color="#3C0078" stop-opacity="0" />
+                    <stop offset="1" stopColor="#3C0078" stopOpacity="0" />
                   </linearGradient>
                   <linearGradient
                     id="paint15_linear_4_209"
@@ -1070,13 +1064,13 @@ export default function Explore() {
                     y2="283.539"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#5D00BA" />
+                    <stop stopColor="#5D00BA" />
                     <stop
                       offset="0.9999"
-                      stop-color="#490092"
-                      stop-opacity="0.392001"
+                      stopColor="#490092"
+                      stopOpacity="0.392001"
                     />
-                    <stop offset="1" stop-color="#3C0078" stop-opacity="0" />
+                    <stop offset="1" stopColor="#3C0078" stopOpacity="0" />
                   </linearGradient>
                   <linearGradient
                     id="paint16_linear_4_209"
@@ -1086,13 +1080,13 @@ export default function Explore() {
                     y2="281.761"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#5D00BA" />
+                    <stop stopColor="#5D00BA" />
                     <stop
                       offset="0.9999"
-                      stop-color="#490092"
-                      stop-opacity="0.392001"
+                      stopColor="#490092"
+                      stopOpacity="0.392001"
                     />
-                    <stop offset="1" stop-color="#3C0078" stop-opacity="0" />
+                    <stop offset="1" stopColor="#3C0078" stopOpacity="0" />
                   </linearGradient>
                   <linearGradient
                     id="paint17_linear_4_209"
@@ -1102,13 +1096,13 @@ export default function Explore() {
                     y2="274.129"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#5D00BA" />
+                    <stop stopColor="#5D00BA" />
                     <stop
                       offset="0.9999"
-                      stop-color="#490092"
-                      stop-opacity="0.392001"
+                      stopColor="#490092"
+                      stopOpacity="0.392001"
                     />
-                    <stop offset="1" stop-color="#3C0078" stop-opacity="0" />
+                    <stop offset="1" stopColor="#3C0078" stopOpacity="0" />
                   </linearGradient>
                   <linearGradient
                     id="paint18_linear_4_209"
@@ -1118,13 +1112,13 @@ export default function Explore() {
                     y2="260.945"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#5D00BA" />
+                    <stop stopColor="#5D00BA" />
                     <stop
                       offset="0.9999"
-                      stop-color="#490092"
-                      stop-opacity="0.392001"
+                      stopColor="#490092"
+                      stopOpacity="0.392001"
                     />
-                    <stop offset="1" stop-color="#3C0078" stop-opacity="0" />
+                    <stop offset="1" stopColor="#3C0078" stopOpacity="0" />
                   </linearGradient>
                   <linearGradient
                     id="paint19_linear_4_209"
@@ -1134,13 +1128,13 @@ export default function Explore() {
                     y2="242.793"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#5D00BA" />
+                    <stop stopColor="#5D00BA" />
                     <stop
                       offset="0.9999"
-                      stop-color="#490092"
-                      stop-opacity="0.392001"
+                      stopColor="#490092"
+                      stopOpacity="0.392001"
                     />
-                    <stop offset="1" stop-color="#3C0078" stop-opacity="0" />
+                    <stop offset="1" stopColor="#3C0078" stopOpacity="0" />
                   </linearGradient>
                   <linearGradient
                     id="paint20_linear_4_209"
@@ -1150,13 +1144,13 @@ export default function Explore() {
                     y2="220.501"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#5D00BA" />
+                    <stop stopColor="#5D00BA" />
                     <stop
                       offset="0.9999"
-                      stop-color="#490092"
-                      stop-opacity="0.392001"
+                      stopColor="#490092"
+                      stopOpacity="0.392001"
                     />
-                    <stop offset="1" stop-color="#3C0078" stop-opacity="0" />
+                    <stop offset="1" stopColor="#3C0078" stopOpacity="0" />
                   </linearGradient>
                   <linearGradient
                     id="paint21_linear_4_209"
@@ -1166,13 +1160,13 @@ export default function Explore() {
                     y2="195.093"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#5D00BA" />
+                    <stop stopColor="#5D00BA" />
                     <stop
                       offset="0.9999"
-                      stop-color="#490092"
-                      stop-opacity="0.392001"
+                      stopColor="#490092"
+                      stopOpacity="0.392001"
                     />
-                    <stop offset="1" stop-color="#3C0078" stop-opacity="0" />
+                    <stop offset="1" stopColor="#3C0078" stopOpacity="0" />
                   </linearGradient>
                   <linearGradient
                     id="paint22_linear_4_209"
@@ -1182,13 +1176,13 @@ export default function Explore() {
                     y2="167.722"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#5D00BA" />
+                    <stop stopColor="#5D00BA" />
                     <stop
                       offset="0.9999"
-                      stop-color="#490092"
-                      stop-opacity="0.392001"
+                      stopColor="#490092"
+                      stopOpacity="0.392001"
                     />
-                    <stop offset="1" stop-color="#3C0078" stop-opacity="0" />
+                    <stop offset="1" stopColor="#3C0078" stopOpacity="0" />
                   </linearGradient>
                   <linearGradient
                     id="paint23_linear_4_209"
@@ -1198,13 +1192,13 @@ export default function Explore() {
                     y2="139.603"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#5D00BA" />
+                    <stop stopColor="#5D00BA" />
                     <stop
                       offset="0.9999"
-                      stop-color="#490092"
-                      stop-opacity="0.392001"
+                      stopColor="#490092"
+                      stopOpacity="0.392001"
                     />
-                    <stop offset="1" stop-color="#3C0078" stop-opacity="0" />
+                    <stop offset="1" stopColor="#3C0078" stopOpacity="0" />
                   </linearGradient>
                   <linearGradient
                     id="paint24_linear_4_209"
@@ -1214,13 +1208,13 @@ export default function Explore() {
                     y2="111.95"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#5D00BA" />
+                    <stop stopColor="#5D00BA" />
                     <stop
                       offset="0.9999"
-                      stop-color="#490092"
-                      stop-opacity="0.392001"
+                      stopColor="#490092"
+                      stopOpacity="0.392001"
                     />
-                    <stop offset="1" stop-color="#3C0078" stop-opacity="0" />
+                    <stop offset="1" stopColor="#3C0078" stopOpacity="0" />
                   </linearGradient>
                   <linearGradient
                     id="paint25_linear_4_209"
@@ -1230,13 +1224,13 @@ export default function Explore() {
                     y2="85.9276"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#5D00BA" />
+                    <stop stopColor="#5D00BA" />
                     <stop
                       offset="0.9999"
-                      stop-color="#490092"
-                      stop-opacity="0.392001"
+                      stopColor="#490092"
+                      stopOpacity="0.392001"
                     />
-                    <stop offset="1" stop-color="#3C0078" stop-opacity="0" />
+                    <stop offset="1" stopColor="#3C0078" stopOpacity="0" />
                   </linearGradient>
                   <linearGradient
                     id="paint26_linear_4_209"
@@ -1246,13 +1240,13 @@ export default function Explore() {
                     y2="62.6091"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#5D00BA" />
+                    <stop stopColor="#5D00BA" />
                     <stop
                       offset="0.9999"
-                      stop-color="#490092"
-                      stop-opacity="0.392001"
+                      stopColor="#490092"
+                      stopOpacity="0.392001"
                     />
-                    <stop offset="1" stop-color="#3C0078" stop-opacity="0" />
+                    <stop offset="1" stopColor="#3C0078" stopOpacity="0" />
                   </linearGradient>
                   <linearGradient
                     id="paint27_linear_4_209"
@@ -1262,13 +1256,13 @@ export default function Explore() {
                     y2="42.9535"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#5D00BA" />
+                    <stop stopColor="#5D00BA" />
                     <stop
                       offset="0.9999"
-                      stop-color="#490092"
-                      stop-opacity="0.392001"
+                      stopColor="#490092"
+                      stopOpacity="0.392001"
                     />
-                    <stop offset="1" stop-color="#3C0078" stop-opacity="0" />
+                    <stop offset="1" stopColor="#3C0078" stopOpacity="0" />
                   </linearGradient>
                   <linearGradient
                     id="paint28_linear_4_209"
@@ -1278,13 +1272,13 @@ export default function Explore() {
                     y2="27.783"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#5D00BA" />
+                    <stop stopColor="#5D00BA" />
                     <stop
                       offset="0.9999"
-                      stop-color="#490092"
-                      stop-opacity="0.392001"
+                      stopColor="#490092"
+                      stopOpacity="0.392001"
                     />
-                    <stop offset="1" stop-color="#3C0078" stop-opacity="0" />
+                    <stop offset="1" stopColor="#3C0078" stopOpacity="0" />
                   </linearGradient>
                   <linearGradient
                     id="paint29_linear_4_209"
@@ -1294,51 +1288,50 @@ export default function Explore() {
                     y2="17.7595"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#5D00BA" />
+                    <stop stopColor="#5D00BA" />
                     <stop
                       offset="0.9999"
-                      stop-color="#490092"
-                      stop-opacity="0.392001"
+                      stopColor="#490092"
+                      stopOpacity="0.392001"
                     />
-                    <stop offset="1" stop-color="#3C0078" stop-opacity="0" />
+                    <stop offset="1" stopColor="#3C0078" stopOpacity="0" />
                   </linearGradient>
                 </defs>
               </svg>
             </div>
-            <div>
-              <Image src={"/exploreimg2.png"} width={400} height={400} />
+            <div className="justify-center flex items-center">
+              <Image src={"/exploreimg2.png"} className="w-auto  mt-5 h-[50vw]  md:h-[19vw]" width={400} height={400} />
             </div>
           </div>
-          <div className="flex flex-col w-[70%]  ml-[5vw] ">
-            <h2 className="text-[42px] text-[#DF6A50] font-[500]">
-            Innovate to Win Prizes
+          <div className="flex md:mt-0 mt-5  md:text-left text-center justify-center flex-col w-full md:w-[60%] ml-0 md:ml-[5vw]  ">
+            <h2 className="md:text-[2vw] text-[6vw] text-[#DF6A50] font-[500]">
+              Learn More than Just Tech
             </h2>
-            <h3 className="text-white mt-5 text-2xl text-justify break-normal mr-16">
+            <h3 className="text-white md:text-[1vw] text-center md:leading-normal leading-8  text-[3.5vw] md:text-justify break-normal ">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
               deserunt veniam, harum dolor voluptas perspiciatis aut veritatis
               iste eaque sunt! Pariatur adipisci laboriosam eum nostrum fuga
               alias sunt iusto maiores?
             </h3>
           </div>
+         
         </div>
-        <div className="flex flex-row flex-wrap justify-center p-5 mb-[101px]">
-          <div className="flex flex-col w-[70%]  mr-[5vw]  ">
-            <h2 className="text-[42px] text-[#DF6A50] font-[500]">
-            Collaborate with Like Minded Peers            </h2>
-            <h3 className="text-white mt-5 text-2xl text-justify break-normal ">
+        <div className="flex flex-row justify-center  flex-wrap p-5 mb-[50px]">
+          <div className="flex md:order-none order-1 md:mt-0 mt-5 md:text-left text-center justify-center flex-col w-full md:w-[60%] mr-0 md:mr-[5vw]  ">
+            <h2 className="md:text-[2vw] text-[6vw] text-[#DF6A50] font-[500]">
+              Learn More than Just Tech
+            </h2>
+            <h3 className="text-white  md:text-[1vw] text-center md:leading-normal leading-8  text-[3.5vw] md:text-justify break-normal ">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
               deserunt veniam, harum dolor voluptas perspiciatis aut veritatis
               iste eaque sunt! Pariatur adipisci laboriosam eum nostrum fuga
               alias sunt iusto maiores?
             </h3>
           </div>
-          <div className="align-center mt-[-5vh] justify-center flex items-center">
-            <div className="absolute ">
+          <div className="align-center md:mb-0 mb-7 justify-center flex items-center">
+            <div className="absolute justify-center">
               <svg
-                width="302"
-                height="297"
-                className="wheel"
-                style={{ transform: "scale(1.6)" }}
+                className="wheel md:mt-0 mt-5 h-[40vw] md:h-[15vw]"
                 viewBox="0 0 302 297"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -1472,13 +1465,13 @@ export default function Explore() {
                     y2="13.2335"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#5D00BA" />
+                    <stop stopColor="#5D00BA" />
                     <stop
                       offset="0.9999"
-                      stop-color="#490092"
-                      stop-opacity="0.392001"
+                      stopColor="#490092"
+                      stopOpacity="0.392001"
                     />
-                    <stop offset="1" stop-color="#3C0078" stop-opacity="0" />
+                    <stop offset="1" stopColor="#3C0078" stopOpacity="0" />
                   </linearGradient>
                   <linearGradient
                     id="paint1_linear_4_209"
@@ -1488,13 +1481,13 @@ export default function Explore() {
                     y2="15.3206"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#5D00BA" />
+                    <stop stopColor="#5D00BA" />
                     <stop
                       offset="0.9999"
-                      stop-color="#490092"
-                      stop-opacity="0.392001"
+                      stopColor="#490092"
+                      stopOpacity="0.392001"
                     />
-                    <stop offset="1" stop-color="#3C0078" stop-opacity="0" />
+                    <stop offset="1" stopColor="#3C0078" stopOpacity="0" />
                   </linearGradient>
                   <linearGradient
                     id="paint2_linear_4_209"
@@ -1504,13 +1497,13 @@ export default function Explore() {
                     y2="23.2539"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#5D00BA" />
+                    <stop stopColor="#5D00BA" />
                     <stop
                       offset="0.9999"
-                      stop-color="#490092"
-                      stop-opacity="0.392001"
+                      stopColor="#490092"
+                      stopOpacity="0.392001"
                     />
-                    <stop offset="1" stop-color="#3C0078" stop-opacity="0" />
+                    <stop offset="1" stopColor="#3C0078" stopOpacity="0" />
                   </linearGradient>
                   <linearGradient
                     id="paint3_linear_4_209"
@@ -1520,13 +1513,13 @@ export default function Explore() {
                     y2="36.714"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#5D00BA" />
+                    <stop stopColor="#5D00BA" />
                     <stop
                       offset="0.9999"
-                      stop-color="#490092"
-                      stop-opacity="0.392001"
+                      stopColor="#490092"
+                      stopOpacity="0.392001"
                     />
-                    <stop offset="1" stop-color="#3C0078" stop-opacity="0" />
+                    <stop offset="1" stopColor="#3C0078" stopOpacity="0" />
                   </linearGradient>
                   <linearGradient
                     id="paint4_linear_4_209"
@@ -1536,13 +1529,13 @@ export default function Explore() {
                     y2="55.1053"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#5D00BA" />
+                    <stop stopColor="#5D00BA" />
                     <stop
                       offset="0.9999"
-                      stop-color="#490092"
-                      stop-opacity="0.392001"
+                      stopColor="#490092"
+                      stopOpacity="0.392001"
                     />
-                    <stop offset="1" stop-color="#3C0078" stop-opacity="0" />
+                    <stop offset="1" stopColor="#3C0078" stopOpacity="0" />
                   </linearGradient>
                   <linearGradient
                     id="paint5_linear_4_209"
@@ -1552,13 +1545,13 @@ export default function Explore() {
                     y2="77.5869"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#5D00BA" />
+                    <stop stopColor="#5D00BA" />
                     <stop
                       offset="0.9999"
-                      stop-color="#490092"
-                      stop-opacity="0.392001"
+                      stopColor="#490092"
+                      stopOpacity="0.392001"
                     />
-                    <stop offset="1" stop-color="#3C0078" stop-opacity="0" />
+                    <stop offset="1" stopColor="#3C0078" stopOpacity="0" />
                   </linearGradient>
                   <linearGradient
                     id="paint6_linear_4_209"
@@ -1568,13 +1561,13 @@ export default function Explore() {
                     y2="103.127"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#5D00BA" />
+                    <stop stopColor="#5D00BA" />
                     <stop
                       offset="0.9999"
-                      stop-color="#490092"
-                      stop-opacity="0.392001"
+                      stopColor="#490092"
+                      stopOpacity="0.392001"
                     />
-                    <stop offset="1" stop-color="#3C0078" stop-opacity="0" />
+                    <stop offset="1" stopColor="#3C0078" stopOpacity="0" />
                   </linearGradient>
                   <linearGradient
                     id="paint7_linear_4_209"
@@ -1584,13 +1577,13 @@ export default function Explore() {
                     y2="130.567"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#5D00BA" />
+                    <stop stopColor="#5D00BA" />
                     <stop
                       offset="0.9999"
-                      stop-color="#490092"
-                      stop-opacity="0.392001"
+                      stopColor="#490092"
+                      stopOpacity="0.392001"
                     />
-                    <stop offset="1" stop-color="#3C0078" stop-opacity="0" />
+                    <stop offset="1" stopColor="#3C0078" stopOpacity="0" />
                   </linearGradient>
                   <linearGradient
                     id="paint8_linear_4_209"
@@ -1600,13 +1593,13 @@ export default function Explore() {
                     y2="158.691"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#5D00BA" />
+                    <stop stopColor="#5D00BA" />
                     <stop
                       offset="0.9999"
-                      stop-color="#490092"
-                      stop-opacity="0.392001"
+                      stopColor="#490092"
+                      stopOpacity="0.392001"
                     />
-                    <stop offset="1" stop-color="#3C0078" stop-opacity="0" />
+                    <stop offset="1" stopColor="#3C0078" stopOpacity="0" />
                   </linearGradient>
                   <linearGradient
                     id="paint9_linear_4_209"
@@ -1616,13 +1609,13 @@ export default function Explore() {
                     y2="186.287"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#5D00BA" />
+                    <stop stopColor="#5D00BA" />
                     <stop
                       offset="0.9999"
-                      stop-color="#490092"
-                      stop-opacity="0.392001"
+                      stopColor="#490092"
+                      stopOpacity="0.392001"
                     />
-                    <stop offset="1" stop-color="#3C0078" stop-opacity="0" />
+                    <stop offset="1" stopColor="#3C0078" stopOpacity="0" />
                   </linearGradient>
                   <linearGradient
                     id="paint10_linear_4_209"
@@ -1632,13 +1625,13 @@ export default function Explore() {
                     y2="212.194"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#5D00BA" />
+                    <stop stopColor="#5D00BA" />
                     <stop
                       offset="0.9999"
-                      stop-color="#490092"
-                      stop-opacity="0.392001"
+                      stopColor="#490092"
+                      stopOpacity="0.392001"
                     />
-                    <stop offset="1" stop-color="#3C0078" stop-opacity="0" />
+                    <stop offset="1" stopColor="#3C0078" stopOpacity="0" />
                   </linearGradient>
                   <linearGradient
                     id="paint11_linear_4_209"
@@ -1648,13 +1641,13 @@ export default function Explore() {
                     y2="235.344"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#5D00BA" />
+                    <stop stopColor="#5D00BA" />
                     <stop
                       offset="0.9999"
-                      stop-color="#490092"
-                      stop-opacity="0.392001"
+                      stopColor="#490092"
+                      stopOpacity="0.392001"
                     />
-                    <stop offset="1" stop-color="#3C0078" stop-opacity="0" />
+                    <stop offset="1" stopColor="#3C0078" stopOpacity="0" />
                   </linearGradient>
                   <linearGradient
                     id="paint12_linear_4_209"
@@ -1664,13 +1657,13 @@ export default function Explore() {
                     y2="254.784"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#5D00BA" />
+                    <stop stopColor="#5D00BA" />
                     <stop
                       offset="0.9999"
-                      stop-color="#490092"
-                      stop-opacity="0.392001"
+                      stopColor="#490092"
+                      stopOpacity="0.392001"
                     />
-                    <stop offset="1" stop-color="#3C0078" stop-opacity="0" />
+                    <stop offset="1" stopColor="#3C0078" stopOpacity="0" />
                   </linearGradient>
                   <linearGradient
                     id="paint13_linear_4_209"
@@ -1680,13 +1673,13 @@ export default function Explore() {
                     y2="269.701"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#5D00BA" />
+                    <stop stopColor="#5D00BA" />
                     <stop
                       offset="0.9999"
-                      stop-color="#490092"
-                      stop-opacity="0.392001"
+                      stopColor="#490092"
+                      stopOpacity="0.392001"
                     />
-                    <stop offset="1" stop-color="#3C0078" stop-opacity="0" />
+                    <stop offset="1" stopColor="#3C0078" stopOpacity="0" />
                   </linearGradient>
                   <linearGradient
                     id="paint14_linear_4_209"
@@ -1696,13 +1689,13 @@ export default function Explore() {
                     y2="279.44"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#5D00BA" />
+                    <stop stopColor="#5D00BA" />
                     <stop
                       offset="0.9999"
-                      stop-color="#490092"
-                      stop-opacity="0.392001"
+                      stopColor="#490092"
+                      stopOpacity="0.392001"
                     />
-                    <stop offset="1" stop-color="#3C0078" stop-opacity="0" />
+                    <stop offset="1" stopColor="#3C0078" stopOpacity="0" />
                   </linearGradient>
                   <linearGradient
                     id="paint15_linear_4_209"
@@ -1712,13 +1705,13 @@ export default function Explore() {
                     y2="283.539"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#5D00BA" />
+                    <stop stopColor="#5D00BA" />
                     <stop
                       offset="0.9999"
-                      stop-color="#490092"
-                      stop-opacity="0.392001"
+                      stopColor="#490092"
+                      stopOpacity="0.392001"
                     />
-                    <stop offset="1" stop-color="#3C0078" stop-opacity="0" />
+                    <stop offset="1" stopColor="#3C0078" stopOpacity="0" />
                   </linearGradient>
                   <linearGradient
                     id="paint16_linear_4_209"
@@ -1728,13 +1721,13 @@ export default function Explore() {
                     y2="281.761"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#5D00BA" />
+                    <stop stopColor="#5D00BA" />
                     <stop
                       offset="0.9999"
-                      stop-color="#490092"
-                      stop-opacity="0.392001"
+                      stopColor="#490092"
+                      stopOpacity="0.392001"
                     />
-                    <stop offset="1" stop-color="#3C0078" stop-opacity="0" />
+                    <stop offset="1" stopColor="#3C0078" stopOpacity="0" />
                   </linearGradient>
                   <linearGradient
                     id="paint17_linear_4_209"
@@ -1744,13 +1737,13 @@ export default function Explore() {
                     y2="274.129"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#5D00BA" />
+                    <stop stopColor="#5D00BA" />
                     <stop
                       offset="0.9999"
-                      stop-color="#490092"
-                      stop-opacity="0.392001"
+                      stopColor="#490092"
+                      stopOpacity="0.392001"
                     />
-                    <stop offset="1" stop-color="#3C0078" stop-opacity="0" />
+                    <stop offset="1" stopColor="#3C0078" stopOpacity="0" />
                   </linearGradient>
                   <linearGradient
                     id="paint18_linear_4_209"
@@ -1760,13 +1753,13 @@ export default function Explore() {
                     y2="260.945"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#5D00BA" />
+                    <stop stopColor="#5D00BA" />
                     <stop
                       offset="0.9999"
-                      stop-color="#490092"
-                      stop-opacity="0.392001"
+                      stopColor="#490092"
+                      stopOpacity="0.392001"
                     />
-                    <stop offset="1" stop-color="#3C0078" stop-opacity="0" />
+                    <stop offset="1" stopColor="#3C0078" stopOpacity="0" />
                   </linearGradient>
                   <linearGradient
                     id="paint19_linear_4_209"
@@ -1776,13 +1769,13 @@ export default function Explore() {
                     y2="242.793"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#5D00BA" />
+                    <stop stopColor="#5D00BA" />
                     <stop
                       offset="0.9999"
-                      stop-color="#490092"
-                      stop-opacity="0.392001"
+                      stopColor="#490092"
+                      stopOpacity="0.392001"
                     />
-                    <stop offset="1" stop-color="#3C0078" stop-opacity="0" />
+                    <stop offset="1" stopColor="#3C0078" stopOpacity="0" />
                   </linearGradient>
                   <linearGradient
                     id="paint20_linear_4_209"
@@ -1792,13 +1785,13 @@ export default function Explore() {
                     y2="220.501"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#5D00BA" />
+                    <stop stopColor="#5D00BA" />
                     <stop
                       offset="0.9999"
-                      stop-color="#490092"
-                      stop-opacity="0.392001"
+                      stopColor="#490092"
+                      stopOpacity="0.392001"
                     />
-                    <stop offset="1" stop-color="#3C0078" stop-opacity="0" />
+                    <stop offset="1" stopColor="#3C0078" stopOpacity="0" />
                   </linearGradient>
                   <linearGradient
                     id="paint21_linear_4_209"
@@ -1808,13 +1801,13 @@ export default function Explore() {
                     y2="195.093"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#5D00BA" />
+                    <stop stopColor="#5D00BA" />
                     <stop
                       offset="0.9999"
-                      stop-color="#490092"
-                      stop-opacity="0.392001"
+                      stopColor="#490092"
+                      stopOpacity="0.392001"
                     />
-                    <stop offset="1" stop-color="#3C0078" stop-opacity="0" />
+                    <stop offset="1" stopColor="#3C0078" stopOpacity="0" />
                   </linearGradient>
                   <linearGradient
                     id="paint22_linear_4_209"
@@ -1824,13 +1817,13 @@ export default function Explore() {
                     y2="167.722"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#5D00BA" />
+                    <stop stopColor="#5D00BA" />
                     <stop
                       offset="0.9999"
-                      stop-color="#490092"
-                      stop-opacity="0.392001"
+                      stopColor="#490092"
+                      stopOpacity="0.392001"
                     />
-                    <stop offset="1" stop-color="#3C0078" stop-opacity="0" />
+                    <stop offset="1" stopColor="#3C0078" stopOpacity="0" />
                   </linearGradient>
                   <linearGradient
                     id="paint23_linear_4_209"
@@ -1840,13 +1833,13 @@ export default function Explore() {
                     y2="139.603"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#5D00BA" />
+                    <stop stopColor="#5D00BA" />
                     <stop
                       offset="0.9999"
-                      stop-color="#490092"
-                      stop-opacity="0.392001"
+                      stopColor="#490092"
+                      stopOpacity="0.392001"
                     />
-                    <stop offset="1" stop-color="#3C0078" stop-opacity="0" />
+                    <stop offset="1" stopColor="#3C0078" stopOpacity="0" />
                   </linearGradient>
                   <linearGradient
                     id="paint24_linear_4_209"
@@ -1856,13 +1849,13 @@ export default function Explore() {
                     y2="111.95"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#5D00BA" />
+                    <stop stopColor="#5D00BA" />
                     <stop
                       offset="0.9999"
-                      stop-color="#490092"
-                      stop-opacity="0.392001"
+                      stopColor="#490092"
+                      stopOpacity="0.392001"
                     />
-                    <stop offset="1" stop-color="#3C0078" stop-opacity="0" />
+                    <stop offset="1" stopColor="#3C0078" stopOpacity="0" />
                   </linearGradient>
                   <linearGradient
                     id="paint25_linear_4_209"
@@ -1872,13 +1865,13 @@ export default function Explore() {
                     y2="85.9276"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#5D00BA" />
+                    <stop stopColor="#5D00BA" />
                     <stop
                       offset="0.9999"
-                      stop-color="#490092"
-                      stop-opacity="0.392001"
+                      stopColor="#490092"
+                      stopOpacity="0.392001"
                     />
-                    <stop offset="1" stop-color="#3C0078" stop-opacity="0" />
+                    <stop offset="1" stopColor="#3C0078" stopOpacity="0" />
                   </linearGradient>
                   <linearGradient
                     id="paint26_linear_4_209"
@@ -1888,13 +1881,13 @@ export default function Explore() {
                     y2="62.6091"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#5D00BA" />
+                    <stop stopColor="#5D00BA" />
                     <stop
                       offset="0.9999"
-                      stop-color="#490092"
-                      stop-opacity="0.392001"
+                      stopColor="#490092"
+                      stopOpacity="0.392001"
                     />
-                    <stop offset="1" stop-color="#3C0078" stop-opacity="0" />
+                    <stop offset="1" stopColor="#3C0078" stopOpacity="0" />
                   </linearGradient>
                   <linearGradient
                     id="paint27_linear_4_209"
@@ -1904,13 +1897,13 @@ export default function Explore() {
                     y2="42.9535"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#5D00BA" />
+                    <stop stopColor="#5D00BA" />
                     <stop
                       offset="0.9999"
-                      stop-color="#490092"
-                      stop-opacity="0.392001"
+                      stopColor="#490092"
+                      stopOpacity="0.392001"
                     />
-                    <stop offset="1" stop-color="#3C0078" stop-opacity="0" />
+                    <stop offset="1" stopColor="#3C0078" stopOpacity="0" />
                   </linearGradient>
                   <linearGradient
                     id="paint28_linear_4_209"
@@ -1920,13 +1913,13 @@ export default function Explore() {
                     y2="27.783"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#5D00BA" />
+                    <stop stopColor="#5D00BA" />
                     <stop
                       offset="0.9999"
-                      stop-color="#490092"
-                      stop-opacity="0.392001"
+                      stopColor="#490092"
+                      stopOpacity="0.392001"
                     />
-                    <stop offset="1" stop-color="#3C0078" stop-opacity="0" />
+                    <stop offset="1" stopColor="#3C0078" stopOpacity="0" />
                   </linearGradient>
                   <linearGradient
                     id="paint29_linear_4_209"
@@ -1936,22 +1929,23 @@ export default function Explore() {
                     y2="17.7595"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#5D00BA" />
+                    <stop stopColor="#5D00BA" />
                     <stop
                       offset="0.9999"
-                      stop-color="#490092"
-                      stop-opacity="0.392001"
+                      stopColor="#490092"
+                      stopOpacity="0.392001"
                     />
-                    <stop offset="1" stop-color="#3C0078" stop-opacity="0" />
+                    <stop offset="1" stopColor="#3C0078" stopOpacity="0" />
                   </linearGradient>
                 </defs>
               </svg>
             </div>
-            <div>
-              <Image src={"/exploreimg3.png"} width={400} height={400} />
+            <div className="justify-center flex items-center">
+              <Image src={"/exploreimg3.png"} className="w-auto md:mt-0 mt-5 h-[50vw]  md:h-[19vw]" width={400} height={400} />
             </div>
           </div>
         </div>
+      
       </div>
     </div>
   );

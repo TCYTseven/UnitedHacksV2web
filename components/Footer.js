@@ -15,36 +15,50 @@ export default function Footer() {
         <div className=" w-full  p-4 py-6 lg:py-2 ">
           <div className="md:flex md:justify-between ">
             <div className="mb-6 justify-center  md:mb-0">
-            <div className="ml-[-30px]">
-
-              <Link href="/">
-                <Image
-                  width={110}
-                  height={110}
-                  src="/earth.png"
-                  className="absolute mt-[-5px] mr-1  "
-                  alt="Ownboon Logo"
-                />
-                <h1 className="text-3xl ml-[95px]  text-center text-[#DF6A50] hackunited text-savapro">
-                  HACK
-                </h1>
-                <h1 className="text-xl ml-[95px]  text-center text-[#DF6A50] hackunited text-savapro">
-                  UNITED
-                </h1>
-              </Link>
-            </div>
+              <div className="ml-[-30px]">
+              
+                  <Image
+                    width={110}
+                    height={110}
+                    src="/earth.png"
+                    className="absolute mt-[-5px] mr-1  "
+                    alt="HackUnited Logo"
+                  />
+                  <h1 className="text-3xl ml-[95px]  md:text-center text-[#DF6A50] hackunited text-savapro">
+                    HACK
+                  </h1>
+                  <h1 className="text-xl ml-[95px]  md:text-center text-[#DF6A50] hackunited text-savapro">
+                    UNITED
+                  </h1>
+              </div>
               <div className="pt-[1vh]  text-[18px]">
                 <div className="flex flex-row text-3xl space-x-4 mt-5">
-                  <Link href="https://www.linkedin.com/company/ownboon">
+                  <Link
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://www.linkedin.com/company/hack-united"
+                  >
                     <FontAwesomeIcon color={"white"} icon={faLinkedin} />
                   </Link>
-                  <Link href="https://instagram.com/OwnBoon">
+                  <Link
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://instagram.com/hack_united"
+                  >
                     <FontAwesomeIcon color={"white"} icon={faInstagram} />
                   </Link>
-                  <Link href="https://twitter.com/OwnBoonHQ">
+                  <Link
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://twitter.com/hackunited_"
+                  >
                     <FontAwesomeIcon color={"white"} icon={faTwitter} />
                   </Link>
-                  <Link href="https://discord.gg/nxeUX3Uufn">
+                  <Link
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://discord.gg/N7QgrKwQCP"
+                  >
                     <FontAwesomeIcon color={"white"} icon={faDiscord} />
                   </Link>
                 </div>
@@ -58,23 +72,38 @@ export default function Footer() {
                 </h2>
                 <ul className="text-gray-600 text-[0.9rem] dark:text-gray-400 font-medium">
                   <li className="mb-4">
-                    <Link href="/#about" className="hover:underline ">
+                    <Link
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="/#about"
+                      className="hover:underline "
+                    >
                       About Us
                     </Link>
                   </li>
                   <li className="mb-4">
-                    <Link href="#" className=" cursor-not-allowed">
-                      Terms of Use
-                    </Link>
-                  </li>
-                  <li className="mb-4">
-                    <Link href="#" className=" cursor-not-allowed">
-                      Privacy
+                    <Link
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="https://unitedhacks23.devpost.com/rules"
+                    >
+                      Hackathon Rules
                     </Link>
                   </li>
                   <li className="mb-4">
                     <Link
-                      href="https://discord.gg/KBNaHgn287"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="https://hackunited.org/#donate"
+                    >
+                      Donate
+                    </Link>
+                  </li>
+                  <li className="mb-4">
+                    <Link
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="mailto:humans@hackunited.org"
                       className="hover:underline"
                     >
                       Give feedback
@@ -89,7 +118,9 @@ export default function Footer() {
                 <ul className="dark:text-gray-400 text-[0.9rem] font-medium">
                   <li className="mb-4">
                     <Link
-                      href="https://discord.gg/nxeUX3Uufn"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="https://hackunited.org/#socialmedia"
                       className="hover:underline"
                     >
                       Join our community
@@ -97,10 +128,32 @@ export default function Footer() {
                   </li>
                   <li className="mb-4">
                     <Link
-                      href="mailto:team@ownboon.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="mailto:humans@hackunited.org"
                       className="hover:underline"
                     >
                       Email Us
+                    </Link>
+                  </li>
+                  <li className="mb-4">
+                    <Link
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="https://blog.hackunited.org/"
+                      className="hover:underline"
+                    >
+                      Blog
+                    </Link>
+                  </li>
+                  <li className="mb-4">
+                    <Link
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="https://hackunited.org/#apply"
+                      className="hover:underline"
+                    >
+                      Volunteer
                     </Link>
                   </li>
                 </ul>

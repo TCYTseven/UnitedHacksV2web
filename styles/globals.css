@@ -11,7 +11,6 @@
   font-family: Sava-Pro;
 }
 .heading{
-  font-size: 64px;
   font-weight: bold;
 }
 .scale{
@@ -28,9 +27,16 @@
   background-size: 100%;
 
 }
+.register{
+  display: none;
+}
 body {
   background-color: linear-gradient(145deg, rgba(0,0,0,1) 0%, rgba(55,0,171,1) 100%);
 }
+.form{
+   background: linear-gradient(145deg, rgba(0,0,0,1) 0%, rgba(55,0,171,1) 100%);
+}
+
 .nav-mid a{
   transition: all 0.2s ease-in-out;
   padding: 20px 0px;
@@ -42,6 +48,10 @@ body {
 .nav-mid a:hover{
   opacity: 1;
   color: #DF6A50;
+}
+.activeLink{
+  color: #DF6A50;
+
 }
 .nav-mid a::before{
   transition: 300ms;
@@ -145,7 +155,7 @@ nav{
 }
 .heading.active{
   opacity: 1;
-  animation: toptobottom 1s ease-in-out;
+  animation: toptobottom 1s ease-in-out, fade 1s ease-in-out;
 }
 
 .exploreimg1{
@@ -159,11 +169,12 @@ nav{
   line-height: 1.2em;
   position: relative;
   overflow: hidden;
-  width: 50vw;
+  width: 100%;
 }
 .scroller > span {
   position: absolute;
-  right: 300px;
+  right: 0;
+  left: 0;
   top: 0;
   animation: slide 6s  infinite;
   animation-delay: 2s;
@@ -199,26 +210,34 @@ html {
 .circle1{
   background-image: url("../public/circle1.png");
   background-size: 100%;
-  background-position: 10px 10px;
+  background-position: 0.52vw 0.52vw;
   
 }
 .circle2{
   background-image: url("../public/circle2.png");
   background-size: 100%;
-  background-position: -50px 20px;
+  background-position: -2.5vw 2vw;
   
 }
 .circle3{
   background-image: url("../public/circle3.png");
   background-size: 100%;
-  background-position: 20px 20px;
+  background-position: 1.4vw 1.4vw;
   
 }
 .circle4{
   background-image: url("../public/circle4.png");
-  background-position: -20px 50px;
+  background-position: -1.4vw 2.61vw;
   background-size: 100%;
   
+}
+@media (max-width: 768px) {  
+  .circle1, .circle2, .circle3, .circle4{
+    background-image: url("../public/circle1.png");
+    background-size: 100%;
+    background-position: 0.52vw 0.52vw;
+
+  }
 }
 .circle{
   opacity: 0;
@@ -291,6 +310,19 @@ html {
 
   }
 }  
+@keyframes bottomtotop {
+  0%{
+    transform: translateY(100px);
+  }
+  
+  100%{
+    transform: translateY(0px);
+
+  }
+}  
+.bottomtotop{
+  animation: bottomtotop 2s ease-in-out;
+}
 .marquee{
   display: none;
 }
@@ -371,7 +403,7 @@ logo-slider:after {
 @media (max-width: 900px) {
   logo-slider {
     --image-size: var(--min-image-size);
-    --image-size: min(max(var(--min-image-size), 10vw), var(--max-image-size));
+    --image-size: min(max(var(--min-image-size), 20vw), var(--max-image-size));
   }
 }
 
@@ -407,4 +439,5 @@ logo-slider:after {
 }
 .loader{
   animation: fade 2s ease-in-out;
+  transition: 2s ease-in-out;
 }

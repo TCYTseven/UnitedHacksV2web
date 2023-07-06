@@ -3,17 +3,17 @@ import { ibmPlexMono } from "../font";
 
 export default function Hero() {
   return (
-    <div className="hero-bg  h-[87vh] min-h-screen">
+    <div className="hero-bg fade items-center justify-center  min-h-screen">
       <div className="flex  flex-col flex-wrap text-center justify-center  items-center">
         <Image
-          className="scale w-[50vw] md:w-[30vw] mt-10"
+          className="scale w-[80vw] md:w-[30vw] mb-5 mt-10"
           src={"/earth.png"}
           width={600}
           height={400}
         />
         <div className="flex flex-row">
           <svg
-            className="mr-5 md:w-[2.5vw] w-[5vw] popfromleft fade"
+            className="mr-5 md:w-[2.5vw] md:mt-0 mt-[-3vw] w-[5vw] popfromleft fade"
             width="50"
             height="70"
             viewBox="0 -10 42 44"
@@ -25,13 +25,13 @@ export default function Hero() {
               fill="#5608A5"
             />
           </svg>
-          <h1 className="md:text-8xl text-4xl mr-5 text-[#DF6A50] hackunited text-savapro">
+          <h1 className="md:text-[4vw] text-[9vw] mr-5 text-[#DF6A50] hackunited text-savapro">
             HACK UNITED
           </h1>
         </div>
         <div
           style={{ fontFamily: `${ibmPlexMono.style.fontFamily}` }}
-          className="hackunited scroller text-4xl text-white"
+          className="hackunited md:mt-0 mt-[-3vw] scroller md:text-[1.8vw] text-[4vw] text-white"
         >
           <span>
             www.hackunited.org <br />

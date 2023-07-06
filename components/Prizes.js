@@ -7,7 +7,7 @@ export default function Prizes() {
     <div id="prizes" className="min-h-screen justify-center items-center mt-3 pb-[100px]">
     <div className="text heading pt-[100px]"> 
         <h1
-          className=" text-center  prizes-heading text text--blocks"
+          className=" text-center md:text-[4vw] text-[10vw] prizes-heading text text--blocks"
           data-scroll="out"
           data-splitting=""
         >
@@ -29,37 +29,37 @@ export default function Prizes() {
             infiniteLoop={true}
           >
 
-            <div className='flex flex-col flex-grow justify-center items-center bg-gradient-to-r from-indigo-800 w-full h-[700px] p-8'> <h2 className="text-[42px] text-[#DF6A50] font-[500]">
+            <div className='flex flex-col flex-grow justify-center items-center bg-gradient-to-r from-indigo-800 w-full  h-[120vw] md:h-[40vw] p-8'> <h2 className="md:text-[3.5vw]    text-[6vw] text-[#DF6A50] font-[500]">
               Learn More than Just Tech
             </h2>
-            <h3 className="text-white w-[70%] mt-3 text-2xl  break-normal ">
+            <h3 className="text-white   md:text-[1.5vw] text-center md:leading-normal leading-8  text-[3.5w]  break-normal">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
               deserunt veniam, harum dolor voluptas perspiciatis aut veritatis
               
             </h3></div>
             
-            <div className='flex flex-col flex-grow justify-center items-center bg-gradient-to-r from-indigo-800 w-full h-[700px] p-8'> <h2 className="text-[42px] text-[#DF6A50] font-[500]">
+            <div className='flex flex-col flex-grow justify-center items-center bg-gradient-to-r from-indigo-800 w-full  h-[120vw] md:h-[40vw] p-8'> <h2 className="md:text-[3.5vw]    text-[6vw] text-[#DF6A50] font-[500]">
               Learn More than Just Tech
             </h2>
-            <h3 className="text-white w-[70%] mt-3 text-2xl  break-normal ">
+            <h3 className="text-white   md:text-[1.5vw] text-center md:leading-normal leading-8  text-[3.5w]  break-normal">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
               deserunt veniam, harum dolor voluptas perspiciatis aut veritatis
               
             </h3></div>
             
-            <div className='flex flex-col flex-grow justify-center items-center bg-gradient-to-r from-indigo-800 w-full h-[700px] p-8'> <h2 className="text-[42px] text-[#DF6A50] font-[500]">
+            <div className='flex flex-col flex-grow justify-center items-center bg-gradient-to-r from-indigo-800 w-full  h-[120vw] md:h-[40vw] p-8'> <h2 className="md:text-[3.5vw]    text-[6vw] text-[#DF6A50] font-[500]">
               Learn More than Just Tech
             </h2>
-            <h3 className="text-white w-[70%] mt-3 text-2xl  break-normal ">
+            <h3 className="text-white   md:text-[1.5vw] text-center md:leading-normal leading-8  text-[3.5w]  break-normal">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
               deserunt veniam, harum dolor voluptas perspiciatis aut veritatis
               
             </h3></div>
             
-            <div className='flex flex-col flex-grow justify-center items-center bg-gradient-to-r from-indigo-800 w-full h-[700px] p-8'> <h2 className="text-[42px] text-[#DF6A50] font-[500]">
+            <div className='flex flex-col flex-grow justify-center items-center bg-gradient-to-r from-indigo-800 w-full  h-[120vw] md:h-[40vw] p-8'> <h2 className="md:text-[3.5vw]    text-[6vw] text-[#DF6A50] font-[500]">
               Learn More than Just Tech
             </h2>
-            <h3 className="text-white w-[70%] mt-3 text-2xl  break-normal ">
+            <h3 className="text-white   md:text-[1.5vw] text-center md:leading-normal leading-8  text-[3.5w]  break-normal">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
               deserunt veniam, harum dolor voluptas perspiciatis aut veritatis
               

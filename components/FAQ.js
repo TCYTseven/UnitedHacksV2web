@@ -50,7 +50,7 @@ export default function FAQ() {
     <div className="min-h-screen justify-center items-center mt-3">
     <div className="text heading"> 
         <h1
-          className=" text-center  faq-heading text text--blocks"
+          className=" text-center md:text-[4vw] text-[10vw] faq-heading text text--blocks"
           data-scroll="out"
           data-splitting=""
         >
