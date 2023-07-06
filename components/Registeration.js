@@ -17,22 +17,20 @@ export default function Registeration({ reg }) {
   const [country, setCountry] = useState("");
   const [linkedin, setLinkedin] = useState("");
   const [resume, setResume] = useState("");
-  const [error, setError] = useState(null);
   const [first, setFirst] = useState(false);
   const handlesubscribe = () => {
-    if (issubscribed === false) {
-      setIssubscribed(true);
-    } else {
+    if (issubscribed  === true) {
       setIssubscribed(false);
+    } else {
+      setIssubscribed(true);
     }
   };
   const handleopen = () => {
-    if (isopen === false) {
-      setIsopen(true);
-      console.log("setted to open true")
+    if (isopen  === true) {
+      setIsopen(false);
     } else {
       console.log("setted to open false")
-      setIsopen(false);
+      setIsopen(true);
     }
   };
   const handlefirst = () => {
@@ -232,7 +230,8 @@ export default function Registeration({ reg }) {
                   </label>
                   <div className="flex flex-row ">
                     <Checkbox className="mb-5 mt-5"
-                  onChange={handlefirst}
+                    isChecked={first}
+                    onChange={handlefirst}
                       size="md"
                       color="secondary"
                       
@@ -242,6 +241,7 @@ export default function Registeration({ reg }) {
                     </Checkbox>
                     <Checkbox className="mb-5 mt-5"
                       size="md"
+                      isChecked={first}
                       color="secondary"
                       onClick={handlefirst}
                       labelColor="warning"
@@ -251,6 +251,7 @@ export default function Registeration({ reg }) {
                   </div>
                   <Checkbox className="mb-5 mt-5"
                     size="md"
+                    isChecked={issubscribed}
                     color="secondary"
                     onClick={handlesubscribe}
                     labelColor="warning"
@@ -273,6 +274,7 @@ export default function Registeration({ reg }) {
                     size="md"
                     color="secondary"
                     onClick={handleopen}
+                    isChecked={isopen}
                     labelColor="warning"
                   >
                     If requested, I consent to having my contact information
