@@ -1,6 +1,10 @@
 import { useState } from "react";
+import Loader from "./Loader";
+import { toast } from "react-toastify";
 
 export default function Registeration() {
+  const [isloading, setIsloading] = useState(false)
+  const [prompt, setPrompt] = useState("")
   const toggle = () => {
     document.getElementsByClassName("register")[0].style.display = "none";
   };
@@ -10,6 +14,9 @@ export default function Registeration() {
   const [message, setMessage] = useState("");
 
   const handleSubmit = async (e) => {
+    setPrompt("HACK UNITED")
+    setIsloading(true)
+    e.preventDefault()
     const form = {
       name,
       email,
@@ -25,14 +32,24 @@ export default function Registeration() {
       body: JSON.stringify(form),
     });
     const content = await response.json();
-    alert(content);
+   
     setMessage("");
     setName("");
     setPhone("");
     setEmail("");
+    setTimeout(() => {
+      
+      toast.success("Successfully Registered!");
+      setIsloading(false)
+    }, 2000);
+
   };
 
   return (
+    <>
+    {isloading? <Loader message={prompt}/> : 
+    
+
     <div
       className="flex flex-col overflow-hidden fade
     items-center register justify-center align-center bg-[#472da779] h-screen fixed w-full z-[999999]  "
@@ -146,5 +163,9 @@ export default function Registeration() {
         </form>
       </div>
     </div>
+  }
+
+    </>
+
   );
 }

@@ -19,8 +19,8 @@ export default function MyApp({ Component, pageProps }) {
           font-family: ${poppins.style.fontFamily};
         }
       `}</style>
-      {isloading ? <Loader/> : 
-      <Component {...pageProps} />
+      {isloading ? <Loader message={"HACK UNITED"}/> : 
+      <Component  {...pageProps} />
       }
     </>
   );
