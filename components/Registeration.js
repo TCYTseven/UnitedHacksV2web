@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import Loader from "./Loader";
 import { Checkbox } from "@nextui-org/react";
@@ -243,16 +244,19 @@ export default function Registeration({ reg }) {
                     This is  <span className="text-white border-b-2"> {first===true? "my First" : first===false? "not my First" : "..."}</span> hackathon
                   </label>
                   <div className="flex flex-row ">
-                    <Checkbox className="mb-5 mt-5 px-5 rounded-3xl bg-[#1212136c]  py-5"
+                    <Checkbox className="mb-5 ml-5 mt-5 px-5 rounded-3xl bg-[#1212136c]  py-5"
                     isChecked={first}
                     onChange={handlefirst} 
                     isDisabled={first===false? true: ""}
-                      size="md"
+                      
                       color="gradient"
                       
                       labelColor="warning"
                     >
+                    <h4  className="text-gray-300 md:ml-0 ml-5 md:text-[1.1vw]    text-[3vw] ">
                      My First Hackathon
+
+                    </h4>
                     </Checkbox>
                     <Checkbox className="mb-5 ml-5 mt-5 px-5 rounded-3xl bg-[#1212136c]  py-5"
                       size="md" 
@@ -261,20 +265,27 @@ export default function Registeration({ reg }) {
                       labelColor="warning"
                       onChange={handlenotfirst}
                     >
+                    <h4  className="text-gray-300  md:text-[1.1vw]    text-[3vw] ">
+
                      Not My First Hackathon
+                    </h4>
+
                     </Checkbox>
                   </div>
                   <div>
 
                   <Checkbox className="px-5 rounded-3xl bg-[#1212136c]  py-5"
-                    size="md" 
+                    
                     isChecked={issubscribed}
                     color="gradient"
                     onChange={handlesubscribe}
                     labelColor="warning"
                   >
+                  <h4 className="text-gray-300  md:text-[1.1vw]    text-[3vw] ">
                     I consent to subscribing to Hack United's mailing list and
                     receiving promotional emails.
+
+                  </h4>
                   </Checkbox>
                   <Checkbox className="px-5 mt-5 rounded-3xl bg-[#1212136c]  py-5"
                     size="md"
@@ -284,8 +295,12 @@ export default function Registeration({ reg }) {
                     isRequired
                     labelColor="warning"
                   >
+                    <h4  className="text-gray-300  md:text-[1.1vw]    text-[3vw] ">
                     By checking this box, I confirm that I am at least 13 years
                     old and either enrolled in college or attending high school.
+                      
+                      </h4>
+
                   </Checkbox>
                   <Checkbox className="px-5 mt-5 rounded-3xl bg-[#1212136c]  py-5"
                     size="md"
@@ -294,8 +309,11 @@ export default function Registeration({ reg }) {
                     isChecked={isopen}
                     labelColor="warning"
                   >
+                  <h4  className="text-gray-300  md:text-[1.1vw]    text-[3vw] ">
                     If requested, I consent to having my contact information
                     shared to sponsors of the hackathon.
+                      
+                      </h4>
                   </Checkbox>
                   <Checkbox className="px-5 mt-5 rounded-3xl bg-[#1212136c]  py-5"
                     size="md"
@@ -305,8 +323,11 @@ export default function Registeration({ reg }) {
                     isRequired   isSelected={true}
                     labelColor="warning"
                   >
+                  <h4  className="text-gray-300  md:text-[1.1vw]    text-[3vw] ">
+                      
                     I have carefully read and understand the rules of the
                     hackathon, and I agree to abide by them.
+                      </h4>
                   </Checkbox>
                   </div>
                 </div>
