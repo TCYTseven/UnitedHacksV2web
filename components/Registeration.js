@@ -253,7 +253,7 @@ export default function Registeration({ reg }) {
                       
                       labelColor="warning"
                     >
-                    <h4  className="text-gray-300 md:ml-0 ml-5 md:text-[1.1vw]    text-[3vw] ">
+                    <h4  className="text-gray-300 md:text-[1.1vw]    text-[3vw] ">
                      My First Hackathon
 
                     </h4>
