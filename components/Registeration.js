@@ -244,7 +244,7 @@ export default function Registeration({ reg }) {
                     This is  <span className="text-white border-b-2"> {first===true? "my First" : first===false? "not my First" : "..."}</span> hackathon
                   </label>
                   <div className="flex flex-row ">
-                    <Checkbox className="mb-5 ml-5 mt-5 px-5 rounded-3xl bg-[#1212136c]  py-5"
+                    <Checkbox className="mb-5  mt-5 px-5 rounded-3xl bg-[#1212136c]  py-5"
                     isChecked={first}
                     onChange={handlefirst} 
                     isDisabled={first===false? true: ""}
