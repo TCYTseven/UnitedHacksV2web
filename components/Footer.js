@@ -11,8 +11,8 @@ import Image from "next/image";
 export default function Footer() {
   return (
     <div className="  items-center text-white  ">
-      <footer className="mt-5 mx-auto md:flex p-8 md:justify-between   md:w-[80%]">
-        <div className=" w-full  p-4 py-6 lg:py-2 ">
+      <footer className="mt-5 md:mx-auto md:flex p-8 md:justify-between w-full  md:w-[80%]">
+        <div className=" w-full  md:p-4 py-6 lg:py-2 ">
           <div className="md:flex md:justify-between ">
             <div className="mb-6 justify-center  md:mb-0">
               <div className="ml-[-30px]">
@@ -22,47 +22,47 @@ export default function Footer() {
                     height={110}
                     src="/earth.png"
                     className="absolute mt-[-5px] mr-1  "
-                    alt="HackUnited Logo"
+                    
                   />
-                  <h1 className="text-3xl  ml-[95px]  md:text-center text-[#DF6A50] hackunited text-savapro">
+                  <h1 className="text-3xl ml-[95px] md:ml-[60px]  md:text-center text-[#DF6A50] hackunited text-savapro">
                     HACK
                   </h1>
-                  <h1 className="text-xl  ml-[95px]  md:text-center text-[#DF6A50] hackunited text-savapro">
+                  <h1 className="text-xl ml-[100px] md:ml-[60px]  md:text-center text-[#DF6A50] hackunited text-savapro">
                     UNITED
                   </h1>
               </div>
               
                 <h3 className="text-gray-600 text-[0.9rem] mt-5 dark:text-gray-400 font-medium">EIN: 81-2908499
 </h3>
-              <div className="pt-[1vh]  text-[18px]">
-                <div className="flex flex-row text-3xl space-x-4 ">
+              <div className="pt-[1vh]  ">
+                <div className="flex flex-row   space-x-4 ">
                   <Link
                     target="_blank"
                     rel="noopener noreferrer"
                     href="https://www.linkedin.com/company/hack-united"
                   >
-                    <FontAwesomeIcon color={"white"} icon={faLinkedin} />
+                    <FontAwesomeIcon width={30} color={"white"} icon={faLinkedin} />
                   </Link>
                   <Link
                     target="_blank"
                     rel="noopener noreferrer"
                     href="https://instagram.com/hack_united"
                   >
-                    <FontAwesomeIcon color={"white"} icon={faInstagram} />
+                    <FontAwesomeIcon width={30} color={"white"} icon={faInstagram} />
                   </Link>
                   <Link
                     target="_blank"
                     rel="noopener noreferrer"
                     href="https://twitter.com/hackunited_"
                   >
-                    <FontAwesomeIcon color={"white"} icon={faTwitter} />
+                    <FontAwesomeIcon width={35} color={"white"} icon={faTwitter} />
                   </Link>
                   <Link
                     target="_blank"
                     rel="noopener noreferrer"
                     href="https://discord.gg/N7QgrKwQCP"
                   >
-                    <FontAwesomeIcon color={"white"} icon={faDiscord} />
+                    <FontAwesomeIcon width={45} color={"white"} icon={faDiscord} />
                   </Link>
                 </div>
               </div>

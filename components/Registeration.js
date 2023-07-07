@@ -17,7 +17,7 @@ export default function Registeration({ reg }) {
   const [country, setCountry] = useState("");
   const [linkedin, setLinkedin] = useState("");
   const [resume, setResume] = useState("");
-  const [first, setFirst] = useState(false);
+  const [first, setFirst] = useState(null);
   const handlesubscribe = () => {
     if (issubscribed  === true) {
       setIssubscribed(false);
@@ -34,12 +34,25 @@ export default function Registeration({ reg }) {
     }
   };
   const handlefirst = () => {
-    if (first === true) {
-      setFirst(false);
-    } else {
-      setFirst(true);
-      
+    if(first ===true){
+      setFirst(null);
     }
+    else{
+      
+      setFirst(true);
+    }
+ 
+  };
+  const handlenotfirst = () => {
+    if(first ===false){
+      setFirst(null);
+    }
+    else{
+      
+      setFirst(false);
+    }
+      
+    
   };
   const handleSubmit = async (e) => {
     setPrompt("HACK UNITED");
@@ -108,7 +121,7 @@ export default function Registeration({ reg }) {
                   />
                 </svg>
               </div>
-              <h1 className="md:text-[2vw] text-[4vw]  text-[#DF6A50] hackunited ">
+              <h1 className="md:text-[3vw] font-bold text-center text-[8vw]  text-[#DF6A50] hackunited ">
                 Register Your Spot
               </h1>
 
@@ -226,46 +239,47 @@ export default function Registeration({ reg }) {
                 </div>
 
                 <div className="flex text-white flex-col mb-5">
-                  <label className="text-white  md:text-[1.1vw]    text-[3vw]  ">
-                    Is this your First Hackathon?
+                  <label className="text-gray-500  md:text-[1.1vw] mt-5   text-[3vw]  ">
+                    This is  <span className="text-white border-b-2"> {first===true? "my First" : first===false? "not my First" : "..."}</span> hackathon
                   </label>
                   <div className="flex flex-row ">
-                    <Checkbox className="mb-5 mt-5"
+                    <Checkbox className="mb-5 mt-5 px-5 rounded-3xl bg-[#1212136c]  py-5"
                     isChecked={first}
-                    isDisabled={first===true? false :true}
                     onChange={handlefirst} 
+                    isDisabled={first===false? true: ""}
                       size="md"
-                      color="secondary"
+                      color="gradient"
                       
                       labelColor="warning"
                     >
-                      Yes
+                     My First Hackathon
                     </Checkbox>
-                    <Checkbox className="mb-5 ml-5 mt-5"
-                      size="md" isDisabled={first===true? true :false}
-                      isChecked={first}
-                      color="secondary"
-                      onChange={handlefirst}
+                    <Checkbox className="mb-5 ml-5 mt-5 px-5 rounded-3xl bg-[#1212136c]  py-5"
+                      size="md" 
+                      isChecked={first} isDisabled={first===true? true: ""}
+                      color="gradient"
+                      onChange={handlenotfirst}
                       labelColor="warning"
+                 
                     >
-                      No
+                     Not My First Hackathon
                     </Checkbox>
                   </div>
                   <div>
 
-                  <Checkbox className="mb-5 mt-5"
-                    size="md"
+                  <Checkbox className="px-5 rounded-3xl bg-[#1212136c]  py-5"
+                    size="md" 
                     isChecked={issubscribed}
-                    color="secondary"
+                    color="gradient"
                     onChange={handlesubscribe}
                     labelColor="warning"
                   >
                     I consent to subscribing to Hack United's mailing list and
                     receiving promotional emails.
                   </Checkbox>
-                  <Checkbox className="mb-5 mt-5"
+                  <Checkbox className="px-5 mt-5 rounded-3xl bg-[#1212136c]  py-5"
                     size="md"
-                    color="secondary"
+                    color="gradient"
                     defaultChecked   isSelected={true}
                  
                     isRequired
@@ -274,9 +288,9 @@ export default function Registeration({ reg }) {
                     By checking this box, I confirm that I am at least 13 years
                     old and either enrolled in college or attending high school.
                   </Checkbox>
-                  <Checkbox className="mb-5 mt-5"
+                  <Checkbox className="px-5 mt-5 rounded-3xl bg-[#1212136c]  py-5"
                     size="md"
-                    color="secondary"
+                    color="gradient"
                     onChange={handleopen}
                     isChecked={isopen}
                     labelColor="warning"
@@ -284,10 +298,10 @@ export default function Registeration({ reg }) {
                     If requested, I consent to having my contact information
                     shared to sponsors of the hackathon.
                   </Checkbox>
-                  <Checkbox className="mb-5 mt-5"
+                  <Checkbox className="px-5 mt-5 rounded-3xl bg-[#1212136c]  py-5"
                     size="md"
                    
-                    color="secondary"
+                    color="gradient"
                     defaultChecked
                     isRequired   isSelected={true}
                     labelColor="warning"
@@ -297,6 +311,7 @@ export default function Registeration({ reg }) {
                   </Checkbox>
                   </div>
                 </div>
+                <h3 className="text-gray-300  md:text-[1.1vw]  text-center mb-5 mt-5 text-[3vw]  "> ⚠️ In order to fully register you need to be in our discord and you need to register on devpost</h3>
                 <button
                       type="submit"
                       className="inline-block button px-12 py-4 leading-none border rounded-full font-bold text-black bg-[#DF6A50] text-xl border-black mt-4 lg:mt-0"
