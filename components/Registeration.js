@@ -258,9 +258,8 @@ export default function Registeration({ reg }) {
                       size="md" 
                       isChecked={first} isDisabled={first===true? true: ""}
                       color="gradient"
-                      onChange={handlenotfirst}
                       labelColor="warning"
-                 
+                      onChange={handlenotfirst}
                     >
                      Not My First Hackathon
                     </Checkbox>
