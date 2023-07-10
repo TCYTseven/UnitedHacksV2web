@@ -60,6 +60,7 @@ export default function Footer() {
                   <Link
                     target="_blank"
                     rel="noopener noreferrer"
+                    className="hover: scale"
                     href="https://discord.gg/N7QgrKwQCP"
                   >
                     <FontAwesomeIcon width={45} color={"white"} icon={faDiscord} />
@@ -88,6 +89,7 @@ export default function Footer() {
                     <Link
                       target="_blank"
                       rel="noopener noreferrer"
+                      className="hover:underline"
                       href="https://unitedhacks23.devpost.com/rules"
                     >
                       Hackathon Rules
@@ -96,6 +98,7 @@ export default function Footer() {
                   <li className="mb-4">
                     <Link
                       target="_blank"
+                      className="hover:underline"
                       rel="noopener noreferrer"
                       href="https://hackunited.org/#donate"
                     >
@@ -109,7 +112,7 @@ export default function Footer() {
                       href="mailto:humans@hackunited.org"
                       className="hover:underline"
                     >
-                      Give feedback
+                      Sponsor Prospectus
                     </Link>
                   </li>
                 </ul>

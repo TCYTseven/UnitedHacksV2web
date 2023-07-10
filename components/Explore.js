@@ -60,13 +60,10 @@ export default function Explore() {
         <div className="flex flex-row justify-center  flex-wrap p-5 mb-[50px]">
           <div className="flex md:order-none order-1 md:mt-0 mt-5 md:text-left text-center justify-center flex-col w-full md:w-[60%] mr-0 md:mr-[5vw]  ">
             <h2 className="md:text-[2vw] text-[6vw] text-[#DF6A50] font-[500]">
-              Learn More than Just Tech
+              Learn More than Just Coding
             </h2>
             <h3 className="text-white  md:text-[1vw] text-center md:leading-normal leading-8  text-[3.5vw] md:text-justify break-normal ">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
-              deserunt veniam, harum dolor voluptas perspiciatis aut veritatis
-              iste eaque sunt! Pariatur adipisci laboriosam eum nostrum fuga
-              alias sunt iusto maiores?
+            Alongside acquiring mechanical skills, anticipate opportunities for collaboration, networking, and engaging in workshops focused on entrepreneurship and critical thinking at our hackathon. Diverse guest speakers will further enrich the event, offering valuable insights and perspectives. Our hackathon provides an experience that extends beyond basic technological skills, offering a full approach to learning and growth.
             </h3>
           </div>
           <div className="align-center md:mb-0 mb-7 justify-center flex items-center">
@@ -1305,27 +1302,20 @@ export default function Explore() {
           </div>
           <div className="flex md:mt-0 mt-5  md:text-left text-center justify-center flex-col w-full md:w-[60%] ml-0 md:ml-[5vw]  ">
             <h2 className="md:text-[2vw] text-[6vw] text-[#DF6A50] font-[500]">
-              Learn More than Just Tech
+              Innovate to Win Prizes
             </h2>
             <h3 className="text-white md:text-[1vw] text-center md:leading-normal leading-8  text-[3.5vw] md:text-justify break-normal ">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
-              deserunt veniam, harum dolor voluptas perspiciatis aut veritatis
-              iste eaque sunt! Pariatur adipisci laboriosam eum nostrum fuga
-              alias sunt iusto maiores?
+            Get ready to showcase your creativity and problem-solving skills at our hackathon, where you can win exciting prizes by coming up with groundbreaking ideas. It's an opportunity to think outside the box and push the boundaries of innovation. This is a great place to submit a project you were going to build anyway, except you get the oppurtunity to win prizes and get recognized for it.
             </h3>
           </div>
-         
         </div>
         <div className="flex flex-row justify-center  flex-wrap p-5 mb-[50px]">
           <div className="flex md:order-none order-1 md:mt-0 mt-5 md:text-left text-center justify-center flex-col w-full md:w-[60%] mr-0 md:mr-[5vw]  ">
             <h2 className="md:text-[2vw] text-[6vw] text-[#DF6A50] font-[500]">
-              Learn More than Just Tech
+            Collaborate With Others
             </h2>
             <h3 className="text-white  md:text-[1vw] text-center md:leading-normal leading-8  text-[3.5vw] md:text-justify break-normal ">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
-              deserunt veniam, harum dolor voluptas perspiciatis aut veritatis
-              iste eaque sunt! Pariatur adipisci laboriosam eum nostrum fuga
-              alias sunt iusto maiores?
+            Connect and interact with individuals from different countries and backgrounds at our hackathon! Discover people who share an interest in similar projects and collaborate based on your respective strengths and weaknesses. Join forces with fellow participants to create a functional project that reflects everyone's passion and dedication, building lasting relationships beyond the hacking period.
             </h3>
           </div>
           <div className="align-center md:mb-0 mb-7 justify-center flex items-center">
