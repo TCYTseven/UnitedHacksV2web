@@ -3,45 +3,58 @@ import 'react-accessible-accordion/dist/fancy-example.css';
 export default function FAQ() {
     const faqs = [
         {
-          question: 'What is your return policy?',
-          answer: 'We accept returns within 30 days of purchase.',
+          question: 'What is a hackathon?',
+          answer: 'A hackathon is a collaborative event where many people come together to collaborate and compete using computer programming.          ',
         },
         {
-          question: 'How do I track my order?',
-          answer: 'You will receive a tracking number via email when your order ships.',
+          question: 'Can I join as a beginner?',
+          answer: 'Of course! We will provide more resources to help you build your project.',
         },
         {
-            question: 'How do I track my order?',
-            answer: 'You will receive a tracking number via email when your order ships.',
+          question: 'Where is the workshop schedule?',
+          answer: 'The workshop schedule is avalible in our discord!.',
+        }, 
+        {
+            question: 'Do I have to pay to enter?',
+            answer: 'Nope! Our hackathon is completely free to compete in.',
           }, {
-            question: 'How do I track my order?',
-            answer: 'You will receive a tracking number via email when your order ships.',
+            question: 'How does finding a team work?',
+            answer: 'You can choose your own team members, or work solo. Maximum team size is 4. When submitting your project on devpost, make sure to include all team members.',
           }, {
-            question: 'How do I track my order?',
-            answer: 'You will receive a tracking number via email when your order ships.',
+            question: 'How do I register?',
+            answer: 
+              <>
+                To register, start off by clicking "Register" at the top of the website. After filling out that form, go to{' '}
+                <a style={{color: 'aqua'}} href="https://unitedhacks23.devpost.com/">Devpost</a> and sign up there! Also, don't forget to join our{' '}
+                <a style={{color: 'aqua'}} href="https://discord.gg/N7QgrKwQCP">Discord</a>.
+              </>
           }, {
-            question: 'How do I track my order?',
-            answer: 'You will receive a tracking number via email when your order ships.',
+            question: 'What do I submit?',
+            answer: 'At the end of the hacking period, on devpost submit a public github repository, a video explaining and demonstrating your project, and a short explanation of your project.',
           },
           {
-            question: 'How do I track my order?',
-            answer: 'You will receive a tracking number via email when your order ships.',
+            question: 'What time zone is this based in?',
+            answer: 'We are based in EST, however you can compete in any time zone.',
           },
           {
-            question: 'How do I track my order?',
-            answer: 'You will receive a tracking number via email when your order ships.',
+            question: 'Do we have to submit a project to register?',
+            answer: 'Nope! Feel free to register just to browse our workshops and resources.',
           },
           {
-            question: 'How do I track my order?',
-            answer: 'You will receive a tracking number via email when your order ships.',
+            question: 'When is the registration deadline?',
+            answer: 'August 4th, 2023 at 4:30pm EST.',
           },
           {
-            question: 'How do I track my order?',
-            answer: 'You will receive a tracking number via email when your order ships.',
+            question: 'What if im not interested in coding?',
+            answer: 'This hackathon is a space to get interested. As long as you like to solve problems, you are more then welcome to attend our hackathon to learn and connect with an encouraging community.',
           },
           {
-            question: 'How do I track my order?',
-            answer: 'You will receive a tracking number via email when your order ships.',
+            question: 'Who is hosting this hackathon?',
+            answer: 'United Hacks is a hackathon hosted by Hack United, a non-profit organization founded by teens on a mission to provide a collaborative environment where innovators of all backgrounds can learn and grow together.',
+          },
+          {
+            question: 'I have a different question.',
+            answer: 'Join our discord and make a ticket! We will get back to you as soon as possible.',
           },
           
         // Add more questions and answers as needed

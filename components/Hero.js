@@ -34,9 +34,9 @@ export default function Hero() {
           className="hackunited md:mt-0 mt-[-3vw] scroller md:text-[1.8vw] text-[4vw] text-white"
         >
           <span>
-            www.hackunited.org <br />
-            Hackathons <br />
             Workshops <br />
+            Prizes <br />
+            Learning <br />
             & More <br />
           </span>{" "}
         </div>

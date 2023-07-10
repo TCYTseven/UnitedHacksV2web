@@ -191,7 +191,7 @@ export default function Registeration({ reg }) {
                     htmlFor="linkedin"
                     className="text-white  md:text-[1.1vw]    text-[3vw]  "
                   >
-                    Enter Linkedin URL
+                    Enter Linkedin URL (Optional)
                   </label>
                   <input
                     value={linkedin}
@@ -208,7 +208,7 @@ export default function Registeration({ reg }) {
                     htmlFor="resume"
                     className="text-white  md:text-[1.1vw]    text-[3vw]  "
                   >
-                    Enter Resume URL
+                    Enter Resume URL (Optional)
                   </label>
                   <input
                     value={resume}
@@ -241,7 +241,7 @@ export default function Registeration({ reg }) {
 
                 <div className="flex text-white flex-col mb-5">
                   <label className="text-gray-500  md:text-[1.1vw] mt-5   text-[3vw]  ">
-                    This is  <span className="text-white border-b-2"> {first===true? "my First" : first===false? "not my First" : "..."}</span> hackathon
+                    This is  <span className="text-white border-b-2"> {first===true? "my First" : first===false? "not my First" : "choose below"}</span> hackathon
                   </label>
                   <div className="flex flex-row ">
                     <Checkbox className="mb-5  mt-5 px-5 rounded-3xl bg-[#1212136c]  py-5"

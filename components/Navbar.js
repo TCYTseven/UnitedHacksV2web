@@ -53,7 +53,7 @@ export default function Navbar() {
     <nav
       style={{
         background: `${
-          backgroundTransparacy === 0 ? "transparent" : "black"
+          backgroundTransparacy === 100 ? "transparent" : "#5608A5"
         }`,
       }}
       className="flex fade top-0 sticky items-center justify-between flex-wrap px-3 py-3"
