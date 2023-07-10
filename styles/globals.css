@@ -371,6 +371,7 @@ html {
   opacity: 0;
 }
 .slidersponsers.active{
+  z-index: 99999999;
   opacity: 1;
   animation: fade 2s ease-in-out, marquee 18s linear infinite  ;
 }
@@ -440,7 +441,9 @@ logo-slider:after {
     transform: translateX(-100%);
   }
 }
-
+.zindex{
+  z-index: 999999999;
+}
 .rounded-text {
   color : #400090;
   width: 10.625rem;
@@ -465,4 +468,13 @@ logo-slider:after {
 .loader{
   animation: fade 2s ease-in-out;
   transition: 2s ease-in-out;
+}
+.navbg{
+  transition: all 0.5s;
+  background-color: #5608A5;
+}
+.notnavbg{
+  transition: all 0.5s;
+  background-color: transparent;
+
 }

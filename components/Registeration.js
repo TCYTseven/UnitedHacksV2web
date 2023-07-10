@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import Loader from "./Loader";
 import { Checkbox } from "@nextui-org/react";
@@ -20,40 +19,33 @@ export default function Registeration({ reg }) {
   const [resume, setResume] = useState("");
   const [first, setFirst] = useState(null);
   const handlesubscribe = () => {
-    if (issubscribed  === true) {
+    if (issubscribed === true) {
       setIssubscribed(false);
     } else {
       setIssubscribed(true);
     }
   };
   const handleopen = () => {
-    if (isopen  === true) {
+    if (isopen === true) {
       setIsopen(false);
     } else {
-      console.log("setted to open false")
+      console.log("setted to open false");
       setIsopen(true);
     }
   };
   const handlefirst = () => {
-    if(first ===true){
+    if (first === true) {
       setFirst(null);
-    }
-    else{
-      
+    } else {
       setFirst(true);
     }
- 
   };
   const handlenotfirst = () => {
-    if(first ===false){
+    if (first === false) {
       setFirst(null);
-    }
-    else{
-      
+    } else {
       setFirst(false);
     }
-      
-    
   };
   const handleSubmit = async (e) => {
     setPrompt("HACK UNITED");
@@ -86,7 +78,7 @@ export default function Registeration({ reg }) {
     setResume("");
     setIsopen(false);
     setIssubscribed(false);
-  
+
     setFirst(false);
     setTimeout(() => {
       reg(true);
@@ -100,17 +92,16 @@ export default function Registeration({ reg }) {
         <Loader message={prompt} />
       ) : (
         <>
-        
           <div
             className="flex flex-col overflow-hidden fade
-    items-center register justify-center align-center bg-[#472da779] h-screen fixed w-full z-[999999]  "
+    items-center zindex register justify-center align-center bg-[#472da779] h-screen fixed w-full z-[999999]  "
           >
             <div className="flex bottomtotop flex-col mt-10 p-8 form mx-auto my-auto md:w-3/5 rounded-2xl ">
-              <div className="cursor-pointer absolute md:right-[22vw]  right-3">
+              <div className="cursor-pointer  absolute md:right-auto right-3 ">
                 <svg
                   width="36"
                   onClick={toggle}
-                  className="h-[5vw] md:h-[3vw]"
+                  className="h-[5vw] md:h-[3vw] "
                   height="36"
                   viewBox="0 0 36 36"
                   fill="none"
@@ -241,103 +232,130 @@ export default function Registeration({ reg }) {
 
                 <div className="flex text-white flex-col mb-5">
                   <label className="text-gray-500  md:text-[1.1vw] mt-5   text-[3vw]  ">
-                    This is  <span className="text-white border-b-2"> {first===true? "my First" : first===false? "not my First" : "choose below"}</span> hackathon
+                    This is{" "}
+                    <span className="text-white border-b-2">
+                      {" "}
+                      {first === true
+                        ? "my First"
+                        : first === false
+                        ? "not my First"
+                        : "choose below"}
+                    </span>{" "}
+                    hackathon
                   </label>
                   <div className="flex flex-row ">
-                    <Checkbox className="mb-5  mt-5 px-5 rounded-3xl bg-[#1212136c]  py-5"
-                    isChecked={first}
-                    onChange={handlefirst} 
-                    isDisabled={first===false? true: ""}
-                      
+                    <Checkbox
+                      className="mb-5  mt-5 px-5 rounded-3xl bg-[#1212136c]  py-5"
+                      isChecked={first}
+                      onChange={handlefirst}
+                      isDisabled={first === false ? true : ""}
                       color="gradient"
-                      
                       labelColor="warning"
                     >
-                    <h4  className="text-gray-300 md:text-[1.1vw]    text-[3vw] ">
-                     My First Hackathon
-
-                    </h4>
+                      <h4 className="text-gray-300 md:text-[1.1vw]    text-[3vw] ">
+                        My First Hackathon
+                      </h4>
                     </Checkbox>
-                    <Checkbox className="mb-5 ml-5 mt-5 px-5 rounded-3xl bg-[#1212136c]  py-5"
-                      size="md" 
-                      isChecked={first} isDisabled={first===true? true: ""}
+                    <Checkbox
+                      className="mb-5 ml-5 mt-5 px-5 rounded-3xl bg-[#1212136c]  py-5"
+                      size="md"
+                      isChecked={first}
+                      isDisabled={first === true ? true : ""}
                       color="gradient"
                       labelColor="warning"
                       onChange={handlenotfirst}
                     >
-                    <h4  className="text-gray-300  md:text-[1.1vw]    text-[3vw] ">
-
-                     Not My First Hackathon
-                    </h4>
-
+                      <h4 className="text-gray-300  md:text-[1.1vw]    text-[3vw] ">
+                        Not My First Hackathon
+                      </h4>
                     </Checkbox>
                   </div>
                   <div>
-
-                  <Checkbox className="px-5 rounded-3xl bg-[#1212136c]  py-5"
-                    
-                    isChecked={issubscribed}
-                    color="gradient"
-                    onChange={handlesubscribe}
-                    labelColor="warning"
-                  >
-                  <h4 className="text-gray-300  md:text-[1.1vw]    text-[3vw] ">
-                    I consent to subscribing to Hack United's mailing list and
-                    receiving promotional emails.
-
-                  </h4>
-                  </Checkbox>
-                  <Checkbox className="px-5 mt-5 rounded-3xl bg-[#1212136c]  py-5"
-                    size="md"
-                    color="gradient"
-                    defaultChecked   isSelected={true}
-                 
-                    isRequired
-                    labelColor="warning"
-                  >
-                    <h4  className="text-gray-300  md:text-[1.1vw]    text-[3vw] ">
-                    By checking this box, I confirm that I am at least 13 years
-                    old and either enrolled in college or attending high school.
-                      
+                    <Checkbox
+                      className="px-5 rounded-3xl bg-[#1212136c]  py-5"
+                      isChecked={issubscribed}
+                      color="gradient"
+                      onChange={handlesubscribe}
+                      labelColor="warning"
+                    >
+                      <h4 className="text-gray-300  md:text-[1.1vw]    text-[3vw] ">
+                        I consent to subscribing to Hack United's mailing list
+                        and receiving promotional emails.
                       </h4>
-
-                  </Checkbox>
-                  <Checkbox className="px-5 mt-5 rounded-3xl bg-[#1212136c]  py-5"
-                    size="md"
-                    color="gradient"
-                    onChange={handleopen}
-                    isChecked={isopen}
-                    labelColor="warning"
-                  >
-                  <h4  className="text-gray-300  md:text-[1.1vw]    text-[3vw] ">
-                    If requested, I consent to having my contact information
-                    shared to sponsors of the hackathon.
-                      
+                    </Checkbox>
+                    <Checkbox
+                      className="px-5 mt-5 rounded-3xl bg-[#1212136c]  py-5"
+                      size="md"
+                      color="gradient"
+                      defaultChecked
+                      isSelected={true}
+                      isRequired
+                      labelColor="warning"
+                    >
+                      <h4 className="text-gray-300  md:text-[1.1vw]    text-[3vw] ">
+                        By checking this box, I confirm that I am at least 13
+                        years old and either enrolled in college or attending
+                        high school.
                       </h4>
-                  </Checkbox>
-                  <Checkbox className="px-5 mt-5 rounded-3xl bg-[#1212136c]  py-5"
-                    size="md"
-                   
-                    color="gradient"
-                    defaultChecked
-                    isRequired   isSelected={true}
-                    labelColor="warning"
-                  >
-                  <h4  className="text-gray-300  md:text-[1.1vw]    text-[3vw] ">
-                      
-                    I have carefully read and understand the rules of the
-                    hackathon, and I agree to abide by them.
+                    </Checkbox>
+                    <Checkbox
+                      className="px-5 mt-5 rounded-3xl bg-[#1212136c]  py-5"
+                      size="md"
+                      color="gradient"
+                      onChange={handleopen}
+                      isChecked={isopen}
+                      labelColor="warning"
+                    >
+                      <h4 className="text-gray-300  md:text-[1.1vw]    text-[3vw] ">
+                        If requested, I consent to having my contact information
+                        shared to sponsors of the hackathon.
                       </h4>
-                  </Checkbox>
+                    </Checkbox>
+                    <Checkbox
+                      className="px-5 mt-5 rounded-3xl bg-[#1212136c]  py-5"
+                      size="md"
+                      color="gradient"
+                      defaultChecked
+                      isRequired
+                      isSelected={true}
+                      labelColor="warning"
+                    >
+                      <h4 className="text-gray-300  md:text-[1.1vw]    text-[3vw] ">
+                        I have carefully read and understand the rules of the
+                        hackathon, and I agree to abide by them.
+                      </h4>
+                    </Checkbox>
                   </div>
                 </div>
-                <h3 className="text-gray-300  md:text-[1.1vw]  text-center mb-5 mt-5 text-[3vw]  "> ⚠️ In order to fully register you need to be in our <a href="https://discord.gg/N7QgrKwQCP" style={{textDecoration: "underline", color: "deepskyblue"}}>Discord</a> and you need to register on <a href="https://unitedhacks23.devpost.com/" style={{textDecoration: "underline", color: "deepskyblue"}}>Devpost</a></h3>
+                <h3 className="text-gray-300  md:text-[1.1vw]  text-center mb-5 mt-5 text-[3vw]  ">
+                  {" "}
+                  ⚠️ In Order To Fully Register You Need To Be In Our{" "}
+                  <a
+                    href="https://discord.gg/N7QgrKwQCP"
+                    style={{
+                      textDecoration: "underline",
+                      color: "deepskyblue",
+                    }}
+                  >
+                    Discord Server
+                  </a>{" "}
+                  And You Need To Register On{" "}
+                  <a
+                    href="https://unitedhacks23.devpost.com/"
+                    style={{
+                      textDecoration: "underline",
+                      color: "deepskyblue",
+                    }}
+                  >
+                    Devpost
+                  </a>
+                </h3>
                 <button
-                      type="submit"
-                      className="inline-block button px-12 py-4 leading-none border rounded-full font-bold text-black bg-[#DF6A50] text-xl border-black mt-4 lg:mt-0"
-                    >
-                      Submit
-                    </button>
+                  type="submit"
+                  className="inline-block button px-12 py-4 leading-none border rounded-full font-bold text-black bg-[#DF6A50] text-xl border-black mt-4 lg:mt-0"
+                >
+                  Submit
+                </button>
               </form>
             </div>
           </div>
