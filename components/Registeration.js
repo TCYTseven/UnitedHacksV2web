@@ -331,7 +331,7 @@ export default function Registeration({ reg }) {
                   </Checkbox>
                   </div>
                 </div>
-                <h3 className="text-gray-300  md:text-[1.1vw]  text-center mb-5 mt-5 text-[3vw]  "> ⚠️ In order to fully register you need to be in our discord and you need to register on devpost</h3>
+                <h3 className="text-gray-300  md:text-[1.1vw]  text-center mb-5 mt-5 text-[3vw]  "> ⚠️ In order to fully register you need to be in our <a href="https://discord.gg/N7QgrKwQCP" style={{textDecoration: "underline", color: "deepskyblue"}}>Discord</a> and you need to register on <a href="https://unitedhacks23.devpost.com/" style={{textDecoration: "underline", color: "deepskyblue"}}>Devpost</a></h3>
                 <button
                       type="submit"
                       className="inline-block button px-12 py-4 leading-none border rounded-full font-bold text-black bg-[#DF6A50] text-xl border-black mt-4 lg:mt-0"

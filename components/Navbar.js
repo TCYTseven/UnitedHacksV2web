@@ -124,10 +124,10 @@ export default function Navbar() {
           </Link>
           <Link
             scroll={false}
-            href="#prizes"
+            href="#information"
             className="block mt-4 lg:inline-block nav-link-ltr lg:mt-0 nav-links mr-14"
           >
-            Prizes
+            Information
           </Link>
           <Link
             scroll={false}

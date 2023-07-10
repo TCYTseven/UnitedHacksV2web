@@ -36,37 +36,44 @@ export default function Sponsors() {
       <div className="mt-5 md:mt-24 flex-row flex-wrap flex gap-10 justify-center items-center">
         <div className="slidersponsors">
           <a href="https://hackunited.org" target="_blank" rel="noopener noreferrer">
-            <Image alt="Hack United" src={"/sponser1.webp"} width={200} height={200} style={{padding: '10px', border: '0px solid black'}} />
+            <Image alt="Hack United" src={"/comingsoon.png"} width={200} height={200} style={{padding: '10px', border: '0px solid black'}} />
           </a>
           <a href="https://hackunited.org" target="_blank" rel="noopener noreferrer">
-            <Image alt="Hack United" src={"/sponser1.webp"} width={200} height={200} style={{padding: '10px', border: '0px solid black'}} />
-          </a>
-        </div>
-        <div className="slidersponsors">
-          <a href="https://hackunited.org" target="_blank" rel="noopener noreferrer">
-            <Image alt="Hack United" src={"/sponser1.webp"} width={200} height={200} style={{padding: '10px', border: '0px solid black'}} />
-          </a>
-          <a href="https://hackunited.org" target="_blank" rel="noopener noreferrer">
-            <Image alt="Hack United" src={"/sponser1.webp"} width={200} height={200} style={{padding: '10px', border: '0px solid black'}} />
+            <Image alt="Hack United" src={"/comingsoon.png"} width={200} height={200} style={{padding: '10px', border: '0px solid black'}} />
           </a>
         </div>
         <div className="slidersponsors">
           <a href="https://hackunited.org" target="_blank" rel="noopener noreferrer">
-            <Image alt="Hack United" src={"/sponser1.webp"} width={200} height={200} style={{padding: '10px', border: '0px solid black'}} />
+            <Image alt="Hack United" src={"/comingsoon.png"} width={200} height={200} style={{padding: '10px', border: '0px solid black'}} />
           </a>
           <a href="https://hackunited.org" target="_blank" rel="noopener noreferrer">
-            <Image alt="Hack United" src={"/sponser1.webp"} width={200} height={200} style={{padding: '10px', border: '0px solid black'}} />
+            <Image alt="Hack United" src={"/comingsoon.png"} width={200} height={200} style={{padding: '10px', border: '0px solid black'}} />
           </a>
         </div>
         <div className="slidersponsors">
           <a href="https://hackunited.org" target="_blank" rel="noopener noreferrer">
-            <Image alt="Hack United" src={"/sponser1.webp"} width={200} height={200} style={{padding: '10px', border: '0px solid black'}} />
+            <Image alt="Hack United" src={"/comingsoon.png"} width={200} height={200} style={{padding: '10px', border: '0px solid black'}} />
           </a>
           <a href="https://hackunited.org" target="_blank" rel="noopener noreferrer">
-            <Image alt="Hack United" src={"/sponser1.webp"} width={200} height={200} style={{padding: '10px', border: '0px solid black'}} />
+            <Image alt="Hack United" src={"/comingsoon.png"} width={200} height={200} style={{padding: '10px', border: '0px solid black'}} />
+          </a>
+        </div>
+        <div className="slidersponsors">
+          <a href="https://hackunited.org" target="_blank" rel="noopener noreferrer">
+            <Image alt="Hack United" src={"/comingsoon.png"} width={200} height={200} style={{padding: '10px', border: '0px solid black'}} />
+          </a>
+          <a href="https://hackunited.org" target="_blank" rel="noopener noreferrer">
+            <Image alt="Hack United" src={"/comingsoon.png"} width={200} height={200} style={{padding: '10px', border: '0px solid black'}} />
           </a>
         </div>
       </div>
-    </div>
+      <div style={{height: '50px'}}></div>
+      <center>
+  <h3 style={{color: "white", fontSize: "18px"}}>
+    Want to sponsor us? View our <a href="https://hackunited.org/#comingsoon" style={{textDecoration: "underline", color: "deepskyblue"}}>Sponsorship Prospectus</a> and email <a href="mailto:humans@hackunited.org" style={{textDecoration: "underline", color: "deepskyblue"}}>humans@hackunited.org</a>!
+  </h3>
+</center>
+
+    </div> 
   );
 }

@@ -60,7 +60,7 @@ export default function FAQ() {
         // Add more questions and answers as needed
       ];
   return (
-    <div className="min-h-screen justify-center items-center mt-3">
+    <div id="faq" className="min-h-screen justify-center items-center mt-3">
     <div className="text heading"> 
         <h1
           className=" text-center md:text-[4vw] text-[10vw] faq-heading text text--blocks"
