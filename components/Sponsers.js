@@ -529,7 +529,7 @@ export default function Sponsers() {
               />
             </Link>
           </div>
-        </logo-slider>
+        </logo-slider> 
       </div>
       <div style={{height: '1px'}}></div>
       <center>
