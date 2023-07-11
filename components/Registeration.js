@@ -331,7 +331,7 @@ export default function Registeration({ reg }) {
                   {" "}
                   ⚠️ In Order To Fully Register You Need To Be In Our{" "}
                   <a
-                    href="https://discord.gg/N7QgrKwQCP"
+                    href="https://discord.gg/M3WYxsY25p"
                     style={{
                       textDecoration: "underline",
                       color: "deepskyblue",

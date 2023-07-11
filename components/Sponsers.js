@@ -531,6 +531,12 @@ export default function Sponsers() {
           </div>
         </logo-slider>
       </div>
+      <div style={{height: '1px'}}></div>
+      <center>
+  <h3 style={{color: "white", fontSize: "18px"}}>
+    Want to sponsor us? View our <a href="https://hackunited.org/#comingsoon" style={{textDecoration: "underline", color: "deepskyblue"}}>Sponsorship Prospectus</a> and email <a href="mailto:humans@hackunited.org" style={{textDecoration: "underline", color: "deepskyblue"}}>humans@hackunited.org</a>!
+  </h3>
+</center>
     </div>
   );
 }

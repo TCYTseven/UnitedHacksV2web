@@ -140,7 +140,7 @@ export default function Navbar() {
           </button>
         </div>
         <div className="flex-col md:absolute relative  flex">
-        <Link  target="_blank" rel="noopener noreferrer" href="https://discord.gg/N7QgrKwQCP">
+        <Link  target="_blank" rel="noopener noreferrer" href="https://discord.gg/M3WYxsY25p">
         <button className=" button inline-block md:w-auto w-full px-12 py-4 leading-none border rounded-full text-black bg-purple-600 text-xl border-black mt-4 lg:mt-0">
           Discord
 

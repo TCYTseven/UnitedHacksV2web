@@ -61,7 +61,7 @@ export default function Footer() {
                     target="_blank"
                     rel="noopener noreferrer"
                     className="hover: scale"
-                    href="https://discord.gg/N7QgrKwQCP"
+                    href="https://discord.gg/M3WYxsY25p"
                   >
                     <FontAwesomeIcon width={45} color={"white"} icon={faDiscord} />
                   </Link>
