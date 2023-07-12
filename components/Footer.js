@@ -92,7 +92,7 @@ export default function Footer() {
                       className="hover:underline"
                       href="https://unitedhacks23.devpost.com/rules"
                     >
-                      Hackathon Rules
+                      Event Rules
                     </Link>
                   </li>
                   <li className="mb-4">
