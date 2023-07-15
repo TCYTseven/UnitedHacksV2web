@@ -15,7 +15,7 @@ export default function Prizes() {
           Information
         </h1>
       </div>
-      <div className="mt-24 justify-center items-center flex-col flex  ">
+      <div className="mt-24  justify-center items-center flex-col flex  ">
         <Carousel
           className=" w-full h-auto "
           showIndicators={false}
@@ -28,7 +28,7 @@ export default function Prizes() {
           autoPlay={true}
           infiniteLoop={true}
         >
-          <div className="flex rounded-[50px]    border-black border-[2px]  flex-col flex-grow justify-center  items-center bg-gradient-to-r from-[#3e158a] w-full md:h-[40vw] p-8">
+          <div className="flex rounded-[50px]  overflow-hidden  border-black border-[2px]  flex-col flex-grow justify-center  items-center bg-gradient-to-r from-[#3e158a] w-full md:h-[40vw] p-8">
             {" "}
             <h2 className="md:text-[4vw]    text-[6vw] text-[#DF6A50] font-[500]">
               Schedule
@@ -55,7 +55,7 @@ export default function Prizes() {
             </h3>
           </div>
 
-          <div className="flex rounded-[50px]  border-black border-[2px]  flex-col flex-grow justify-center items-center bg-gradient-to-r from-[#3e158a] w-full  h-[120vw] md:h-[40vw] p-8">
+          <div className="flex rounded-[50px] overflow-hidden border-black border-[2px]  flex-col flex-grow justify-center items-center bg-gradient-to-r from-[#3e158a] w-full   md:h-[40vw] p-8">
             {" "}
             <h2 className="md:text-[3.5vw]    text-[6vw] text-[#DF6A50] font-[500]">
               Workshops
@@ -74,7 +74,7 @@ export default function Prizes() {
             </h3>
           </div>
 
-          <div className="flex rounded-[50px]  border-black border-[2px]  flex-col flex-grow justify-center items-center bg-gradient-to-r from-[#3e158a] w-full  h-[120vw] md:h-[40vw] p-8">
+          <div className="flex rounded-[50px] overflow-hidden border-black border-[2px]  flex-col flex-grow justify-center items-center bg-gradient-to-r from-[#3e158a] w-full   md:h-[40vw] p-8">
             {" "}
             <h2 className="md:text-[3.5vw]    text-[6vw] text-[#DF6A50] font-[500]">
               Theme
@@ -94,7 +94,7 @@ export default function Prizes() {
             </h3>
           </div>
 
-          <div className="flex rounded-[50px] justify-center  border-black border-[2px]  flex-col flex-grow   bg-gradient-to-r from-[#3e158a] w-full  h-[120vw] md:h-[40vw] p-8">
+          <div className="flex rounded-[50px] overflow-hidden justify-center  border-black border-[2px]  flex-col flex-grow   bg-gradient-to-r from-[#3e158a] w-full   md:h-[40vw] p-8">
             <h2 className="md:text-[3.5vw]    text-[6vw] text-[#DF6A50] font-[500]">
               Rules
             </h2>
