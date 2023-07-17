@@ -26,7 +26,7 @@ export default function FAQ() {
               <>
                 To register, start off by clicking "Register" at the top of the website. After filling out that form, go to{' '}
                 <a style={{color: 'deepskyblue'}} href="https://unitedhacks23.devpost.com/">Devpost</a> and sign up there! Also, don't forget to join our{' '}
-                <a style={{color: 'deepskyblue'}} href="https://discord.gg/M3WYxsY25p">Discord</a>.
+                <a style={{color: 'deepskyblue'}} href="https://discord.gg/hackunited">Discord</a>.
               </>
           }, {
             question: 'What do I submit?',

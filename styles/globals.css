@@ -442,7 +442,11 @@ logo-slider:after {
   }
 }
 .zindex{
-  z-index: 999999999;
+  z-index: 9999999;
+}
+
+nav{
+zIndex: 99999999999;
 }
 .rounded-text {
   color : #400090;

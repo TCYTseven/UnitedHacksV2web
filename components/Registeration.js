@@ -1,8 +1,10 @@
 import { useState } from "react";
 import Loader from "./Loader";
 import { Checkbox } from "@nextui-org/react";
+import Link from "next/link";
 
 export default function Registeration({ reg }) {
+  
   const [isloading, setIsloading] = useState(false);
   const [prompt, setPrompt] = useState("");
   const toggle = () => {
@@ -29,7 +31,6 @@ export default function Registeration({ reg }) {
     if (isopen === true) {
       setIsopen(false);
     } else {
-      console.log("setted to open false");
       setIsopen(true);
     }
   };
@@ -92,7 +93,7 @@ export default function Registeration({ reg }) {
         <Loader message={prompt} />
       ) : (
         <>
-          <div
+          <section id="register"
             className="flex flex-col overflow-hidden fade
     items-center zindex register justify-center align-center bg-[#472da779] h-screen fixed w-full z-[999999]  "
           >
@@ -330,17 +331,17 @@ export default function Registeration({ reg }) {
                 <h3 className="text-gray-300  md:text-[1.1vw]  text-center mb-5 mt-5 text-[3vw]  ">
                   {" "}
                   ⚠️ In Order To Fully Register You Need To Be In Our{" "}
-                  <a
-                    href="https://discord.gg/M3WYxsY25p"
+                  <Link
+                    href="https://discord.gg/hackunited"
                     style={{
                       textDecoration: "underline",
                       color: "deepskyblue",
                     }}
                   >
                     Discord Server
-                  </a>{" "}
+                  </Link>{" "}
                   And You Need To Register On{" "}
-                  <a
+                  <Link
                     href="https://unitedhacks23.devpost.com/"
                     style={{
                       textDecoration: "underline",
@@ -348,7 +349,7 @@ export default function Registeration({ reg }) {
                     }}
                   >
                     Devpost
-                  </a>
+                  </Link>
                 </h3>
                 <button
                   type="submit"
@@ -358,7 +359,7 @@ export default function Registeration({ reg }) {
                 </button>
               </form>
             </div>
-          </div>
+          </section>
         </>
       )}
     </>
