@@ -54,9 +54,9 @@ export default function Hero() {
 
         </button>
         </Link>
-        <Link  target="_blank" rel="noopener noreferrer" href="mailto:humans@hackunited.org">
+        <Link  target="_blank" rel="noopener noreferrer" href="https://bank.hackclub.com/donations/start/hackunited">
         <button className="mx-0 md:mx-5 button inline-block md:w-auto w-full md:px-[3vw] px-8 py-3 md:py-[0.9vw] leading-none border rounded-full text-black bg-white text-xl border-black mt-4 lg:mt-0">
-          Support
+          Donate
 
         </button>
         </Link>
