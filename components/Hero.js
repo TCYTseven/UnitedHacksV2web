@@ -40,6 +40,26 @@ export default function Hero() {
             & More <br />
           </span>{" "}
         </div>
+        <div className="sm:flex-row items-center justify-center mt-[10vh] flex-col flex">
+        <Link  target="_blank" rel="noopener noreferrer" href="https://discord.gg/hackunited">
+        <button className="mx-0 md:mx-5 button inline-block md:w-auto w-full md:px-[3vw] px-8 py-3 md:py-[0.9vw] leading-none border rounded-full text-black bg-white text-xl border-black mt-4 lg:mt-0">
+          Discord
+
+        </button>
+        </Link>
+        <Link  target="_blank" rel="noopener noreferrer" href="https://unitedhacks23.devpost.com">
+        <button className=" mx-0 md:mx-5 button inline-block md:w-auto w-full md:px-[3vw] px-8 py-3 md:py-[0.9vw] leading-none border rounded-full text-black bg-white text-xl border-black mt-4 lg:mt-0">
+          Devpost
+
+        </button>
+        </Link>
+        <Link  target="_blank" rel="noopener noreferrer" href="mailto:humans@hackunited.org">
+        <button className="mx-0 md:mx-5 button inline-block md:w-auto w-full md:px-[3vw] px-8 py-3 md:py-[0.9vw] leading-none border rounded-full text-black bg-white text-xl border-black mt-4 lg:mt-0">
+          Support
+
+        </button>
+        </Link>
+        </div>
       </div>
     </div>
   );
