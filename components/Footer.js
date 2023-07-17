@@ -109,7 +109,7 @@ export default function Footer() {
                     <Link
                       target="_blank"
                       rel="noopener noreferrer"
-                      href="mailto:humans@hackunited.org"
+                      href="https://drive.google.com/file/d/1QVr7WmvAL858uL5APvj9X6Gnl0Jf-96u/view?usp=sharing"
                       className="hover:underline"
                     >
                       Sponsor Prospectus

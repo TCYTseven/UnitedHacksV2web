@@ -58,19 +58,10 @@ export default function Prizes() {
           <div className="flex rounded-[50px] overflow-hidden border-black border-[2px]  flex-col flex-grow justify-center items-center bg-gradient-to-r from-[#3e158a] w-full   md:h-[40vw] p-8">
             {" "}
             <h2 className="md:text-[3.5vw]    text-[6vw] text-[#DF6A50] font-[500]">
-              Workshops
+              Judges
             </h2>
             <h3 className="text-white   md:text-[1.5vw] text-center md:leading-normal leading-8  text-[3.5w]  break-normal">
-              United Hacks offers a variety of events throughout the hacking
-              period, providing hackers with opportunities to learn and take
-              breaks from constant coding. While the full workshop schedule will
-              be released on August 1st, 2023, you can expect guest speakers
-              from renowned FAANG companies, engaging games with exciting
-              prizes, discussions on the future of technology, and even chances
-              to enhance your professional digital presence. Our events go
-              beyond teaching basic mechanical skills; instead, our hosts, who
-              are either teenagers or industry professionals, will guide you on
-              developing a thoughtful and strategic mindset.
+            Our hackathon is judged by industry professionals, who will also critique your projects and provide feedback. Our judges come from various fields such as Engineering, Software Engineering, Business, or the medical industry. As the theme for this year's hackathon is mental health, we aim to evaluate all mental health-related projects with the assistance of a genuine medical professional. This expert will be able to assess the potential impact of the projects in making a difference. Even if you don't submit a project, you may see our judges around!
             </h3>
           </div>
 
