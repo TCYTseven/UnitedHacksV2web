@@ -80,7 +80,7 @@ export default function Sponsers() {
               <Image
                 alt="Hack United"
                 src={"/codiac.png"}
-                className="w-[6vw] h-[11vw] md:w-[11vw] md:h-[5vw] " width={200}
+                className="w-[6vw] h-[11vw] md:w-[3vw] md:h-[8vw] " width={200}
                 height={200}
               />
             </Link>
@@ -92,7 +92,7 @@ export default function Sponsers() {
               <Image
                 alt="Hack United"
                 src={"/echo3d.png"}
-                className="w-[6vw] h-[11vw] md:w-[11vw] md:h-[5vw] " width={200}
+                className="w-[6vw] h-[11vw] md:w-[11vw] md:h-[3vw] " width={200}
                 height={200}
               />
             </Link>
@@ -104,7 +104,7 @@ export default function Sponsers() {
               <Image
                 alt="Hack United"
                 src={"/fearedsudiotech.png"}
-                className="w-[6vw] h-[11vw] md:w-[11vw] md:h-[5vw] " width={200}
+                className="w-[6vw] h-[11vw] md:w-[11vw] md:h-[9vw] " width={200}
                 height={200}
               />
             </Link>
@@ -116,7 +116,7 @@ export default function Sponsers() {
               <Image
                 alt="Hack United"
                 src={"/flight.png"}
-                className="w-[6vw] h-[11vw] md:w-[11vw] md:h-[5vw] " width={200}
+                className="w-[6vw] h-[11vw] md:w-[11vw] md:h-[9vw] " width={200}
                 height={200}
               />
             </Link>
@@ -128,7 +128,7 @@ export default function Sponsers() {
               <Image
                 alt="Hack United"
                 src={"/interviewcake.png"}
-                className="w-[6vw] h-[11vw] md:w-[11vw] md:h-[5vw] " width={200}
+                className="w-[6vw] h-[11vw] md:w-[11vw] md:h-[3vw] " width={200}
                 height={200}
               />
             </Link>
@@ -203,7 +203,7 @@ export default function Sponsers() {
               <Image
                 alt="Hack United"
                 src={"/codiac.png"}
-                className="w-[6vw] h-[11vw] md:w-[11vw] md:h-[5vw] " width={200}
+                className="w-[6vw] h-[11vw] md:w-[3vw] md:h-[8vw] " width={200}
                 height={200}
               />
             </Link>
@@ -215,7 +215,7 @@ export default function Sponsers() {
               <Image
                 alt="Hack United"
                 src={"/echo3d.png"}
-                className="w-[6vw] h-[11vw] md:w-[11vw] md:h-[5vw] " width={200}
+                className="w-[6vw] h-[11vw] md:w-[11vw] md:h-[3vw] " width={200}
                 height={200}
               />
             </Link>
@@ -227,7 +227,7 @@ export default function Sponsers() {
               <Image
                 alt="Hack United"
                 src={"/xyz.png"}
-                className="w-[6vw] h-[11vw] md:w-[11vw] md:h-[5vw] " width={200}
+                className="w-[6vw] h-[11vw] md:w-[11vw] md:h-[7vw] " width={200}
                 height={200}
               />
             </Link>
@@ -239,7 +239,7 @@ export default function Sponsers() {
               <Image
                 alt="Hack United"
                 src={"/wolfram.png"}
-                className="w-[6vw] h-[11vw] md:w-[11vw] md:h-[5vw] " width={200}
+                className="w-[6vw] h-[11vw] md:w-[11vw] md:h-[4vw] " width={200}
                 height={200}
               />
             </Link>
@@ -251,7 +251,7 @@ export default function Sponsers() {
               <Image
                 alt="Hack United"
                 src={"/vueschool.png"}
-                className="w-[6vw] h-[11vw] md:w-[11vw] md:h-[5vw] " width={200}
+                className="w-[6vw] h-[11vw] md:w-[11vw] md:h-[4vw] " width={200}
                 height={200}
               />
             </Link>
@@ -263,7 +263,7 @@ export default function Sponsers() {
               <Image
                 alt="Hack United"
                 src={"/verbwire.png"}
-                className="w-[6vw] h-[11vw] md:w-[11vw] md:h-[5vw] " width={200}
+                className="w-[6vw] h-[11vw] md:w-[11vw] md:h-[3vw] " width={200}
                 height={200}
               />
             </Link>
@@ -275,7 +275,7 @@ export default function Sponsers() {
               <Image
                 alt="Hack United"
                 src={"/swishswoosh.png"}
-                className="w-[6vw] h-[11vw] md:w-[11vw] md:h-[5vw] " width={200}
+                className="w-[6vw] h-[11vw] md:w-[11vw] md:h-[3vw] " width={200}
                 height={200}
               />
             </Link>
@@ -330,7 +330,7 @@ export default function Sponsers() {
               <Image
                 alt="Hack United"
                 src={"/codiac.png"}
-                className="w-[6vw] h-[11vw] md:w-[11vw] md:h-[5vw] " width={200}
+                className="w-[6vw] h-[11vw] md:w-[3vw] md:h-[8vw] " width={200}
                 height={200}
               />
             </Link>
@@ -342,7 +342,7 @@ export default function Sponsers() {
               <Image
                 alt="Hack United"
                 src={"/echo3d.png"}
-                className="w-[6vw] h-[11vw] md:w-[11vw] md:h-[5vw] " width={200}
+                className="w-[6vw] h-[11vw] md:w-[11vw] md:h-[3vw] " width={200}
                 height={200}
               />
             </Link>
@@ -354,7 +354,7 @@ export default function Sponsers() {
               <Image
                 alt="Hack United"
                 src={"/xyz.png"}
-                className="w-[6vw] h-[11vw] md:w-[11vw] md:h-[5vw] " width={200}
+                className="w-[6vw] h-[11vw] md:w-[11vw] md:h-[7vw] " width={200}
                 height={200}
               />
             </Link>
@@ -366,7 +366,7 @@ export default function Sponsers() {
               <Image
                 alt="Hack United"
                 src={"/wolfram.png"}
-                className="w-[6vw] h-[11vw] md:w-[11vw] md:h-[5vw] " width={200}
+                className="w-[6vw] h-[11vw] md:w-[11vw] md:h-[4vw] " width={200}
                 height={200}
               />
             </Link>
@@ -378,7 +378,7 @@ export default function Sponsers() {
               <Image
                 alt="Hack United"
                 src={"/vueschool.png"}
-                className="w-[6vw] h-[11vw] md:w-[11vw] md:h-[5vw] " width={200}
+                className="w-[6vw] h-[11vw] md:w-[11vw] md:h-[4vw] " width={200}
                 height={200}
               />
             </Link>
@@ -390,7 +390,7 @@ export default function Sponsers() {
               <Image
                 alt="Hack United"
                 src={"/verbwire.png"}
-                className="w-[6vw] h-[11vw] md:w-[11vw] md:h-[5vw] " width={200}
+                className="w-[6vw] h-[11vw] md:w-[11vw] md:h-[3vw] " width={200}
                 height={200}
               />
             </Link>
@@ -402,7 +402,7 @@ export default function Sponsers() {
               <Image
                 alt="Hack United"
                 src={"/swishswoosh.png"}
-                className="w-[6vw] h-[11vw] md:w-[11vw] md:h-[5vw] " width={200}
+                className="w-[6vw] h-[11vw] md:w-[11vw] md:h-[3vw] " width={200}
                 height={200}
               />
             </Link>
@@ -452,7 +452,7 @@ export default function Sponsers() {
               <Image
                 alt="Hack United"
                 src={"/codiac.png"}
-                className="w-[6vw] h-[11vw] md:w-[11vw] md:h-[5vw] " width={200}
+                className="w-[6vw] h-[11vw] md:w-[3vw] md:h-[8vw] " width={200}
                 height={200}
               />
             </Link>
@@ -464,7 +464,7 @@ export default function Sponsers() {
               <Image
                 alt="Hack United"
                 src={"/echo3d.png"}
-                className="w-[6vw] h-[11vw] md:w-[11vw] md:h-[5vw] " width={200}
+                className="w-[6vw] h-[11vw] md:w-[11vw] md:h-[3vw] " width={200}
                 height={200}
               />
             </Link>
@@ -476,7 +476,7 @@ export default function Sponsers() {
               <Image
                 alt="Hack United"
                 src={"/xyz.png"}
-                className="w-[6vw] h-[11vw] md:w-[11vw] md:h-[5vw] " width={200}
+                className="w-[6vw] h-[11vw] md:w-[11vw] md:h-[7vw] " width={200}
                 height={200}
               />
             </Link>
@@ -488,7 +488,7 @@ export default function Sponsers() {
               <Image
                 alt="Hack United"
                 src={"/wolfram.png"}
-                className="w-[6vw] h-[11vw] md:w-[11vw] md:h-[5vw] " width={200}
+                className="w-[6vw] h-[11vw] md:w-[11vw] md:h-[4vw] " width={200}
                 height={200}
               />
             </Link>
@@ -500,7 +500,7 @@ export default function Sponsers() {
               <Image
                 alt="Hack United"
                 src={"/vueschool.png"}
-                className="w-[6vw] h-[11vw] md:w-[11vw] md:h-[5vw] " width={200}
+                className="w-[6vw] h-[11vw] md:w-[11vw] md:h-[4vw] " width={200}
                 height={200}
               />
             </Link>
@@ -512,7 +512,7 @@ export default function Sponsers() {
               <Image
                 alt="Hack United"
                 src={"/verbwire.png"}
-                className="w-[6vw] h-[11vw] md:w-[11vw] md:h-[5vw] " width={200}
+                className="w-[6vw] h-[11vw] md:w-[11vw] md:h-[3vw] " width={200}
                 height={200}
               />
             </Link>
@@ -524,7 +524,7 @@ export default function Sponsers() {
               <Image
                 alt="Hack United"
                 src={"/swishswoosh.png"}
-                className="w-[6vw] h-[11vw] md:w-[11vw] md:h-[5vw] " width={200}
+                className="w-[6vw] h-[11vw] md:w-[11vw] md:h-[3vw] " width={200}
                 height={200}
               />
             </Link>
