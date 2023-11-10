@@ -7,9 +7,6 @@ export default function Navbar() {
 
   const [backgroundTransparacy, setBackgroundTransparacy] = useState(0);
 
-  const toggle=()=>{
-    document.getElementsByClassName("register")[0].style.display="block";
-  }
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
     var navbar = document.querySelectorAll(".nav-links");
@@ -52,17 +49,10 @@ export default function Navbar() {
   return (
     <nav
       className={`${
-          backgroundTransparacy === 0 ? "notnavbg" : "navbg"
-        } flex fade top-0 sticky items-center justify-between flex-wrap px-3 py-3`}
+          backgroundTransparacy === 0 ? "notnavbg" : ""
+        } flex fade top-0 sticky items-center justify-between flex-wrap `}
     >
-      <div className="flex items-center flex-shrink-0 text-white mr-6">
-        <Image alt="Hack United"
-          src={"/navbarlogo.png"}
-          width={300}
-          height={120}
-          className="w-[160px] h-[80px]"
-        />
-      </div>
+    
       <div className="block lg:hidden">
         <button
           className="flex items-center px-3 py-2 rounded"
@@ -102,9 +92,15 @@ export default function Navbar() {
       <div
         className={`${
           menuVisible ? "fade scale" : "hidden"
-        }  w-full text-center block flex-grow lg:flex lg:items-center lg:w-auto`}
+        }   w-full text-center block flex-grow lg:flex  lg:items-center lg:w-auto`}
       >
-        <div className="text-xl nav-mid text-white lg:flex-grow">
+        <div className="text-xl flex flex-row slidd px-3 py-3 mx-auto rounded-br-3xl rounded-bl-3xl w-auto nav-mid navbg text-white  justify-center">
+        <Image alt="Hack United"
+          src={"/earth.png"}
+          width={100}
+          height={100}
+          className=""
+        />
           <Link
             scroll={false}
             className="block nav-links mt-4 lg:inline-block lg:mt-0 nav-link-ltr mr-14"
@@ -129,15 +125,17 @@ export default function Navbar() {
           <Link
             scroll={false}
             className="block mt-4 lg:inline-block lg:mt-0 nav-links nav-link-ltr"
+            href="#signup"
+          >
+            Register
+          </Link>
+          <Link
+            scroll={false}
+            className="block mt-4 lg:inline-block lg:mt-0 nav-links nav-link-ltr"
             href="#sponsors"
           >
             Sponsors
           </Link>
-        </div>
-        <div className="flex-col flex">
-          <button onClick={toggle} className="inline-block button px-12 py-4 leading-none border rounded-full text-black bg-[#DF6A50] text-xl border-black mt-4 lg:mt-0">
-            Register
-          </button>
         </div>
       
       </div>

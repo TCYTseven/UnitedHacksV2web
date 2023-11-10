@@ -32,10 +32,10 @@
   overflow-y: scroll;
 }
 body {
-  background-color: linear-gradient(145deg, rgba(0,0,0,1) 0%, rgba(55,0,171,1) 100%);
+  background-color: black;
 }
 .form{
-   background: linear-gradient(145deg, rgba(0,0,0,1) 0%, rgba(55,0,171,1) 100%);
+   background: black;
 }
 
 .nav-mid a{
@@ -201,7 +201,7 @@ nav{
   right: 0;
   left: 0;
   top: 0;
-  animation: slide 6s  infinite;
+  animation: slide 9s  infinite;
   animation-delay: 2s;
   font-weight: bold;
 }
@@ -215,7 +215,9 @@ nav{
   animation: spin 20s infinite linear ;
 }
 
-
+.slidd{
+  animation: toptobottom 1s ease-in-out, fade 1s ease-in-out;
+}
 
 html {
   scroll-behavior: smooth;
@@ -311,6 +313,7 @@ html {
   0%{
     transform: translateY(100px);
   }
+  
   100%{
     transform: translateY(0px);
 
@@ -475,7 +478,7 @@ zIndex: 99999999999;
 }
 .navbg{
   transition: all 0.5s;
-  background-color: #5608A5;
+  background-color: #390170;
 }
 .notnavbg{
   transition: all 0.5s;

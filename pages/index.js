@@ -1,6 +1,7 @@
 import Expect from "@/components/Expect";
 import Explore from "@/components/Explore";
 import FAQ from "@/components/FAQ";
+import SignUp from "@/components/SignUp";
 import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
@@ -93,6 +94,20 @@ if(hasregistered===true){
         </p>
       </div>
       <div className="mx-auto px-2 my-auto  w-full md:w-[75%]  justify-center">
+        <SignUp />
+      </div>
+      <div className="marquee">
+        <p
+          className="text-[#400090]"
+          style={{ fontFamily: `${ibmPlexMono.style.fontFamily}` }}
+        >
+          1 0 0 1 0 1 0 1 0 1 0 1 1 0 0 1 0 1 0 1 0 1 0 1 1 0 0 1 0 1 0 1 0 1 0
+          1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 1 0 0 1 0 1 0 1 0 1 0 1 1 0 0 1 0 1 0 1
+          0 1 0 1 1 0 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 0 1 0 1
+          0 1 0{" "}
+        </p>
+      </div>
+      <div className="mx-auto px-2 my-auto  w-full md:w-[75%]  justify-center">
         <FAQ />
       </div>
       <div className="marquee">
@@ -121,12 +136,6 @@ if(hasregistered===true){
         </p>
       </div>
       <Footer/>
-      
-
     </>
-
-      
-     
-    
   );
 }

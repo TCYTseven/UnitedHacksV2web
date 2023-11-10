@@ -32,12 +32,13 @@ export default function Hero() {
         </div>
         <div
           style={{ fontFamily: `${ibmPlexMono.style.fontFamily}` }}
-          className="hackunited md:mt-0 mt-[-3vw] scroller md:text-[1.8vw] text-[4vw] text-white"
+          className="  md:mt-0 mt-[-3vw] scroller md:text-[1.8vw] text-[4vw] text-white"
         >
           <span>
+          5.19.23 - 5.20.23 <br />
             Workshops <br />
             Prizes <br />
-            Learning <br />
+            {/* Learning <br /> */}
             & More <br />
           </span>{" "}
         </div>
@@ -56,7 +57,7 @@ export default function Hero() {
         </Link>
         <Link  target="_blank" rel="noopener noreferrer" href="https://bank.hackclub.com/donations/start/hackunited">
         <button className="mx-0 md:mx-5 button inline-block md:w-auto w-full md:px-[3vw] px-8 py-3 md:py-[0.9vw] leading-none border rounded-full text-black bg-white text-xl border-black mt-4 lg:mt-0">
-          Donate
+          Website
 
         </button>
         </Link>
