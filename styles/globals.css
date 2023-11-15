@@ -5,7 +5,10 @@
   font-family: 'Sava-Pro';
   src: url('../public/savapro.otf') format('truetype');
 }
-
+::-webkit-scrollbar {
+  width: 0px;
+  background-color: #535353;
+}
 /* utils */
 .text-savapro{
   font-family: Sava-Pro;
@@ -21,11 +24,6 @@
 }
 .popfromleft{
   animation: popfromleft ease-in-out 0.5s;
-}
-:root{
-  background: linear-gradient(145deg, rgba(0,0,0,1) 0%, rgba(55,0,171,1) 100%);
-  background-size: 100%;
-
 }
 .register{
   display: none;
@@ -48,10 +46,10 @@ body {
 }
 .nav-mid a:hover{
   opacity: 1;
-  color: #DF6A50;
+  color: white;
 }
-.activeLink{
-  color: #DF6A50;
+.activelink{
+  color: white;
 
 }
 .nav-mid a::before{
@@ -59,7 +57,7 @@ body {
   height: 5px;
   content: "";
   position: absolute;
-  background-color: #DF6A50;
+  background-color: white;
 }
 
 .nav-link-ltr::before {
@@ -92,60 +90,34 @@ body {
 }
 .hackunited{
 animation: hackunited 0.5s ease-in-out,fade 0.5s ease-in-out;
+letter-spacing: 5px;
 }
 
 .explore-heading{
-  margin-top: 20px;
-
-  background-image: linear-gradient(
-    90deg,
-    #7000FF, #7A31C2, #5B1C99
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  margin-top: 10px;color: white;
+  letter-spacing: 5px;
+  text-transform: uppercase;
 }
 .expect-heading{
-  margin-top: 20px;
-
-  background-image: linear-gradient(
-    90deg,
-    #5C01CF, #B266FF
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-
+  margin-top: 10px;color: white;
+  text-transform: uppercase;
+  letter-spacing: 5px;
 }
 .prizes-heading{
-  margin-top: 20px;
-
-  background-image: linear-gradient(
-    90deg,
-    #420196, #B266FF
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-
+  margin-top: 10px;color: white;
+  text-transform: uppercase;
+  letter-spacing: 5px;
 }
 .faq-heading{
-  margin-top: 20px;
-  background-image: linear-gradient(
-    90deg,
-    #420196, #B266FF
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-
+  margin-top: 10px;color: white;
+  text-transform: uppercase;
+  letter-spacing: 5px;
 }
 .sponsers-heading{
-  margin-top: 20px;
-
-  background-image: linear-gradient(
-    90deg,
-    #400090, #B266FF
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-
+  margin-top: 10px;
+  letter-spacing: 5px;
+  color: white;
+  text-transform: uppercase;
 }
 nav{
   z-index: 99999;
@@ -221,17 +193,6 @@ nav{
 
 html {
   scroll-behavior: smooth;
-}
-::-webkit-scrollbar { 
-  width: 10px;
-}
-
-::-webkit-scrollbar-thumb {
-  background: linear-gradient(
-    180deg,
-    rgb(118, 65, 242) 0%,
-    rgba(0, 0, 0, 0) 100%
-  );
 }
 
 .circle1{
@@ -349,10 +310,55 @@ html {
   }
 }  
 .bottomtotop{
-  animation: bottomtotop 2s ease-in-out;
+  animation: bottomtotop 1s ease-in-out;
+}
+.toptobottom{
+  animation: toptobottom 1s ease-in-out;
+}
+@keyframes poptotop {
+  0%{
+    transform: translateY(0px);
+  }
+  
+  100%{
+    transform: translateY(-100px);
+
+  }
+}
+@media (max-width: 746px){
+  @keyframes poptotop {
+    0%{
+      transform: translateY(0px);
+    }
+    
+    100%{
+      transform: translateY(-200px);
+  
+    }
+  }
+  @keyframes toptobottom {
+    0%{
+      transform: translateY(-200px);
+    }
+    
+    100%{
+      transform: translateY(50px);
+  
+    }
+  }  
+  .toptobottom{
+    animation: toptobottom 1s ease-in-out ;
+    transform: translateY(50px);
+  }
+}
+  
+.poptotop{
+  animation: poptotop 1s ease-in-out ;
+  transform: translateY(-100px);
 }
 .marquee{
   display: none;
+  overflow: hidden;
 }
 .marquee.active {
   display: block;
@@ -478,7 +484,7 @@ zIndex: 99999999999;
 }
 .navbg{
   transition: all 0.5s;
-  background-color: #390170;
+  background-color: #2b0055;
 }
 .notnavbg{
   transition: all 0.5s;

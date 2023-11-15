@@ -24,10 +24,10 @@ export default function Footer() {
                     className="absolute mt-[-5px] mr-1  "
                     
                   />
-                  <h1 className="text-3xl ml-[95px] md:ml-[60px]  md:text-center text-[#DF6A50] hackunited text-savapro">
+                  <h1 className="text-3xl ml-[95px] md:ml-[80px]  md:text-center text-[#DF6A50] hackunited text-savapro">
                     HACK
                   </h1>
-                  <h1 className="text-xl ml-[100px] md:ml-[60px]  md:text-center text-[#DF6A50] hackunited text-savapro">
+                  <h1 className="text-xl ml-[100px] md:ml-[80px]  md:text-center text-[#DF6A50] hackunited text-savapro">
                     UNITED
                   </h1>
               </div>

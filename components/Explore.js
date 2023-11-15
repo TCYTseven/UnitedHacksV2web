@@ -3,47 +3,51 @@ import React from "react";
 import { useEffect } from "react";
 
 export default function Explore() {
-  useEffect(() => {
-    function reveal() {
-      var revealed = document.querySelectorAll(".marquee");
-      
-      var wheel = document.querySelectorAll(".wheel");
-      var reveals = document.querySelectorAll(".heading");
-
-      for (var i = 0; i < reveals.length; i++) {
-        var windowHeight = window.innerHeight;
-        var elementTop = reveals[i].getBoundingClientRect().top;
-        var elementVisible = 150;
-
-        if (elementTop < windowHeight - elementVisible) {
-          reveals[i].classList.add("active");
-          revealed[i].classList.add("active");
-          
-        }
-        else{
+  if(typeof window !== "undefined"){
+    useEffect(() => {
+      function reveal() {
         
-          revealed[i].classList.remove("active");
-
+        var revealed = document.querySelectorAll(".marquee");
+        
+        var wheel = document.querySelectorAll(".wheel");
+        var reveals = document.querySelectorAll(".heading");
+  
+        for (var i = 0; i < reveals.length; i++) {
+          var windowHeight = window.innerHeight;
+          var elementTop = reveals[i].getBoundingClientRect().top;
+          var elementVisible = 150;
+  
+          if (elementTop < windowHeight - elementVisible) {
+            reveals[i].classList.add("active");
+            revealed[i]?.classList.add("active");
+            
+          }
+          else{
+          
+            revealed[i]?.classList.remove("active");
+  
+          }
+         
         }
-       
+        for (var i = 0; i < wheel.length; i++) {
+          var windowHeight = window.innerHeight;
+          var elementTop = wheel[i].getBoundingClientRect().top;
+          var elementVisible = 150;
+  
+          if (elementTop < windowHeight - elementVisible) {
+            wheel[i].classList.add("active");
+          }
+          else{
+            wheel[i].classList.remove("active");
+  
+          }
+        }
       }
-      for (var i = 0; i < wheel.length; i++) {
-        var windowHeight = window.innerHeight;
-        var elementTop = wheel[i].getBoundingClientRect().top;
-        var elementVisible = 150;
-
-        if (elementTop < windowHeight - elementVisible) {
-          wheel[i].classList.add("active");
-        }
-        else{
-          wheel[i].classList.remove("active");
-
-        }
-      }
-    }
-
-    window.addEventListener("scroll", reveal);
-  }, []);
+  
+      window.addEventListener("scroll", reveal);
+    }, []);
+    
+  }
 
   return (
     <div className="min-h-screen mt-3 mb-24">
@@ -59,7 +63,7 @@ export default function Explore() {
       <div className="md:mt-24 mt-5 flex-col flex ">
         <div className="flex flex-row justify-center  flex-wrap p-5 mb-[50px]">
           <div className="flex md:order-none order-1 md:mt-0 mt-5 md:text-left text-center justify-center flex-col w-full md:w-[60%] mr-0 md:mr-[5vw]  ">
-            <h2 className="md:text-[2vw] text-[6vw] text-[#DF6A50] font-[500]">
+            <h2 className="md:text-[2vw] text-[6vw] text-[#4f00b1] font-[500]">
               Learn More than Just Coding
             </h2>
             <h3 className="text-white  md:text-[1vw] text-center md:leading-normal leading-8  text-[3.5vw] md:text-justify break-normal ">
@@ -1301,7 +1305,7 @@ export default function Explore() {
             </div>
           </div>
           <div className="flex md:mt-0 mt-5  md:text-left text-center justify-center flex-col w-full md:w-[60%] ml-0 md:ml-[5vw]  ">
-            <h2 className="md:text-[2vw] text-[6vw] text-[#DF6A50] font-[500]">
+            <h2 className="md:text-[2vw] text-[6vw] text-[#4f00b1] font-[500]">
               Innovate to Win Prizes
             </h2>
             <h3 className="text-white md:text-[1vw] text-center md:leading-normal leading-8  text-[3.5vw] md:text-justify break-normal ">
@@ -1311,7 +1315,7 @@ export default function Explore() {
         </div>
         <div className="flex flex-row justify-center  flex-wrap p-5 mb-[50px]">
           <div className="flex md:order-none order-1 md:mt-0 mt-5 md:text-left text-center justify-center flex-col w-full md:w-[60%] mr-0 md:mr-[5vw]  ">
-            <h2 className="md:text-[2vw] text-[6vw] text-[#DF6A50] font-[500]">
+            <h2 className="md:text-[2vw] text-[6vw] text-[#4f00b1] font-[500]">
             Collaborate With Others
             </h2>
             <h3 className="text-white  md:text-[1vw] text-center md:leading-normal leading-8  text-[3.5vw] md:text-justify break-normal ">

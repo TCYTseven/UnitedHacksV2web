@@ -35,8 +35,8 @@ export default function Expect() {
             What To Expect?
           </h1>
         </div>
-        <div className="md:mt-24  md:ml-0 justify-center mt-0 flex-col flex  space-x-0 md:space-x-[30vw]">
-          <div className="flex circle circle1 w-[85vw] h-[85vw] md:w-[39vw] md:h-[39vw] rounded-full text-center items-center justify-center  flex-col">
+        <div className="md:mt-24  md:ml-0 justify-center  mt-0 flex-col flex  space-x-0 md:space-x-[30vw]">
+          <div className="flex circle circle1 w-[85vw] h-[85vw] md:w-[29vw] md:h-[29vw] rounded-full text-center items-center justify-center  flex-col">
             <h2 className="md:text-[2.2vw]  w-[80%]  text-[5vw] text-[#DF6A50] font-[500]">
               Networking Opportunities
             </h2>
@@ -46,8 +46,8 @@ export default function Expect() {
               collaborations and career opportunities at our hackathon.
             </h3>
           </div>
-          <div className="flex ml-0 md:ml-16 md:mb-32 lg:mb-0 lg:ml-0 mb-0 circle circle2 md:h-[39vw] rounded-full md:mt-[-15vh] text-center items-center justify-center w-[85vw] h-[85vw] md:w-[39vw] flex-col">
-            <h2 className="md:text-[2.2vw] w-[80%] text-[6vw] text-[#DF6A50] font-[500]">
+          <div className="flex ml-0 md:ml-16 md:mb-32 lg:mb-0 lg:ml-0 mb-0 circle circle2 md:h-[29vw] rounded-full md:mt-[-15vh] text-center items-center justify-center w-[85vw] h-[85vw] md:w-[29vw] flex-col">
+            <h2 className="md:text-[2.2vw] w-[80%] text-[6vw] text-center text-[#DF6A50] font-[500]">
               Project Showcase
             </h2>
             <h3 className="text-white mt-1 w-[80%] md:text-[1vw] text-center md:leading-normal leading-8  text-[3vw]  break-normal  ">
@@ -58,7 +58,7 @@ export default function Expect() {
           </div>
         </div>
         <div className=" flex-col  md:ml-0 flex  space-x-0 md:space-x-[30vw]">
-          <div className="flex circle circle3 md:h-[39vw] rounded-full md:mt-[-25vh] text-center items-center justify-center w-[85vw] h-[85vw] md:w-[39vw] flex-col">
+          <div className="flex circle circle3 md:h-[29vw] rounded-full md:mt-[-25vh] text-center items-center justify-center w-[85vw] h-[85vw] md:w-[29vw] flex-col">
             <h2 className="md:text-[2.2vw] w-[80%] text-[6vw] text-[#DF6A50] font-[500]">
               Fascinating Prizes{" "}
             </h2>
@@ -68,7 +68,7 @@ export default function Expect() {
               dedication at our hackathon.
             </h3>
           </div>
-          <div className="flex circle circle4 md:h-[39vw] rounded-full md:mt-[-15vh] text-center items-center justify-center w-[85vw] h-[85vw] md:w-[39vw] flex-col">
+          <div className="flex circle circle4 md:h-[29vw] rounded-full md:mt-[-15vh] text-center items-center justify-center w-[85vw] h-[85vw] md:w-[29vw] flex-col">
             <h2 className="md:text-[2.2vw] w-[80%] text-[6vw] text-[#DF6A50] font-[500]">
               Engaging Workshops{" "}
             </h2>

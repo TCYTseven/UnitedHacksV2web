@@ -9,7 +9,7 @@ export default function FAQ() {
     <div id="signup" className="py-5 justify-center space-y-5 items-center ">
     <div className="text heading"> 
         <h1
-          className=" text-center md:text-[4vw] text-[10vw] faq-heading text text--blocks"
+          className=" text-center md:text-[4vw] text-[10vw] faq-heading heading text text--blocks"
           data-scroll="out"
           data-splitting=""
         >

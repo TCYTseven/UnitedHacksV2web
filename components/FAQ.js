@@ -63,14 +63,14 @@ export default function FAQ() {
     <div id="faq" className="min-h-screen justify-center items-center mt-3">
     <div className="text heading"> 
         <h1
-          className=" text-center md:text-[4vw] text-[10vw] faq-heading text text--blocks"
+          className=" text-center md:text-[4vw] text-[10vw] faq-heading heading text text--blocks"
           data-scroll="out"
           data-splitting=""
         >
           Frequently Asked
         </h1>
       </div>
-      <Accordion className='mt-10 p-5 text-white bg-gradient-to-r from-indigo-800'>
+      <Accordion className='mb-10 p-5 text-white bg-black'>
       {faqs.map((faq, index) => (
         <AccordionItem  key={index}>
           <AccordionItemButton >{faq.question}</AccordionItemButton>

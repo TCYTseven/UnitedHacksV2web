@@ -45,12 +45,47 @@ export default function Navbar() {
   const toggleMenu = () => {
     setMenuVisible(!menuVisible);
   };
+  const [show, setShow] = useState(true);
+  const [prevScrollPos, setPrevScrollPos] = useState(0);
+
+  useEffect(() => {
+    const sections = document.querySelectorAll("section");
+    const navLi = document.querySelectorAll("nav ul li");
+    window.onscroll = () => {
+      var current = "";
+
+      sections.forEach((section) => {
+        const sectionTop = section.offsetTop;
+        if (pageYOffset >= sectionTop - 60) {
+          current = section.getAttribute("id");
+        }
+      });
+
+      navLi.forEach((li) => {
+        li.classList.remove("activelink");
+        if (li.classList.contains(current)) {
+          li.classList.add("activelink");
+        }
+      });
+    };
+
+    const handleScroll = () => {
+      const currentScrollPos = window.pageYOffset;
+      const visible = prevScrollPos > currentScrollPos || currentScrollPos < 10;
+      setShow(visible);
+      setPrevScrollPos(currentScrollPos);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [prevScrollPos]);
 
   return (
     <nav
       className={`${
           backgroundTransparacy === 0 ? "notnavbg" : ""
-        } flex fade top-0 sticky items-center justify-between flex-wrap `}
+        } ${
+          show ? "toptobottom " : "poptotop   "
+        }  flex fade top-0 sticky items-center  justify-between flex-wrap `}
     >
     
       <div className="block lg:hidden">
@@ -92,9 +127,9 @@ export default function Navbar() {
       <div
         className={`${
           menuVisible ? "fade scale" : "hidden"
-        }   w-full text-center block flex-grow lg:flex  lg:items-center lg:w-auto`}
+        }   w-full text-center block flex-grow lg:flex md:relative  fixed lg:items-center lg:w-auto`}
       >
-        <div className="text-xl flex flex-row slidd px-3 py-3 mx-auto rounded-br-3xl rounded-bl-3xl w-auto nav-mid navbg text-white  justify-center">
+        <div className="text-xl flex flex-row md:flex-nowrap flex-wrap slidd px-3 py-3 mx-auto rounded-br-3xl rounded-bl-3xl w-auto nav-mid navbg text-white  md:justify-center">
         <Image alt="Hack United"
           src={"/earth.png"}
           width={100}

@@ -13,20 +13,8 @@ export default function Hero() {
           height={400}
         />
         <div className="flex flex-row">
-          <svg
-            className="mr-5 md:w-[2.5vw] md:mt-0 mt-[-3vw] w-[5vw] popfromleft fade"
-            width="50"
-            height="70"
-            viewBox="0 -10 42 44"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M0.89 41.01V29.11L14.66 24.86L26.22 20.95V20.61L14.66 16.7L0.89 12.45V0.549996L41.01 15.85V25.71L0.89 41.01Z"
-              fill="#5608A5"
-            />
-          </svg>
-          <h1 className="md:text-[4vw] text-[9vw] mr-5 text-[#DF6A50] hackunited text-savapro">
+         
+          <h1 className="md:text-[4vw] text-[9vw] font-bold text-[#400090] hackunited ">
              UNITED HACKS
           </h1>
         </div>
