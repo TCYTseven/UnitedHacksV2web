@@ -30,7 +30,8 @@
   overflow-y: scroll;
 }
 body {
-  background-color: black;
+  color: black;
+  background-color: white;
 }
 .form{
    background: black;
@@ -94,29 +95,29 @@ letter-spacing: 5px;
 }
 
 .explore-heading{
-  margin-top: 10px;color: white;
+  margin-top: 10px;color: #400090;
   letter-spacing: 5px;
   text-transform: uppercase;
 }
 .expect-heading{
-  margin-top: 10px;color: white;
+  margin-top: 10px;color: #400090;
   text-transform: uppercase;
   letter-spacing: 5px;
 }
 .prizes-heading{
-  margin-top: 10px;color: white;
+  margin-top: 10px;color: #400090;
   text-transform: uppercase;
   letter-spacing: 5px;
 }
 .faq-heading{
-  margin-top: 10px;color: white;
+  margin-top: 10px;color: #400090;
   text-transform: uppercase;
   letter-spacing: 5px;
 }
 .sponsers-heading{
   margin-top: 10px;
   letter-spacing: 5px;
-  color: white;
+  color: #400090;
   text-transform: uppercase;
 }
 nav{
@@ -196,7 +197,8 @@ html {
 }
 
 .circle1{
-  background-image: url("../public/circle1.png");
+  border: solid black;
+  
   background-size: 100%;
   background-position: 0.52vw 0.52vw;
   
@@ -484,7 +486,7 @@ zIndex: 99999999999;
 }
 .navbg{
   transition: all 0.5s;
-  background-color: #2b0055;
+  background-color: black;
 }
 .notnavbg{
   transition: all 0.5s;

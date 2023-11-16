@@ -70,7 +70,7 @@ export default function FAQ() {
           Frequently Asked
         </h1>
       </div>
-      <Accordion className='mb-10 p-5 text-white bg-black'>
+      <Accordion className='mb-10 p-5 text-black '>
       {faqs.map((faq, index) => (
         <AccordionItem  key={index}>
           <AccordionItemButton >{faq.question}</AccordionItemButton>

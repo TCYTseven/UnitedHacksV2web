@@ -20,7 +20,7 @@ export default function Hero() {
         </div>
         <div
           style={{ fontFamily: `${ibmPlexMono.style.fontFamily}` }}
-          className="  md:mt-0 mt-[-3vw] scroller md:text-[1.8vw] text-[4vw] text-white"
+          className="  md:mt-0 mt-[-3vw] scroller md:text-[1.8vw] text-[4vw] text-black"
         >
           <span>
           5.19.23 - 5.20.23 <br />
