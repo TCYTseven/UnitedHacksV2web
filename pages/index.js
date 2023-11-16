@@ -124,17 +124,7 @@ if(hasregistered===true){
       <div className="mx-auto px-2 my-auto justify-center">
         <Sponsers />
       </div>
-      <div className="marquee ">
-        <p
-          className="text-[#400090]"
-          style={{ fontFamily: `${ibmPlexMono.style.fontFamily}` }}
-        >
-          1 0 0 1 0 1 0 1 0 1 0 1 1 0 0 1 0 1 0 1 0 1 0 1 1 0 0 1 0 1 0 1 0 1 0
-          1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 1 0 0 1 0 1 0 1 0 1 0 1 1 0 0 1 0 1 0 1
-          0 1 0 1 1 0 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 0 1 0 1
-          0 1 0{" "}
-        </p>
-      </div>
+     
       <Footer/>
     </>
   );
