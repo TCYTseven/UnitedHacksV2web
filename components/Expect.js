@@ -41,7 +41,7 @@ export default function Expect() {
             <h2 className="md:text-[2.5vw]  w-[80%]  text-[5vw] text-[#DF6A50] font-[500]">
               Networking Opportunities
             </h2>
-            <h3 className="text-white mt-1 w-[80%] md:text-[1.2vw] text-center md:leading-normal leading-8  text-[3vw]  break-normal ">
+            <h3 className="text-white mt-1 w-[80%] md:text-[1.2vw] text-center md:leading-normal leading-8  text-[3.5vw]  break-normal ">
               Network with industry professionals, mentors, and fellow
               participants, leveraging valuable connections for future
               collaborations and career opportunities at our hackathon.
@@ -52,7 +52,7 @@ export default function Expect() {
             <h2 className="md:text-[2.5vw] w-[80%] text-[6vw] text-center text-[#DF6A50] font-[500]">
               Project Showcase
             </h2>
-            <h3 className="text-white mt-1 w-[80%] md:text-[1.2vw] text-center md:leading-normal leading-8  text-[3vw]  break-normal  ">
+            <h3 className="text-white mt-1 w-[80%] md:text-[1.2vw] text-center md:leading-normal leading-8  text-[3.5vw]  break-normal  ">
               Be prepared to demonstrate your project to our judges through a
               video! Furthermore, you can view other team's project
               demonstrations after the hackathon ends.
@@ -64,7 +64,7 @@ export default function Expect() {
             <h2 className="md:text-[2.5vw] w-[80%] text-[6vw] text-[#DF6A50] font-[500]">
               Fascinating Prizes{" "}
             </h2>
-            <h3 className="text-white mt-1 w-[80%] md:text-[1.2vw] text-center md:leading-normal leading-8  text-[3vw]  break-normal  ">
+            <h3 className="text-white mt-1 w-[80%] md:text-[1.2vw] text-center md:leading-normal leading-8  text-[3.5vw]  break-normal  ">
               Compete for enticing cash and digital prizes as we reward the top
               projects, highlighting exceptional skills, innovation, and
               dedication at our hackathon.
@@ -74,7 +74,7 @@ export default function Expect() {
             <h2 className="md:text-[2.5vw] w-[80%] text-[6vw] text-[#DF6A50] font-[500]">
               Engaging Workshops{" "}
             </h2>
-            <h3 className="text-white mt-1 w-[80%] md:text-[1.2vw] text-center md:leading-normal leading-8  text-[3vw]  break-normal ">
+            <h3 className="text-white mt-1 w-[80%] md:text-[1.2vw] text-center md:leading-normal leading-8  text-[3.5vw]  break-normal ">
               Industry professionals, as well as our own team, will be hosting
               workshops throughout the hackathon to help you learn new skills
               and build your project.

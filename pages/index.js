@@ -55,7 +55,7 @@ if(hasregistered===true){
       </div>
       <div className="marquee">
         <p
-          className="text-[#400090]"
+          className="text-[#400090] shadow-xl shadow-[#400090] "
           style={{ fontFamily: `${ibmPlexMono.style.fontFamily}` }}
         >
           1 0 0 1 0 1 0 1 0 1 0 1 1 0 0 1 0 1 0 1 0 1 0 1 1 0 0 1 0 1 0 1 0 1 0
@@ -70,7 +70,7 @@ if(hasregistered===true){
       </div>
       <div className="marquee">
         <p
-          className="text-[#400090]"
+          className="text-[#400090] shadow-xl shadow-[#400090] "
           style={{ fontFamily: `${ibmPlexMono.style.fontFamily}` }}
         >
           1 0 0 1 0 1 0 1 0 1 0 1 1 0 0 1 0 1 0 1 0 1 0 1 1 0 0 1 0 1 0 1 0 1 0
@@ -84,7 +84,7 @@ if(hasregistered===true){
       </div>
       <div className="marquee">
         <p
-          className="text-[#400090]"
+          className="text-[#400090] shadow-xl shadow-[#400090] "
           style={{ fontFamily: `${ibmPlexMono.style.fontFamily}` }}
         >
           1 0 0 1 0 1 0 1 0 1 0 1 1 0 0 1 0 1 0 1 0 1 0 1 1 0 0 1 0 1 0 1 0 1 0
@@ -98,7 +98,7 @@ if(hasregistered===true){
       </div>
       <div className="marquee">
         <p
-          className="text-[#400090]"
+          className="text-[#400090] shadow-xl shadow-[#400090] "
           style={{ fontFamily: `${ibmPlexMono.style.fontFamily}` }}
         >
           1 0 0 1 0 1 0 1 0 1 0 1 1 0 0 1 0 1 0 1 0 1 0 1 1 0 0 1 0 1 0 1 0 1 0
@@ -112,7 +112,7 @@ if(hasregistered===true){
       </div>
       <div className="marquee">
         <p
-          className="text-[#400090]"
+          className="text-[#400090] shadow-xl shadow-[#400090] "
           style={{ fontFamily: `${ibmPlexMono.style.fontFamily}` }}
         >
           1 0 0 1 0 1 0 1 0 1 0 1 1 0 0 1 0 1 0 1 0 1 0 1 1 0 0 1 0 1 0 1 0 1 0

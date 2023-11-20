@@ -30,7 +30,7 @@ export default function Hero() {
             & More <br />
           </span>{" "}
         </div>
-        <div className="flex-row  items-center justify-center mt-12 space-x-5  flex">
+        <div className="flex-row flex-wrap gap-4 items-center justify-center mt-12   flex">
         <Link  target="_blank" rel="noopener noreferrer" href="https://discord.gg/hackunited">
         <button className=" button font-bold inline-block md:w-auto w-full md:px-[3vw] px-8 py-3 md:py-[0.9vw] leading-none  rounded-full 
         text-black bg-[#DF6A50] text-xl border-black  lg:mt-0">

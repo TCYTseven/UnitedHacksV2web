@@ -19,7 +19,7 @@ export default function FAQ() {
      
 
       
-      <div className='flex flex-col text-white  md:text-[1.5vw] text-[3vw]'>
+      <div className='flex flex-col text-white  md:text-[1.5vw] text-[3.5vw]'>
         <h2>hackMHS will take place from May 19th, 5:00pm to around 8:00pm the next day.
              There will be 24 hours of hacking, food, workshops, and games. If you have any 
              questions before you sign up, feel free to reach out to us at info@hackmhs.com.</h2>
