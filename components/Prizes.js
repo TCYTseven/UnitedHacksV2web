@@ -1,6 +1,7 @@
-import { Carousel } from "react-responsive-carousel";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
 export default function Prizes() {
+ 
   return (
     <div
       id="information"
@@ -16,20 +17,61 @@ export default function Prizes() {
         </h1>
       </div>
       <div className="mt-24  justify-center items-center flex-col flex  ">
-        <Carousel
-          className=" w-full h-auto "
-          showIndicators={false}
-          interval={2000}
-          showStatus={false}
-          useKeyboardArrows={true}
-          swipeable={true}
-          thumbWidth={600}
-          showThumbs={false}
-          autoPlay={true}
-          infiniteLoop={true}
-        >
+      <Carousel
+  additionalTransfrom={0}
+  arrows
+  autoPlaySpeed={3000}
+  centerMode={false}
+  className=""
+  containerClass="container-with-dots"
+  dotListClass=""
+  draggable
+  focusOnSelect={false}
+  infinite
+  itemClass=""
+  keyBoardControl
+  minimumTouchDrag={80}
+  pauseOnHover
+  renderArrowsWhenDisabled={false}
+  renderButtonGroupOutside={false}
+  renderDotsOutside={false}
+  responsive={{
+    desktop: {
+      breakpoint: {
+        max: 3000,
+        min: 1024
+      },
+      items: 3,
+      partialVisibilityGutter: 40
+    },
+    mobile: {
+      breakpoint: {
+        max: 464,
+        min: 0
+      },
+      items: 1,
+      partialVisibilityGutter: 30
+    },
+    tablet: {
+      breakpoint: {
+        max: 1024,
+        min: 464
+      },
+      items: 2,
+      partialVisibilityGutter: 30
+    }
+  }}
+  rewind={false}
+  rewindWithAnimation={false}
+  rtl={false}
+  shouldResetAutoplay
+  showDots={false}
+  sliderClass=""
+  slidesToSlide={1}
+  swipeable
+>
           <div className="flex rounded-[50px]  overflow-hidden  border-black border-[2px]  flex-col flex-grow justify-center  items-center bg-gradient-to-r from-[#3e158a] w-full md:h-[40vw] p-8">
-            {" "}
+        
             <h2 className="md:text-[4vw]    text-[6vw] text-[#DF6A50] font-[500]">
               Schedule
             </h2>
