@@ -353,7 +353,7 @@ export default function Registeration({ reg }) {
                 </h3>
                 <button
                   type="submit"
-                  className="inline-block button px-12 py-4 leading-none border rounded-full font-bold text-black bg-[#DF6A50] text-xl border-black mt-4 lg:mt-0"
+                  className="inline-block button px-12 py-4 leading-none border rounded-full font-bold text-white bg-[#DF6A50] text-xl border-black mt-4 lg:mt-0"
                 >
                   Submit
                 </button>

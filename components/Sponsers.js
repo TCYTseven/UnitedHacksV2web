@@ -22,6 +22,8 @@ export default function Sponsers() {
 
     window.addEventListener("scroll", reveal);
   }, []);
+  const firstrowsponsors = [{imageLink : "/aops.png", href: "https://www.google.com/search?q=art+of+problem+solving+company", name:"AOPS"},{imageLink : "/aops.png", href: "https://www.google.com/search?q=art+of+problem+solving+company", name:"AOPS"},{imageLink : "/aops.png", href: "https://www.google.com/search?q=art+of+problem+solving+company", name:"AOPS"},{imageLink : "/aops.png", href: "https://www.google.com/search?q=art+of+problem+solving+company", name:"AOPS"},{imageLink : "/aops.png", href: "https://www.google.com/search?q=art+of+problem+solving+company", name:"AOPS"},{imageLink : "/aops.png", href: "https://www.google.com/search?q=art+of+problem+solving+company", name:"AOPS"}]
+  const secondrowsponsors = [{imageLink : "/aops.png", href: "https://www.google.com/search?q=art+of+problem+solving+company", name:"AOPS"},{imageLink : "/aops.png", href: "https://www.google.com/search?q=art+of+problem+solving+company", name:"AOPS"},{imageLink : "/aops.png", href: "https://www.google.com/search?q=art+of+problem+solving+company", name:"AOPS"},{imageLink : "/aops.png", href: "https://www.google.com/search?q=art+of+problem+solving+company", name:"AOPS"},{imageLink : "/aops.png", href: "https://www.google.com/search?q=art+of+problem+solving+company", name:"AOPS"},{imageLink : "/aops.png", href: "https://www.google.com/search?q=art+of+problem+solving+company", name:"AOPS"}]
   return (
     <div id="sponsors" className="  ">
       <div className="text heading pt-[100px]">
@@ -36,499 +38,101 @@ export default function Sponsers() {
       <div className="mt-5  flex-row flex-wrap flex   gap-10 justify-center items-center">
         <logo-slider>
           <div className="z-no slidersponsers">
-            <Link
-              href="https://www.google.com/search?q=hackclub"
+            {firstrowsponsors.map((item,index)=>{
+              return <>
+                <Link
+                key={index}
+              href={item.href}
+              className="mr-10 mt-8 cursor-pointer duration-300 hover:-translate-y-2"
               target="_blank"
               rel="noopener noreferrer"
             >
               <Image
-                alt="Hack Club"
-                src={"/hackclub.png"}
-                className="w-[6vw] h-[11vw] md:w-[11vw] md:h-[5vw] " width={200}
+              key={index}
+                alt={item.name}
+                src={item.imageLink}
+                className="h-[75px] w-full max-w-[150px] rounded-lg object-contain md:h-[100px] md:max-w-[200px] lg:h-[150px] lg:max-w-[350px]" width={200}
                 height={200}
               />
             </Link>
-            <Link
-              href="https://www.google.com/search?q=art+of+problem+solving+company"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Image
-                alt="AOPS"
-                src={"/aops.png"}
-                className="w-[6vw] h-[11vw] md:w-[11vw] md:h-[5vw] " width={200}
-                height={200}
-              />
-            </Link>
-            <Link
-              href="https://www.google.com/search?q=axure"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Image
-                alt="Axure"
-                src={"/axure.png"}
-                className="w-[6vw] h-[11vw] md:w-[11vw] md:h-[5vw] " width={200}
-                height={200}
-              />
-            </Link>
-            <Link
-              href="https://www.google.com/search?q=codiac"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Image
-                alt="Hack United"
-                src={"/codiac.png"}
-                className="w-[6vw] h-[11vw] md:w-[3vw] md:h-[8vw] " width={200}
-                height={200}
-              />
-            </Link>
-            <Link
-              href="https://www.google.com/search?q=echo3d"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Image
-                alt="Hack United"
-                src={"/echo3d.png"}
-                className="w-[6vw] h-[11vw] md:w-[11vw] md:h-[3vw] " width={200}
-                height={200}
-              />
-            </Link>
-            <Link
-              href="https://www.google.com/search?q=fearedsudiotech"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Image
-                alt="Hack United"
-                src={"/fearedsudiotech.png"}
-                className="w-[6vw] h-[11vw] md:w-[11vw] md:h-[9vw] " width={200}
-                height={200}
-              />
-            </Link>
-            <Link
-              href="https://www.google.com/search?q=givemycertificate"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Image
-                alt="Hack United"
-                src={"/flight.png"}
-                className="w-[6vw] h-[11vw] md:w-[11vw] md:h-[9vw] " width={200}
-                height={200}
-              />
-            </Link>
-            <Link
-              href="https://www.google.com/search?q=interviewcake"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Image
-                alt="Hack United"
-                src={"/interviewcake.png"}
-                className="w-[6vw] h-[11vw] md:w-[11vw] md:h-[3vw] " width={200}
-                height={200}
-              />
-            </Link>
-            <Link
-              href="https://www.google.com/search?q=leangap"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Image
-                alt="Hack United"
-                src={"/leangap.png"}
-                className="w-[6vw] h-[11vw] md:w-[11vw] md:h-[5vw] " width={200}
-                height={200}
-              />
-            </Link>
-            <Link
-              href="https://www.google.com/search?q=streamyard"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Image
-                alt="Hack United"
-                src={"/streamyard.png"}
-                className="w-[6vw] h-[11vw] md:w-[11vw] md:h-[5vw] " width={200}
-                height={200}
-              />
-            </Link>
+              </>
+            })}
+          
+           
           </div>
-
           <div className="z-no slidersponsers">
-            <Link
-              href="https://www.google.com/search?q=hackclub"
+            {secondrowsponsors.map((item,index)=>{
+              return <>
+                <Link
+                key={index}
+              href={item.href}
+              className="mr-10 mt-8 cursor-pointer duration-300 hover:-translate-y-2"
               target="_blank"
               rel="noopener noreferrer"
             >
               <Image
-                alt="Hack Club"
-                src={"/hackclub.png"}
-                className="w-[6vw] h-[11vw] md:w-[11vw] md:h-[5vw] " width={200}
+              key={index}
+                alt={item.name}
+                src={item.imageLink}
+                className="h-[75px] w-full max-w-[150px] rounded-lg object-contain md:h-[100px] md:max-w-[200px] lg:h-[150px] lg:max-w-[350px]" width={200}
                 height={200}
               />
             </Link>
-            <Link
-              href="https://www.google.com/search?q=art+of+problem+solving+company"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Image
-                alt="AOPS"
-                src={"/aops.png"}
-                className="w-[6vw] h-[11vw] md:w-[11vw] md:h-[5vw] " width={200}
-                height={200}
-              />
-            </Link>
-            <Link
-              href="https://www.google.com/search?q=axure"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Image
-                alt="Axure"
-                src={"/axure.png"}
-                className="w-[6vw] h-[11vw] md:w-[11vw] md:h-[5vw] " width={200}
-                height={200}
-              />
-            </Link>
-            <Link
-              href="https://www.google.com/search?q=codiac"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Image
-                alt="Hack United"
-                src={"/codiac.png"}
-                className="w-[6vw] h-[11vw] md:w-[3vw] md:h-[8vw] " width={200}
-                height={200}
-              />
-            </Link>
-            <Link
-              href="https://www.google.com/search?q=echo3d"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Image
-                alt="Hack United"
-                src={"/echo3d.png"}
-                className="w-[6vw] h-[11vw] md:w-[11vw] md:h-[3vw] " width={200}
-                height={200}
-              />
-            </Link>
-            <Link
-              href="https://www.google.com/search?q=xyz"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Image
-                alt="Hack United"
-                src={"/xyz.png"}
-                className="w-[6vw] h-[11vw] md:w-[11vw] md:h-[7vw] " width={200}
-                height={200}
-              />
-            </Link>
-            <Link
-              href="https://www.google.com/search?q=wolfram"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Image
-                alt="Hack United"
-                src={"/wolfram.png"}
-                className="w-[6vw] h-[11vw] md:w-[11vw] md:h-[4vw] " width={200}
-                height={200}
-              />
-            </Link>
-            <Link
-              href="https://www.google.com/search?q=viewschool"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Image
-                alt="Hack United"
-                src={"/vueschool.png"}
-                className="w-[6vw] h-[11vw] md:w-[11vw] md:h-[4vw] " width={200}
-                height={200}
-              />
-            </Link>
-            <Link
-              href="https://www.google.com/search?q=verbwire"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Image
-                alt="Hack United"
-                src={"/verbwire.png"}
-                className="w-[6vw] h-[11vw] md:w-[11vw] md:h-[3vw] " width={200}
-                height={200}
-              />
-            </Link>
-            <Link
-              href="https://www.google.com/search?q=swishswoosh"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Image
-                alt="Hack United"
-                src={"/swishswoosh.png"}
-                className="w-[6vw] h-[11vw] md:w-[11vw] md:h-[3vw] " width={200}
-                height={200}
-              />
-            </Link>
+              </>
+            })}
+          
+           
           </div>
+          
         </logo-slider>
       </div>
-      <div className="mt-0 z-no md:mt-14 md:mb-16 flex-row flex-wrap flex   gap-10 justify-center items-center">
+      <div className="mb-12 z-no  flex-row flex-wrap flex   gap-10 justify-center items-center">
         <logo-slider>
         
         <div className="slidersponsers">
-            <Link
-              href="https://www.google.com/search?q=hackclub"
-              target="_blank"
+        {secondrowsponsors.map((item,index)=>{
+              return <>
+                <Link
+                key={index}
+              href={item.href}
+              target="_blank" className="mr-10 mt-8 cursor-pointer duration-300 hover:-translate-y-2"
               rel="noopener noreferrer"
             >
               <Image
-                alt="Hack Club"
-                src={"/hackclub.png"}
-                className="w-[6vw] h-[11vw] md:w-[11vw] md:h-[5vw] " width={200}
+              key={index}
+                alt={item.name}
+                src={item.imageLink}
+                className="h-[75px] w-full max-w-[150px] rounded-lg object-contain md:h-[100px] md:max-w-[200px] lg:h-[150px] lg:max-w-[350px]" width={200}
                 height={200}
               />
             </Link>
-            <Link
-              href="https://www.google.com/search?q=art+of+problem+solving+company"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Image
-                alt="AOPS"
-                src={"/aops.png"}
-                className="w-[6vw] h-[11vw] md:w-[11vw] md:h-[5vw] " width={200}
-                height={200}
-              />
-            </Link>
-            <Link
-              href="https://www.google.com/search?q=axure"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Image
-                alt="Axure"
-                src={"/axure.png"}
-                className="w-[6vw] h-[11vw] md:w-[11vw] md:h-[5vw] " width={200}
-                height={200}
-              />
-            </Link>
-            <Link
-              href="https://www.google.com/search?q=codiac"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Image
-                alt="Hack United"
-                src={"/codiac.png"}
-                className="w-[6vw] h-[11vw] md:w-[3vw] md:h-[8vw] " width={200}
-                height={200}
-              />
-            </Link>
-            <Link
-              href="https://www.google.com/search?q=echo3d"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Image
-                alt="Hack United"
-                src={"/echo3d.png"}
-                className="w-[6vw] h-[11vw] md:w-[11vw] md:h-[3vw] " width={200}
-                height={200}
-              />
-            </Link>
-            <Link
-              href="https://www.google.com/search?q=xyz"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Image
-                alt="Hack United"
-                src={"/xyz.png"}
-                className="w-[6vw] h-[11vw] md:w-[11vw] md:h-[7vw] " width={200}
-                height={200}
-              />
-            </Link>
-            <Link
-              href="https://www.google.com/search?q=wolfram"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Image
-                alt="Hack United"
-                src={"/wolfram.png"}
-                className="w-[6vw] h-[11vw] md:w-[11vw] md:h-[4vw] " width={200}
-                height={200}
-              />
-            </Link>
-            <Link
-              href="https://www.google.com/search?q=viewschool"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Image
-                alt="Hack United"
-                src={"/vueschool.png"}
-                className="w-[6vw] h-[11vw] md:w-[11vw] md:h-[4vw] " width={200}
-                height={200}
-              />
-            </Link>
-            <Link
-              href="https://www.google.com/search?q=verbwire"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Image
-                alt="Hack United"
-                src={"/verbwire.png"}
-                className="w-[6vw] h-[11vw] md:w-[11vw] md:h-[3vw] " width={200}
-                height={200}
-              />
-            </Link>
-            <Link
-              href="https://www.google.com/search?q=swishswoosh"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Image
-                alt="Hack United"
-                src={"/swishswoosh.png"}
-                className="w-[6vw] h-[11vw] md:w-[11vw] md:h-[3vw] " width={200}
-                height={200}
-              />
-            </Link>
+              </>
+            })}
           </div>
-        <div className="slidersponsers">
-            <Link
-              href="https://www.google.com/search?q=hackclub"
+          <div className="z-no slidersponsers">
+            {firstrowsponsors.map((item,index)=>{
+              return <>
+                <Link
+                key={index}
+              href={item.href}
+              className="mr-10 mt-8 cursor-pointer duration-300 hover:-translate-y-2"
               target="_blank"
               rel="noopener noreferrer"
             >
               <Image
-                alt="Hack Club"
-                src={"/hackclub.png"}
-                className="w-[6vw] h-[11vw] md:w-[11vw] md:h-[5vw] " width={200}
+              key={index}
+                alt={item.name}
+                src={item.imageLink}
+                className="h-[75px] w-full max-w-[150px] rounded-lg object-contain md:h-[100px] md:max-w-[200px] lg:h-[150px] lg:max-w-[350px]" width={200}
                 height={200}
               />
             </Link>
-            <Link
-              href="https://www.google.com/search?q=art+of+problem+solving+company"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Image
-                alt="AOPS"
-                src={"/aops.png"}
-                className="w-[6vw] h-[11vw] md:w-[11vw] md:h-[5vw] " width={200}
-                height={200}
-              />
-            </Link>
-            <Link
-              href="https://www.google.com/search?q=axure"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Image
-                alt="Axure"
-                src={"/axure.png"}
-                className="w-[6vw] h-[11vw] md:w-[11vw] md:h-[5vw] " width={200}
-                height={200}
-              />
-            </Link>
-            <Link
-              href="https://www.google.com/search?q=codiac"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Image
-                alt="Hack United"
-                src={"/codiac.png"}
-                className="w-[6vw] h-[11vw] md:w-[3vw] md:h-[8vw] " width={200}
-                height={200}
-              />
-            </Link>
-            <Link
-              href="https://www.google.com/search?q=echo3d"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Image
-                alt="Hack United"
-                src={"/echo3d.png"}
-                className="w-[6vw] h-[11vw] md:w-[11vw] md:h-[3vw] " width={200}
-                height={200}
-              />
-            </Link>
-            <Link
-              href="https://www.google.com/search?q=xyz"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Image
-                alt="Hack United"
-                src={"/xyz.png"}
-                className="w-[6vw] h-[11vw] md:w-[11vw] md:h-[7vw] " width={200}
-                height={200}
-              />
-            </Link>
-            <Link
-              href="https://www.google.com/search?q=wolfram"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Image
-                alt="Hack United"
-                src={"/wolfram.png"}
-                className="w-[6vw] h-[11vw] md:w-[11vw] md:h-[4vw] " width={200}
-                height={200}
-              />
-            </Link>
-            <Link
-              href="https://www.google.com/search?q=viewschool"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Image
-                alt="Hack United"
-                src={"/vueschool.png"}
-                className="w-[6vw] h-[11vw] md:w-[11vw] md:h-[4vw] " width={200}
-                height={200}
-              />
-            </Link>
-            <Link
-              href="https://www.google.com/search?q=verbwire"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Image
-                alt="Hack United"
-                src={"/verbwire.png"}
-                className="w-[6vw] h-[11vw] md:w-[11vw] md:h-[3vw] " width={200}
-                height={200}
-              />
-            </Link>
-            <Link
-              href="https://www.google.com/search?q=swishswoosh"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Image
-                alt="Hack United"
-                src={"/swishswoosh.png"}
-                className="w-[6vw] h-[11vw] md:w-[11vw] md:h-[3vw] " width={200}
-                height={200}
-              />
-            </Link>
+              </>
+            })}
+          
+           
           </div>
+    
 
         </logo-slider> 
       </div>

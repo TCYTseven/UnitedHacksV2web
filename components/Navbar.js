@@ -78,19 +78,32 @@ export default function Navbar() {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, [prevScrollPos]);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    handleResize();
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
 
   return (
     <nav
-      className={`${
-          backgroundTransparacy === 0 ? "notnavbg" : ""
-        } ${
-          show ? "toptobottom " : "poptotop   "
+      className={` ${
+        !isMobile ? show ? "toptobottom " : "poptotop ": ""
         }  flex fade top-0 sticky items-center  justify-between flex-wrap `}
     >
     
       <div className="block lg:hidden">
         <button
-          className="flex items-center px-3 py-2 rounded"
+          className="flex items-center z-50 px-3 py-2 rounded"
           onClick={toggleMenu}
         >
           <svg
@@ -127,9 +140,10 @@ export default function Navbar() {
       <div
         className={`${
           menuVisible ? "fade scale" : "hidden"
-        }   w-full text-center block flex-grow lg:flex md:relative  fixed lg:items-center lg:w-auto`}
+        }   w-full text-center block flex-grow lg:flex md:relative -z-10 fixed lg:items-center lg:w-auto`}
       >
-        <div className="text-xl flex flex-row md:flex-nowrap flex-wrap slidd px-3 py-3 mx-auto rounded-br-3xl rounded-bl-3xl w-auto nav-mid navbg text-white  md:justify-center">
+        <div className=" md:text-xl text-md md:mt-0 mt-64 flex flex-row md:flex-nowrap flex-wrap slidd px-3 py-3 mx-auto rounded-br-3xl rounded-bl-3xl w-auto 
+        nav-mid navbg text-white  md:justify-center">
         <Image alt="Hack United"
           src={"/earth.png"}
           width={100}

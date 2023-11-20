@@ -20,7 +20,7 @@ export default function Hero() {
         </div>
         <div
           style={{ fontFamily: `${ibmPlexMono.style.fontFamily}` }}
-          className="  md:mt-0 mt-[-3vw] scroller md:text-[1.8vw] text-[4vw] text-black"
+          className="  scroller md:text-[1.8vw] text-[5vw] text-white"
         >
           <span>
           5.19.23 - 5.20.23 <br />
@@ -30,21 +30,22 @@ export default function Hero() {
             & More <br />
           </span>{" "}
         </div>
-        <div className="sm:flex-row items-center justify-center mt-[10vh] flex-col flex">
+        <div className="flex-row  items-center justify-center mt-12 space-x-5  flex">
         <Link  target="_blank" rel="noopener noreferrer" href="https://discord.gg/hackunited">
-        <button className="mx-0 md:mx-5 button inline-block md:w-auto w-full md:px-[3vw] px-8 py-3 md:py-[0.9vw] leading-none border rounded-full text-black bg-white text-xl border-black mt-4 lg:mt-0">
+        <button className=" button inline-block md:w-auto w-full md:px-[3vw] px-8 py-3 md:py-[0.9vw] leading-none  rounded-full 
+        text-black bg-[#DF6A50] text-xl border-black  lg:mt-0">
           Discord
 
         </button>
         </Link>
         <Link  target="_blank" rel="noopener noreferrer" href="https://unitedhacks23.devpost.com">
-        <button className=" mx-0 md:mx-5 button inline-block md:w-auto w-full md:px-[3vw] px-8 py-3 md:py-[0.9vw] leading-none border rounded-full text-black bg-white text-xl border-black mt-4 lg:mt-0">
+        <button className="  button inline-block md:w-auto w-full md:px-[3vw] px-8 py-3 md:py-[0.9vw] leading-none border rounded-full text-black bg-[#DF6A50] text-xl border-black  lg:mt-0">
           Devpost
 
         </button>
         </Link>
         <Link  target="_blank" rel="noopener noreferrer" href="https://bank.hackclub.com/donations/start/hackunited">
-        <button className="mx-0 md:mx-5 button inline-block md:w-auto w-full md:px-[3vw] px-8 py-3 md:py-[0.9vw] leading-none border rounded-full text-black bg-white text-xl border-black mt-4 lg:mt-0">
+        <button className=" button inline-block md:w-auto w-full md:px-[3vw] px-8 py-3 md:py-[0.9vw] leading-none border rounded-full text-black bg-[#DF6A50] text-xl border-black  lg:mt-0">
           Website
 
         </button>
