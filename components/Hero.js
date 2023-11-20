@@ -32,20 +32,20 @@ export default function Hero() {
         </div>
         <div className="flex-row  items-center justify-center mt-12 space-x-5  flex">
         <Link  target="_blank" rel="noopener noreferrer" href="https://discord.gg/hackunited">
-        <button className=" button inline-block md:w-auto w-full md:px-[3vw] px-8 py-3 md:py-[0.9vw] leading-none  rounded-full 
+        <button className=" button font-bold inline-block md:w-auto w-full md:px-[3vw] px-8 py-3 md:py-[0.9vw] leading-none  rounded-full 
         text-black bg-[#DF6A50] text-xl border-black  lg:mt-0">
           Discord
 
         </button>
         </Link>
         <Link  target="_blank" rel="noopener noreferrer" href="https://unitedhacks23.devpost.com">
-        <button className="  button inline-block md:w-auto w-full md:px-[3vw] px-8 py-3 md:py-[0.9vw] leading-none border rounded-full text-black bg-[#DF6A50] text-xl border-black  lg:mt-0">
+        <button className=" font-bold button inline-block md:w-auto w-full md:px-[3vw] px-8 py-3 md:py-[0.9vw] leading-none border rounded-full text-black bg-[#DF6A50] text-xl border-black  lg:mt-0">
           Devpost
 
         </button>
         </Link>
         <Link  target="_blank" rel="noopener noreferrer" href="https://bank.hackclub.com/donations/start/hackunited">
-        <button className=" button inline-block md:w-auto w-full md:px-[3vw] px-8 py-3 md:py-[0.9vw] leading-none border rounded-full text-black bg-[#DF6A50] text-xl border-black  lg:mt-0">
+        <button className="font-bold button inline-block md:w-auto w-full md:px-[3vw] px-8 py-3 md:py-[0.9vw] leading-none border rounded-full text-black bg-[#DF6A50] text-xl border-black  lg:mt-0">
           Website
 
         </button>

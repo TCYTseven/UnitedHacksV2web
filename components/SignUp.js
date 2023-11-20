@@ -25,7 +25,7 @@ export default function FAQ() {
              questions before you sign up, feel free to reach out to us at info@hackmhs.com.</h2>
       </div>
       <div className="flex-col w-full ">
-          <button onClick={toggle} className="inline-block button  px-12 py-4 leading-none border rounded-full text-white bg-[#DF6A50] text-xl border-black mt-4 lg:mt-0">
+          <button onClick={toggle} className="inline-block button font-bold text-black px-12 py-4 leading-none border rounded-full  bg-[#DF6A50] text-xl border-black mt-4 lg:mt-0">
             Register
           </button>
         </div>
