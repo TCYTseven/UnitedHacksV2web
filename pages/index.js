@@ -110,7 +110,7 @@ if(hasregistered===true){
       <div className="mx-auto px-2 my-auto  w-full md:w-[75%]  justify-center">
         <FAQ />
       </div>
-      <div className="marquee">
+      <div className="marquee justify-center items-center ">
         <p
           className="text-[#400090] shadow-xl shadow-[#400090] "
           style={{ fontFamily: `${ibmPlexMono.style.fontFamily}` }}
