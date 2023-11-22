@@ -1317,7 +1317,7 @@ export default function Explore() {
         <div className="flex flex-row justify-center  flex-wrap p-5 mb-[50px]">
           <div className="flex md:order-none order-1 md:mt-0 mt-5 md:text-left text-center justify-center flex-col w-full md:w-[60%] mr-0 md:mr-[5vw]  ">
             <h2 className="md:text-[2vw] text-[6vw] text-[#DF6A50] font-[500]">
-            Collaborate With Others
+            Collaborate With Others:
             </h2>
             <h3 className="text-white  md:text-[1vw] text-center md:leading-normal leading-8  text-[3.5vw] md:text-justify break-normal ">
             Connect and interact with individuals from different countries and backgrounds at our hackathon! Discover people who share an interest in similar projects and collaborate based on your respective strengths and weaknesses. Join forces with fellow participants to create a functional project that reflects everyone's passion and dedication, building lasting relationships beyond the hacking period.
