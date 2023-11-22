@@ -2,7 +2,6 @@ import Link from "next/link";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 export default function Navbar() {
-  
   const [clientWindowHeight, setClientWindowHeight] = useState("");
 
   const [backgroundTransparacy, setBackgroundTransparacy] = useState(0);
@@ -87,20 +86,19 @@ export default function Navbar() {
 
     handleResize();
 
-    window.addEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
 
     return () => {
-      window.removeEventListener('resize', handleResize);
+      window.removeEventListener("resize", handleResize);
     };
   }, []);
 
   return (
     <nav
       className={` ${
-        !isMobile ? show ? "toptobottom " : "poptotop ": ""
-        }  flex fade top-0 sticky items-center  justify-between flex-wrap `}
+        !isMobile ? (show ? "toptobottom " : "poptotop ") : ""
+      }  flex fade top-0 sticky items-center  justify-between flex-wrap `}
     >
-    
       <div className="block lg:hidden">
         <button
           className="flex items-center z-50 px-3 py-2 rounded"
@@ -142,14 +140,17 @@ export default function Navbar() {
           menuVisible ? "fade scale" : "hidden"
         }   w-full text-center block flex-grow lg:flex md:relative -z-10 fixed lg:items-center lg:w-auto`}
       >
-        <div className=" md:text-xl text-md md:mt-0 mt-64 flex flex-row md:flex-nowrap flex-wrap slidd px-3 py-3 mx-auto rounded-br-3xl rounded-bl-3xl w-auto 
-        nav-mid navbg text-white  md:justify-center">
-        <Image alt="Hack United"
-          src={"/earth.png"}
-          width={100}
-          height={100}
-          className=""
-        />
+        <div
+          className=" md:text-xl text-md md:mt-0 mt-64 flex flex-row md:flex-nowrap flex-wrap slidd px-3 py-3 mx-auto rounded-br-3xl rounded-bl-3xl w-auto 
+        nav-mid navbg text-white  md:justify-center"
+        >
+          <Image
+            alt="Hack United"
+            src={"/earth.png"}
+            width={100}
+            height={100}
+            className=""
+          />
           <Link
             scroll={false}
             className="block nav-links mt-4 lg:inline-block lg:mt-0 nav-link-ltr mr-14"
@@ -186,7 +187,6 @@ export default function Navbar() {
             Sponsors
           </Link>
         </div>
-      
       </div>
     </nav>
   );

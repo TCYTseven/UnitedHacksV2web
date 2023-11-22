@@ -385,7 +385,7 @@ html {
   to { transform: translateX(-50%); }
 }
 logo-slider {
-  --min-image-size: 100px;
+  --min-image-size: 150px;
   --max-image-size: 300px;
   --image-size: var(--max-image-size);
   padding: 20px;
@@ -484,5 +484,16 @@ zIndex: 99999999999;
 .notnavbg{
   transition: all 0.5s;
   background-color: transparent;
+
+}
+.react-stacked-center-carousel-item {
+  opacity: 0.6;
+}
+
+.react-stacked-center-carousel-item-centered {
+  opacity: 1;
+}
+.gradient-box{
+  background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgb(23, 14, 59) 100%);
 
 }

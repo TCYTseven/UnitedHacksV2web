@@ -4,7 +4,6 @@ import { Checkbox } from "@nextui-org/react";
 import Link from "next/link";
 
 export default function Registeration({ reg }) {
-  
   const [isloading, setIsloading] = useState(false);
   const [prompt, setPrompt] = useState("");
   const toggle = () => {
@@ -93,7 +92,8 @@ export default function Registeration({ reg }) {
         <Loader message={prompt} />
       ) : (
         <>
-          <section id="register"
+          <section
+            id="register"
             className="flex flex-col overflow-hidden fade
     items-center zindex register justify-center align-center bg-[#472da779] h-screen fixed w-full z-[999999]  "
           >
