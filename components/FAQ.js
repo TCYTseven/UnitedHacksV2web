@@ -69,7 +69,7 @@ export default function FAQ() {
     },
     {
       question: "When is the registration deadline?",
-      answer: "August 4th, 2023 at 4:30pm EST.",
+      answer: "January 12th, 2024 at 7pm EST.",
     },
     {
       question: "What if im not interested in coding?",
