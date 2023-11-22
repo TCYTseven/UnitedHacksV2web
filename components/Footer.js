@@ -90,7 +90,7 @@ export default function Footer() {
                       target="_blank"
                       rel="noopener noreferrer"
                       className="hover:underline"
-                      href="https://unitedhacks23.devpost.com/rules"
+                      href="https://unitedhacksv2.devpost.com/rules"
                     >
                       Event Rules
                     </Link>
@@ -109,7 +109,7 @@ export default function Footer() {
                     <Link
                       target="_blank"
                       rel="noopener noreferrer"
-                      href="https://drive.google.com/file/d/1QVr7WmvAL858uL5APvj9X6Gnl0Jf-96u/view?usp=sharing"
+                      href="https://drive.google.com/file/d/13kB7zt1rcQ0lXdWlEDRP1qGt7mZ0sRyK/view?usp=sharing"
                       className="hover:underline"
                     >
                       Sponsor Prospectus

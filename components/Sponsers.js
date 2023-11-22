@@ -24,65 +24,65 @@ export default function Sponsers() {
   }, []);
   const firstrowsponsors = [
     {
-      imageLink: "/aops.png",
-      href: "https://www.google.com/search?q=art+of+problem+solving+company",
+      imageLink: "/comingsoon.png",
+      href: "https://hackunited.org/#donate",
       name: "AOPS",
     },
     {
-      imageLink: "/aops.png",
-      href: "https://www.google.com/search?q=art+of+problem+solving+company",
+      imageLink: "/comingsoon.png",
+      href: "https://hackunited.org/#donate",
       name: "AOPS",
     },
     {
-      imageLink: "/aops.png",
-      href: "https://www.google.com/search?q=art+of+problem+solving+company",
+      imageLink: "/comingsoon.png",
+      href: "https://hackunited.org/#donate",
       name: "AOPS",
     },
     {
-      imageLink: "/aops.png",
-      href: "https://www.google.com/search?q=art+of+problem+solving+company",
+      imageLink: "/comingsoon.png",
+      href: "https://hackunited.org/#donate",
       name: "AOPS",
     },
     {
-      imageLink: "/aops.png",
-      href: "https://www.google.com/search?q=art+of+problem+solving+company",
+      imageLink: "/comingsoon.png",
+      href: "https://hackunited.org/#donate",
       name: "AOPS",
     },
     {
-      imageLink: "/aops.png",
-      href: "https://www.google.com/search?q=art+of+problem+solving+company",
+      imageLink: "/comingsoon.png",
+      href: "https://hackunited.org/#donate",
       name: "AOPS",
     },
   ];
   const secondrowsponsors = [
     {
-      imageLink: "/aops.png",
-      href: "https://www.google.com/search?q=art+of+problem+solving+company",
+      imageLink: "/comingsoon.png",
+      href: "https://hackunited.org/#donate",
       name: "AOPS",
     },
     {
-      imageLink: "/aops.png",
-      href: "https://www.google.com/search?q=art+of+problem+solving+company",
+      imageLink: "/comingsoon.png",
+      href: "https://hackunited.org/#donate",
       name: "AOPS",
     },
     {
-      imageLink: "/aops.png",
-      href: "https://www.google.com/search?q=art+of+problem+solving+company",
+      imageLink: "/comingsoon.png",
+      href: "https://hackunited.org/#donate",
       name: "AOPS",
     },
     {
-      imageLink: "/aops.png",
-      href: "https://www.google.com/search?q=art+of+problem+solving+company",
+      imageLink: "/comingsoon.png",
+      href: "https://hackunited.org/#donate",
       name: "AOPS",
     },
     {
-      imageLink: "/aops.png",
-      href: "https://www.google.com/search?q=art+of+problem+solving+company",
+      imageLink: "/comingsoon.png",
+      href: "https://hackunited.org/#donate",
       name: "AOPS",
     },
     {
-      imageLink: "/aops.png",
-      href: "https://www.google.com/search?q=art+of+problem+solving+company",
+      imageLink: "/comingsoon.png",
+      href: "https://hackunited.org/#donate",
       name: "AOPS",
     },
   ];
@@ -213,10 +213,10 @@ export default function Sponsers() {
           </a>{" "}
           and email{" "}
           <a
-            href="mailto:humans@hackunited.org"
+            href="mailto:sponsor@hackunited.org"
             style={{ textDecoration: "underline", color: "#DF6A50" }}
           >
-            humans@hackunited.org
+            sponsor@hackunited.org
           </a>
           !
         </h3>

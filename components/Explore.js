@@ -64,10 +64,11 @@ export default function Explore() {
         <div className="flex flex-row justify-center  flex-wrap p-5 mb-[50px]">
           <div className="flex md:order-none order-1 md:mt-0 mt-5 md:text-left text-center justify-center flex-col w-full md:w-[60%] mr-0 md:mr-[5vw]  ">
             <h2 className="md:text-[2vw] text-[6vw] text-[#DF6A50] font-[500]">
-              Learn More than Just Coding
+            Discover More Than Coding: 
             </h2>
             <h3 className="text-white  md:text-[1vw]  text-center md:leading-normal leading-8  text-[3.5vw] md:text-justify break-normal ">
-            Alongside acquiring mechanical skills, anticipate opportunities for collaboration, networking, and engaging in workshops focused on entrepreneurship and critical thinking at our hackathon. Diverse guest speakers will further enrich the event, offering valuable insights and perspectives. Our hackathon provides an experience that extends beyond basic technological skills, offering a full approach to learning and growth.
+            At United Hack's, beyond coding, anticipate a dynamic experience providing collaboration, entrepreneurial insights, and critical thinking. Engage in workshops exploring entrepreneurship and critical thought alongside technical skills. Diverse guest speakers will further enrich the event, offering valuable insights and perspectives.  Our hackathon provides an experience that extends beyond basic technological skills, offering a full approach to learning and growth.
+
             </h3>
           </div>
           <div className="align-center md:mb-0 mb-7 justify-center flex items-center">
@@ -1306,10 +1307,10 @@ export default function Explore() {
           </div>
           <div className="flex md:mt-0 mt-5  md:text-left text-center justify-center flex-col w-full md:w-[60%] ml-0 md:ml-[5vw]  ">
             <h2 className="md:text-[2vw] text-[6vw] text-[#DF6A50] font-[500]">
-              Innovate to Win Prizes
+            Innovate for Rewards:
             </h2>
             <h3 className="text-white md:text-[1vw] text-center md:leading-normal leading-8  text-[3.5vw] md:text-justify break-normal ">
-            Get ready to showcase your creativity and problem-solving skills at our hackathon, where you can win exciting prizes by coming up with groundbreaking ideas. It's an opportunity to think outside the box and push the boundaries of innovation. This is a great place to submit a project you were going to build anyway, except you get the oppurtunity to win prizes and get recognized for it.
+            Unleash your creativity and problem-solving prowess to win exciting prizes! Challenge yourself to think beyond boundaries, turning your ideas into groundbreaking solutions. This is a great place to submit a project you were going to build anyway, except you get the opportunity to win prizes and get recognized for it. This platform is an ideal space to submit that project you had in mind!
             </h3>
           </div>
         </div>

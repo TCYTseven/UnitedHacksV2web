@@ -4,6 +4,7 @@ import Loader from "@/components/Loader";
 import { useState } from "react";
 import { useEffect } from "react";
 import Head from 'next/head';
+
 import { ToastProvider } from 'react-toast-notifications'
 
 export default function MyApp({ Component, pageProps }) {

@@ -19,16 +19,24 @@ export default function FAQ() {
      
 
       
-      <div className='flex flex-col text-white  md:text-[1.5vw] text-[3.5vw]'>
-        <h2>hackMHS will take place from May 19th, 5:00pm to around 8:00pm the next day.
-             There will be 24 hours of hacking, food, workshops, and games. If you have any 
-             questions before you sign up, feel free to reach out to us at info@hackmhs.com.</h2>
-      </div>
-      <div className="flex-col w-full ">
-          <button onClick={toggle} className="inline-block button font-bold text-black px-12 py-4 leading-none border rounded-full  bg-[#DF6A50] text-xl border-black mt-4 lg:mt-0">
-            Register
-          </button>
-        </div>
+      <div className='flex flex-col text-white md:text-[1.5vw] text-[3.5vw]'>
+  <h2>United Hacks is an online event. Even if you are not interested in submitting a project, still feel free
+    to sign up in order to access workshops and network with our community. In order to sign up, please follow
+    the instructions below.</h2>
+
+  <ol className="list-decimal ml-6 mt-4">
+    <li>Click on <b>Register</b> button below & fill out form</li>
+    <li>Sign up on <a href="https://unitedhacksv2.devpost.com" className="underline text-blue-500">Devpost</a></li>
+    <li>Join <a href="https://discord.gg/hackunited" className="underline text-blue-500">discord.gg/hackunited</a></li>
+  </ol>
+</div>
+
+<div className="flex-col w-full">
+  <button onClick={toggle} className="inline-block button font-bold text-black px-12 py-4 leading-none border rounded-full bg-[#DF6A50] text-xl border-black mt-4 lg:mt-0">
+    Register
+  </button>
+</div>
+
         </div>
      
   )

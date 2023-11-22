@@ -7,26 +7,28 @@ export default function Prizes() {
     {
       title: "Schedule",
       description:
-        " The United Hacks opening ceremony is scheduled to take place on August 4th at 5 PM EST. Following that, participants can engage in hacking activities, workshops, games, and more until August 6th at 12 PM EST, which is the deadline for submitting all projects on devpost. Judging will then commence, and the closing ceremony, during which the winners will be announced, will be held on August 6th at 8 PM EST. The schedule for workshops and events throughout this two-day marathon will be released on August 1st, 2023. Stay tuned for updates!",
+        "The United Hacks opening ceremony is scheduled to take place on January 12th at 8pm EST. Following that, participants can engage in hacking activities, workshops, games, and more until January 14th at 12pm EST, which is the deadline for submitting all projects on devpost. Judging will then commence, and the closing ceremony, during which the winners will be announced, will be held on January 14th at 8 PM EST. The schedule for workshops and events throughout this two-day marathon will be released on January 1st, 2024. Stay tuned for updates!",
       link: "https://hackunited.org/#comingsoon",
       linktitle: "Hackathon Schedule",
     },
     {
       title: "Judges",
       description:
-        "Our hackathon is judged by industry professionals, who will also  critique your projects and provide feedback. Our judges come from  various fields such as Engineering, Software Engineering,  Business, or the medical industry. As the theme for this year's hackathon is mental health, we aim to evaluate all mental health-related projects with the assistance of a genuine medical professional. This expert will be able to assess the potential impact of the projects in making a difference. Even if you don't submit a project, you may see our judges around!",
+        "Our hackathon is evaluated by industry professionals spanning Engineering, Software Engineering, Business, and the medical industry. These experts not only assess projects and offer valuable feedback but also bring their expertise to gauge the potential impact and transformative capabilities of each endeavor. In addition to industry professionals, we also have high school/college judges participating. Even if you're not submitting a project, you can still interact with our diverse panel of judges throughout the event!",
+      link: "https://unitedhacks23.devpost.com/#judges",
+      linktitle: "View Judges",
     },
     {
       title: "Theme",
       description:
-        " United Hacks is a hackathon with the purpose of empowering innovators to build anything they desire. Participants can choose any topic they want, ranging from accessibility to mental health to climate change, and beyond. We are eager to witness the potential of your creations! While United Hacks offers two main tracks, a general category and a mental health theme, we encourage you to develop a project related to mental health. However, it is not mandatory, as there will be prizes for both tracks. In addition to these two main tracks, we also offer awards for various miscellaneous categories. For further information, please refer to our devpost page.",
+        "United Hacks is a platform where innovators unleash their creativity without any limitations. If competing in the GENERAL track, participants have the freedom to explore diverse topics—from accessibility to mental health, and beyond, nurturing the potential of your ideas! This year, our theme is Resolution, mirroring New Year's resolutions—initiatives promoting self-improvement and goal achievement. While we encourage projects related to resolution, it's not obligatory to qualify for prizes. Apart from this prize track, additional awards await across various categories. For more details, check out our Devpost page.",
     },
     {
       title: "Rules",
-      description: `• You must be of ages 13+ and a high school or college student.\n• Your project must be original, it may not be directly copied from another source.\n• You may not use code written previous to this hackathon.\n• Your team may have up to 4 people, although you may work individually as well.\n• You must submit your project on time.\n• Your entry must be in English\n • You have to sign up on Devpost and Our Website. Joining the Discord is recommended.\nYou must follow Code of Conduct",
-      link: "https://static.mlh.io/docs/mlh-code-of-conduct.pdf`,
+      description: `• You must be of ages 13+ and a high school or college student.\n• Your project must be original, it may not be copied from another source.\n• You may not use code written previous to this hackathon.\n• Your team may have up to 4 people, although you may work individually as well.\n• You must submit your project on time.\n• Your entry must be in English\n • You have to sign up on Devpost and Our Website. Joining the Discord is recommended.\n• You must follow the MLH`,
+      link: "https://static.mlh.io/docs/mlh-code-of-conduct.pdf",
       linktitle: "Code of Conduct",
-    },
+    },    
   ];
 
   return (
@@ -100,7 +102,7 @@ export default function Prizes() {
         >
           {data.map((i, e) => {
             return (
-              <div className="flex rounded-[50px] mx-3 gradient-box  overflow-hidden h-[140vw] md:h-[35vw]  flex-col flex-grow   items-center   ">
+              <div className="flex rounded-[50px] mx-3 gradient-box shadow shadow-black overflow-hidden h-[140vw] md:h-[35vw] flex-col flex-grow items-center">
                 <h2 className="md:text-[3vw]    text-[7vw] text-[#DF6A50] font-[500]">
                   {i.title}
                 </h2>
