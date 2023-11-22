@@ -19,7 +19,7 @@ export default function Hero() {
         />
         <div className="flex flex-row">
           <h1 className="md:text-[4vw] text-[9vw] font-bold text-[#400090] hackunited ">
-            UNITED HACKS
+            UNITED HACKS V2
           </h1>
         </div>
         <div
@@ -53,9 +53,9 @@ export default function Hero() {
         <div className="flex justify-center mt-4">
           <button
             onClick={() => setIsModalOpen(true)}
-            className="button font-bold inline-block md:w-auto w-full md:px-[3vw] px-8 py-3 md:py-[0.9vw] leading-none rounded-full text-white bg-white text-xl border-white"
+            className="button font-bold inline-block md:w-auto w-full md:px-[3vw] px-8 py-3 md:py-[0.9vw] leading-none rounded-full text-white bg-red-600 text-xl border-white"
           >
-            <span style={{ color: "black" }}>▶</span>
+            <span style={{ color: "white" }}>▶</span>
           </button>
         </div>
       </div>
