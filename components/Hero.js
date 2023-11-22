@@ -54,31 +54,30 @@ export default function Hero() {
           <button
             onClick={() => setIsModalOpen(true)}
             className="button font-bold inline-block md:w-auto w-full md:px-[3vw] px-8 py-3 md:py-[0.9vw] leading-none rounded-full text-white bg-white text-xl border-white"
-            >
-<span style={{ color: "black" }}>▶</span>
+          >
+            <span style={{ color: "black" }}>▶</span>
           </button>
         </div>
       </div>
 
       {/* Video Modal */}
       {isModalOpen && (
-        <div className="modal-overlay">
-          <div className="modal-content">
-            <span className="close" onClick={() => setIsModalOpen(false)}>
-              &times;
-            </span>
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/xUouKtNYsl8?si=7PpiIBpzDmw7Dnj0&amp;controls=0"
-              title="YouTube video player"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowFullScreen
-            ></iframe>
-          </div>
-        </div>
-      )}
+  <div className="modal-overlay">
+    <div className="modal-content" style={{ width: "80%", height: "80%" }}>
+      <span className="close" onClick={() => setIsModalOpen(false)}>
+        &times;
+      </span>
+      <iframe
+        style={{ width: "100%", height: "100%" }}
+        src="https://www.youtube.com/embed/xUouKtNYsl8?si=7PpiIBpzDmw7Dnj0&amp;controls=0"
+        title="YouTube video player"
+        frameBorder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowFullScreen
+      ></iframe>
+    </div>
+  </div>
+)}
     </div>
   );
 }
