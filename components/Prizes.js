@@ -8,7 +8,7 @@ export default function Prizes() {
       title: "Schedule",
       description:
         "The United Hacks opening ceremony is scheduled to take place on January 12th at 8pm EST. Following that, participants can engage in hacking activities, workshops, games, and more until January 14th at 12pm EST, which is the deadline for submitting all projects on devpost. Judging will then commence, and the closing ceremony, during which the winners will be announced, will be held on January 14th at 8 PM EST. The schedule for workshops and events throughout this two-day marathon will be released on January 1st, 2024. Stay tuned for updates!",
-      link: "https://hackunited.org/#comingsoon",
+      link: "https://docs.google.com/spreadsheets/d/1NyhOD98_V34r-XSfcmWTEVMliKnwPyLsb-OxqgKaxyQ/edit?usp=sharing",
       linktitle: "Hackathon Schedule",
     },
     {
